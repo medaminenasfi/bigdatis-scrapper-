@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-08-11T05:36:28.012Z",
+  "lastProcessedId": "999996",
+  "stats": {
+    "totalProperties": 12260,
+    "processed": 12260,
+    "successful": 12260,
+    "failed": 0,
+    "skipped": 1,
+    "apiCalls": 12267,
+    "apiErrors": 7,
+    "locationsMapped": 11530,
+    "locationsNotFound": 730,
+    "startTime": "2025-08-10T20:56:44.661Z",
+    "endTime": "2025-08-11T05:36:27.883Z",
+    "lastProcessedId": "999996"
+  },
+  "completionRate": 100
+}

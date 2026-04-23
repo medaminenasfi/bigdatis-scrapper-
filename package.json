@@ -1,0 +1,48 @@
+{
+  "name": "bigdatis-scraper",
+  "version": "1.0.0",
+  "description": "Real estate property scraper for Bigdatis API with MongoDB storage",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node src/test.js",
+    "test-db": "node -e \"require('./src/config/database').connect().then(() => require('./src/config/database').testConnection()).then(() => process.exit(0)).catch(e => {console.error(e); process.exit(1);})\"",
+    "setup-db": "node src/setup/database.js",
+    "lint": "eslint src/",
+    "format": "prettier --write src/",
+    "scheduler": "node src/scheduler.js start",
+    "scheduler:test": "node src/scheduler.js test",
+    "scheduler:status": "node src/scheduler.js status",
+    "scheduler:help": "node src/scheduler.js help"
+  },
+  "keywords": [
+    "scraper",
+    "real-estate",
+    "bigdatis",
+    "mongodb",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "cron": "^3.1.6",
+    "dotenv": "^16.6.1",
+    "htmlparser2": "^10.0.0",
+    "mongoose": "^8.0.0",
+    "node-cron": "^4.2.1",
+    "playwright": "^1.54.2",
+    "validator": "^13.11.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

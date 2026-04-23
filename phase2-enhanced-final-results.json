@@ -1,0 +1,5687 @@
+{
+  "timestamp": "2025-08-09T20:34:52.513Z",
+  "processingTime": 2130049,
+  "summary": {
+    "totalLocationIds": 924,
+    "successfulMappings": 693,
+    "failedMappings": 231,
+    "finalSuccessRate": "75%"
+  },
+  "locationMappings": {
+    "286": {
+      "id": "286",
+      "name": "Ariana Centre, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1087493,
+      "sampleTitle": "Apparemment s+3 a vendre",
+      "extractedAt": "2025-08-09T01:24:07.744Z"
+    },
+    "287": {
+      "id": "287",
+      "name": "Borj El Baccouche, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1036565,
+      "sampleTitle": "Villa individuelle en vente",
+      "extractedAt": "2025-08-09T01:41:14.995Z"
+    },
+    "290": {
+      "id": "290",
+      "name": "Cité Borj Turki, Ariana Ville, Ariana",
+      "propertyCount": 2,
+      "sampleListingId": 1052031,
+      "sampleTitle": "Maison luxe",
+      "extractedAt": "2025-08-09T01:25:02.689Z"
+    },
+    "292": {
+      "id": "292",
+      "name": "Cité de la Sante, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1079771,
+      "sampleTitle": "appartement s2 à cité saha",
+      "extractedAt": "2025-08-09T01:31:16.462Z"
+    },
+    "299": {
+      "id": "299",
+      "name": "Cité Ennasr 1, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1055548,
+      "sampleTitle": "À vendre villa avec jardin à Ennasr",
+      "extractedAt": "2025-08-09T01:22:45.999Z"
+    },
+    "300": {
+      "id": "300",
+      "name": "Cité Ennasr 2, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 979058,
+      "sampleTitle": "A vendre s+3 de chez promoteur à Ennasr 2",
+      "extractedAt": "2025-08-09T01:24:18.210Z"
+    },
+    "301": {
+      "id": "301",
+      "name": "Cité Ennozha, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1006622,
+      "sampleTitle": "Ariana cité ennozha vnt villa hs",
+      "extractedAt": "2025-08-09T01:40:50.475Z"
+    },
+    "308": {
+      "id": "308",
+      "name": "s+8+, Typologie",
+      "propertyCount": 20,
+      "sampleListingId": 826578,
+      "sampleTitle": "Ville de 400 m² sur terrain de 467m2 à Menzah 5",
+      "extractedAt": "2025-08-09T01:23:18.814Z"
+    },
+    "309": {
+      "id": "309",
+      "name": "s+8+, Typologie",
+      "propertyCount": 20,
+      "sampleListingId": 856391,
+      "sampleTitle": "VILLA à MENZAH 6",
+      "extractedAt": "2025-08-09T01:23:59.505Z"
+    },
+    "310": {
+      "id": "310",
+      "name": "El Menzah 7, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1068070,
+      "sampleTitle": "Appartement s3 de 124m2 a menzah 7",
+      "extractedAt": "2025-08-09T01:23:43.648Z"
+    },
+    "311": {
+      "id": "311",
+      "name": "El Menzah 8, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1087760,
+      "sampleTitle": "Propriété 239 m2 à ariana sur route principal",
+      "extractedAt": "2025-08-09T01:16:29.133Z"
+    },
+    "312": {
+      "id": "312",
+      "name": "Nouvelle Ariana, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1087041,
+      "sampleTitle": "a vendre",
+      "extractedAt": "2025-08-09T01:22:54.517Z"
+    },
+    "316": {
+      "id": "316",
+      "name": "Ennahli, Ariana Ville, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 1074317,
+      "sampleTitle": "Bel appartement à la soukra",
+      "extractedAt": "2025-08-09T01:43:34.020Z"
+    },
+    "320": {
+      "id": "320",
+      "name": "Riadh El Andalous, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 955484,
+      "sampleTitle": "Appartement S3 au rez de chaussée Riadh Andalous",
+      "extractedAt": "2025-08-09T01:41:06.553Z"
+    },
+    "321": {
+      "id": "321",
+      "name": "Cité 18 Janvier, Cité Ettadhamen, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 1074534,
+      "sampleTitle": "4 appartements plus villa",
+      "extractedAt": "2025-08-09T02:05:45.158Z"
+    },
+    "325": {
+      "id": "325",
+      "name": "Cité Ettadhamen, Cité Ettadhamen, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1081616,
+      "sampleTitle": "Maison",
+      "extractedAt": "2025-08-09T02:05:37.163Z"
+    },
+    "329": {
+      "id": "329",
+      "name": "Cité Snit Nagra, Cité Ettadhamen, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 900917,
+      "sampleTitle": "Belle maison à vendre",
+      "extractedAt": "2025-08-09T01:47:05.402Z"
+    },
+    "343": {
+      "id": "343",
+      "name": "Kalâat El Andalous, Kalâat El Andalous, Ariana",
+      "propertyCount": 10,
+      "sampleListingId": 857733,
+      "sampleTitle": "Maison a vendre au centre kalaat andalous ariana",
+      "extractedAt": "2025-08-09T02:38:38.547Z"
+    },
+    "344": {
+      "id": "344",
+      "name": "Pont de Bizerte, Kalâat El Andalous, Ariana",
+      "propertyCount": 4,
+      "sampleListingId": 1072339,
+      "sampleTitle": "maison a vendre",
+      "extractedAt": "2025-08-09T02:34:02.368Z"
+    },
+    "346": {
+      "id": "346",
+      "name": "Borj Louzir, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 819554,
+      "sampleTitle": "Borj louzir à vendre s2",
+      "extractedAt": "2025-08-09T01:31:07.926Z"
+    },
+    "347": {
+      "id": "347",
+      "name": "Charguia 1, La Soukra, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 1074102,
+      "sampleTitle": "Appartement à soukra",
+      "extractedAt": "2025-08-09T01:54:36.736Z"
+    },
+    "348": {
+      "id": "348",
+      "name": "Charguia 2, La Soukra, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 1069592,
+      "sampleTitle": "Spacieux appartement de 3 pièces  bon standing",
+      "extractedAt": "2025-08-09T01:42:51.541Z"
+    },
+    "349": {
+      "id": "349",
+      "name": "Chotrana 1, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1080243,
+      "sampleTitle": "S2 en vente",
+      "extractedAt": "2025-08-09T01:17:10.554Z"
+    },
+    "350": {
+      "id": "350",
+      "name": "Chotrana 2, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 944278,
+      "sampleTitle": "Une luxueuse villa à chotrana 2",
+      "extractedAt": "2025-08-09T01:18:50.674Z"
+    },
+    "351": {
+      "id": "351",
+      "name": "Chotrana 3, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1082048,
+      "sampleTitle": "Villa avec piscine à chotrana 3",
+      "extractedAt": "2025-08-09T01:18:32.259Z"
+    },
+    "352": {
+      "id": "352",
+      "name": "La Soukra Closerie, La Soukra, Ariana",
+      "propertyCount": 6,
+      "sampleListingId": 1026970,
+      "sampleTitle": "A vendre des S1 S2 S3 S4 direct promoteur la soukra",
+      "extractedAt": "2025-08-09T01:18:42.375Z"
+    },
+    "353": {
+      "id": "353",
+      "name": "Rue du parc, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 842995,
+      "sampleTitle": "Prés parc Soukra S+2 à vendre",
+      "extractedAt": "2025-08-09T01:17:43.117Z"
+    },
+    "354": {
+      "id": "354",
+      "name": "La Soukra Valley, La Soukra, Ariana",
+      "propertyCount": 4,
+      "sampleListingId": 1034919,
+      "sampleTitle": "📍 Soukra Valley – فرصتك باش تبني دار أحلامك! 🏗️🌅",
+      "extractedAt": "2025-08-09T01:17:51.294Z"
+    },
+    "355": {
+      "id": "355",
+      "name": "Rue d'Irak, La Soukra, Ariana",
+      "propertyCount": 3,
+      "sampleListingId": 977623,
+      "sampleTitle": "Villa à soukra rue d'irak",
+      "extractedAt": "2025-08-09T01:18:16.104Z"
+    },
+    "356": {
+      "id": "356",
+      "name": "Rue Yakout El Hamaoui, La Soukra, Ariana",
+      "propertyCount": 15,
+      "sampleListingId": 1083612,
+      "sampleTitle": "Villa de luxe soukra yakout hamaoui",
+      "extractedAt": "2025-08-09T01:17:59.481Z"
+    },
+    "357": {
+      "id": "357",
+      "name": "La Nouvelle Soukra, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1078442,
+      "sampleTitle": "📍 Nouvelle Soukra | 🗓️ remise de Clés immédiate :  💰 À partir de 230 000 DT | Direct Promoteur",
+      "extractedAt": "2025-08-09T01:18:07.689Z"
+    },
+    "361": {
+      "id": "361",
+      "name": "Zone industrielle Soukra, La Soukra, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 1078086,
+      "sampleTitle": "🚀 EXCLUSIF - SUPERBE APPARTEMENT S+4 À ARIANA ASSOGHRA - PARKING INCLUS ! 🚀",
+      "extractedAt": "2025-08-09T01:30:59.584Z"
+    },
+    "364": {
+      "id": "364",
+      "name": "Cité El Behi Ladghem, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1006574,
+      "sampleTitle": "Appartement SNIT (REF V006 BORJ LOUZIR)",
+      "extractedAt": "2025-08-09T01:31:24.808Z"
+    },
+    "371": {
+      "id": "371",
+      "name": "Cité El Mansoura, La Soukra, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 973442,
+      "sampleTitle": "A vendre une villa sur deux niveaux indépendant à Ariana mansoura",
+      "extractedAt": "2025-08-09T01:31:32.834Z"
+    },
+    "378": {
+      "id": "378",
+      "name": "Cité Ezzitoun, La Soukra, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 806409,
+      "sampleTitle": "Appartement en vente à Cité Ezzitoun 1.2 belles chambres",
+      "extractedAt": "2025-08-09T01:18:59.242Z"
+    },
+    "385": {
+      "id": "385",
+      "name": "Cité Hedi Nouira, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1078989,
+      "sampleTitle": "S2 en vente",
+      "extractedAt": "2025-08-09T01:42:02.982Z"
+    },
+    "390": {
+      "id": "390",
+      "name": "Dar Fadhal, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1086853,
+      "sampleTitle": "Villa a vendre",
+      "extractedAt": "2025-08-09T01:19:07.346Z"
+    },
+    "391": {
+      "id": "391",
+      "name": "La Soukra, La Soukra, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1087895,
+      "sampleTitle": "Villa inachevée en vente",
+      "extractedAt": "2025-08-09T01:16:09.784Z"
+    },
+    "392": {
+      "id": "392",
+      "name": "Mosquée Erraoudha, La Soukra, Ariana",
+      "propertyCount": 18,
+      "sampleListingId": 869538,
+      "sampleTitle": "Villa avec studio à la soukra",
+      "extractedAt": "2025-08-09T01:30:35.070Z"
+    },
+    "398": {
+      "id": "398",
+      "name": "Sidi Frej, La Soukra, Ariana",
+      "propertyCount": 19,
+      "sampleListingId": 947453,
+      "sampleTitle": "La Soukra Sidi Fraj: A Vendre Studio à retaper ou à raser",
+      "extractedAt": "2025-08-09T01:17:34.864Z"
+    },
+    "399": {
+      "id": "399",
+      "name": "Sidi Salah, La Soukra, Ariana",
+      "propertyCount": 19,
+      "sampleListingId": 757423,
+      "sampleTitle": "A VENDRE S0 – SOUKRA – TEL – FB.6350",
+      "extractedAt": "2025-08-09T01:30:51.423Z"
+    },
+    "400": {
+      "id": "400",
+      "name": "Sidi Soufiene, La Soukra, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 1026676,
+      "sampleTitle": "À vendre à sidi sofienne la soukra",
+      "extractedAt": "2025-08-09T01:30:43.172Z"
+    },
+    "404": {
+      "id": "404",
+      "name": "Cité de la Republique, Mnihla, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 1077191,
+      "sampleTitle": "شقة للبيع",
+      "extractedAt": "2025-08-09T01:46:22.687Z"
+    },
+    "405": {
+      "id": "405",
+      "name": "Cité El Bassatine, Mnihla, Ariana",
+      "propertyCount": 4,
+      "sampleListingId": 1064177,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T02:05:53.342Z"
+    },
+    "412": {
+      "id": "412",
+      "name": "Cité Rafaha, Mnihla, Ariana",
+      "propertyCount": 6,
+      "sampleListingId": 1008304,
+      "sampleTitle": "Maison 2 étage",
+      "extractedAt": "2025-08-09T01:45:42.085Z"
+    },
+    "414": {
+      "id": "414",
+      "name": "Essanhaji, Mnihla, Ariana",
+      "propertyCount": 5,
+      "sampleListingId": 809545,
+      "sampleTitle": "maison sanheji mnihla",
+      "extractedAt": "2025-08-09T01:48:57.321Z"
+    },
+    "415": {
+      "id": "415",
+      "name": "Mnihla, Mnihla, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1079047,
+      "sampleTitle": "dar lil bi3",
+      "extractedAt": "2025-08-09T01:46:14.399Z"
+    },
+    "417": {
+      "id": "417",
+      "name": "Ariana Essoghra, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1077237,
+      "sampleTitle": "AV appartement S+3 ariana essoghra",
+      "extractedAt": "2025-08-09T01:49:21.207Z"
+    },
+    "418": {
+      "id": "418",
+      "name": "Borj Touil, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1069654,
+      "sampleTitle": "À vendre une villa S+3 d’une superficie de 1600 mètre carré à Borj Touil",
+      "extractedAt": "2025-08-09T02:20:43.451Z"
+    },
+    "422": {
+      "id": "422",
+      "name": "Cité Chaker, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 931204,
+      "sampleTitle": "Immeuble neuf 3 appartements",
+      "extractedAt": "2025-08-09T02:15:22.551Z"
+    },
+    "429": {
+      "id": "429",
+      "name": "Cité El Ghazala 1, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1075776,
+      "sampleTitle": "S3 360 md ghazela",
+      "extractedAt": "2025-08-09T01:43:42.078Z"
+    },
+    "430": {
+      "id": "430",
+      "name": "Cité El Ghazala 2, Raoued, Ariana",
+      "propertyCount": 7,
+      "sampleListingId": 943906,
+      "sampleTitle": "Maison deux étages à la gazelle",
+      "extractedAt": "2025-08-09T01:59:16.519Z"
+    },
+    "434": {
+      "id": "434",
+      "name": "Sidi Amor, Raoued, Ariana",
+      "propertyCount": 10,
+      "sampleListingId": 839144,
+      "sampleTitle": "Villa a vendre",
+      "extractedAt": "2025-08-09T02:08:43.780Z"
+    },
+    "436": {
+      "id": "436",
+      "name": "Cité Ennkhilet, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 840204,
+      "sampleTitle": "Bel Apt S+2 à Vendre à Ennkhilet",
+      "extractedAt": "2025-08-09T01:49:13.220Z"
+    },
+    "437": {
+      "id": "437",
+      "name": "Cité Ennour Jaafar, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1086931,
+      "sampleTitle": "Maison récemment construit",
+      "extractedAt": "2025-08-09T02:00:49.188Z"
+    },
+    "440": {
+      "id": "440",
+      "name": "Cité Essahafa, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1070186,
+      "sampleTitle": "Maison plain pied à cité sahafa",
+      "extractedAt": "2025-08-09T01:58:52.891Z"
+    },
+    "449": {
+      "id": "449",
+      "name": "El Brarja, Raoued, Ariana",
+      "propertyCount": 6,
+      "sampleListingId": 618236,
+      "sampleTitle": "maison à raoued",
+      "extractedAt": "2025-08-09T02:20:51.767Z"
+    },
+    "450": {
+      "id": "450",
+      "name": "El Hessiene, Raoued, Ariana",
+      "propertyCount": 2,
+      "sampleListingId": 628684,
+      "sampleTitle": "Villa Batoul à Raoued",
+      "extractedAt": "2025-08-09T02:29:45.022Z"
+    },
+    "451": {
+      "id": "451",
+      "name": "s+8+, Typologie",
+      "propertyCount": 16,
+      "sampleListingId": 686921,
+      "sampleTitle": "Villa Wahyi à Raoued",
+      "extractedAt": "2025-08-09T01:59:00.776Z"
+    },
+    "452": {
+      "id": "452",
+      "name": "Jaafar 2, Raoued, Ariana",
+      "propertyCount": 13,
+      "sampleListingId": 708835,
+      "sampleTitle": "Vente d'un bel appartement à Jaafar. 2 grandes pièces",
+      "extractedAt": "2025-08-09T02:00:41.077Z"
+    },
+    "455": {
+      "id": "455",
+      "name": "Raoued, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1087388,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T02:16:48.793Z"
+    },
+    "464": {
+      "locationName": "Borj Youssef, Sidi Thabet, Ariana",
+      "listingId": 796643,
+      "sampleTitle": "A vendre un majestueuse villa à Borj Youssef",
+      "propertyCount": 4,
+      "extractedAt": "2025-08-09T20:12:20.964Z",
+      "sampleIndex": 2,
+      "totalSamplesTested": 4,
+      "isRetry": true
+    },
+    "465": {
+      "id": "465",
+      "name": "Cebalet Ben Ammar, Sidi Thabet, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1035047,
+      "sampleTitle": "Villa de maitre Cebalet ben ammar 5 mn de Geant",
+      "extractedAt": "2025-08-09T01:59:51.786Z"
+    },
+    "466": {
+      "id": "466",
+      "name": "Chorfech, Sidi Thabet, Ariana",
+      "propertyCount": 2,
+      "sampleListingId": 949052,
+      "sampleTitle": "Terrain maisons chorfech",
+      "extractedAt": "2025-08-09T02:29:14.595Z"
+    },
+    "467": {
+      "id": "467",
+      "name": "Chorfech 12, Sidi Thabet, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 977921,
+      "sampleTitle": "Magnifique domaine",
+      "extractedAt": "2025-08-09T02:29:22.660Z"
+    },
+    "468": {
+      "id": "468",
+      "name": "Chorfech 2, Sidi Thabet, Ariana",
+      "propertyCount": 2,
+      "sampleListingId": 930206,
+      "sampleTitle": "Cause départ maison et 1 hectar",
+      "extractedAt": "2025-08-09T02:29:32.165Z"
+    },
+    "491": {
+      "id": "491",
+      "name": "Jabbes, Sidi Thabet, Ariana",
+      "propertyCount": 10,
+      "sampleListingId": 1080756,
+      "sampleTitle": "vendre | Villa inachevée – Sabelet Ben Ammar, Sidi Thabet",
+      "extractedAt": "2025-08-09T02:20:24.552Z"
+    },
+    "492": {
+      "id": "492",
+      "name": "Jabbes El Borj, Sidi Thabet, Ariana",
+      "propertyCount": 1,
+      "sampleListingId": 1078466,
+      "sampleTitle": "Vente villa jabes el borj sabelt ben ammar",
+      "extractedAt": "2025-08-09T02:20:32.999Z"
+    },
+    "493": {
+      "id": "493",
+      "name": "Sidi Thabet, Sidi Thabet, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1070879,
+      "sampleTitle": "maison â vendre",
+      "extractedAt": "2025-08-09T02:29:01.795Z"
+    },
+    "657": {
+      "id": "657",
+      "name": "Gueriche El Oued, Medjez El Bab, Beja",
+      "propertyCount": 1,
+      "sampleListingId": 1079326,
+      "sampleTitle": "إعلان بيع منزل",
+      "extractedAt": "2025-08-09T03:16:03.540Z"
+    },
+    "661": {
+      "id": "661",
+      "name": "Medjez El Bab, Medjez El Bab, Beja",
+      "propertyCount": 9,
+      "sampleListingId": 731404,
+      "sampleTitle": "Villa de 100 m bâtie sur un terrain de 1100 m",
+      "extractedAt": "2025-08-09T03:21:55.655Z"
+    },
+    "804": {
+      "id": "804",
+      "name": "Ben Arous Ville, Ben Arous, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1083574,
+      "sampleTitle": "Appartement à vendre Rades cité olympique",
+      "extractedAt": "2025-08-09T02:49:47.038Z"
+    },
+    "805": {
+      "id": "805",
+      "name": "Ben Arous Sud, Ben Arous, Ben Arous",
+      "propertyCount": 6,
+      "sampleListingId": 1082194,
+      "sampleTitle": "À Vendre – Villa à Ben Arous, Avenue Farhat Hached",
+      "extractedAt": "2025-08-09T02:49:55.261Z"
+    },
+    "811": {
+      "id": "811",
+      "name": "Cité El Bassatine Ancien, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 4,
+      "sampleListingId": 1001353,
+      "sampleTitle": "Maison bien construire",
+      "extractedAt": "2025-08-09T02:41:48.960Z"
+    },
+    "816": {
+      "id": "816",
+      "name": "Cité El Amen, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 809387,
+      "sampleTitle": "Villa RDC et 4 appts indép aux 2 étages",
+      "extractedAt": "2025-08-09T02:41:08.000Z"
+    },
+    "818": {
+      "id": "818",
+      "name": "Boumhel El Bassatine 1, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1001644,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T02:41:15.904Z"
+    },
+    "822": {
+      "id": "822",
+      "name": "Cité El Khalij, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 4,
+      "sampleListingId": 839961,
+      "sampleTitle": "Maison a vendre",
+      "extractedAt": "2025-08-09T02:42:07.595Z"
+    },
+    "835": {
+      "id": "835",
+      "name": "Boumhel El Bassatine 2, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 831038,
+      "sampleTitle": "Bel appartement à vendre à Bou Mhel. 2 belles chambres",
+      "extractedAt": "2025-08-09T02:41:57.054Z"
+    },
+    "845": {
+      "id": "845",
+      "name": "Bir El Kassaa, El Mourouj, Ben Arous",
+      "propertyCount": 5,
+      "sampleListingId": 1043853,
+      "sampleTitle": "Belle villa mourouj",
+      "extractedAt": "2025-08-09T02:51:17.432Z"
+    },
+    "879": {
+      "id": "879",
+      "name": "El Mourouj, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 663383,
+      "sampleTitle": "Appart S3 Joséphine à EL Mourouj",
+      "extractedAt": "2025-08-09T02:59:41.811Z"
+    },
+    "909": {
+      "id": "909",
+      "name": "Ezzahra Lycée, Ezzahra, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1020270,
+      "sampleTitle": "A VENDRE S+2 EZZAHRA LYCEE",
+      "extractedAt": "2025-08-09T02:40:49.696Z"
+    },
+    "910": {
+      "locationName": "Cité Borj Louzir, Ezzahra, Ben Arous",
+      "listingId": 937398,
+      "sampleTitle": "Maison à borj louzir ezahra",
+      "propertyCount": 2,
+      "extractedAt": "2025-08-09T20:14:01.929Z",
+      "sampleIndex": 2,
+      "totalSamplesTested": 2,
+      "isRetry": true
+    },
+    "923": {
+      "locationName": "Cité Ennakhil, Ezzahra, Ben Arous",
+      "listingId": 903447,
+      "sampleTitle": "A vendre  villa  avec 1erre Étage",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:15:19.290Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "932": {
+      "id": "932",
+      "name": "Saint Germain, Ezzahra, Ben Arous",
+      "propertyCount": 9,
+      "sampleListingId": 954436,
+      "sampleTitle": "Ezzahra plage vnt s2 front mer",
+      "extractedAt": "2025-08-09T02:31:14.006Z"
+    },
+    "933": {
+      "id": "933",
+      "name": "Cité Panorama, Ezzahra, Ben Arous",
+      "propertyCount": 4,
+      "sampleListingId": 1041525,
+      "sampleTitle": "Des appartements s1 à ezzahra ben arous",
+      "extractedAt": "2025-08-09T02:32:03.061Z"
+    },
+    "934": {
+      "id": "934",
+      "name": "Ezzahra Ville, Ezzahra, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1048041,
+      "sampleTitle": "Appart",
+      "extractedAt": "2025-08-09T02:31:22.555Z"
+    },
+    "939": {
+      "id": "939",
+      "name": "Cité Brim, Fouchana, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 901435,
+      "sampleTitle": "Special offre pour les tunisiens a l'etranger",
+      "extractedAt": "2025-08-09T02:56:47.432Z"
+    },
+    "941": {
+      "id": "941",
+      "name": "Cité El Amal, Fouchana, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 215149,
+      "sampleTitle": "maison a vendre",
+      "extractedAt": "2025-08-09T02:57:06.218Z"
+    },
+    "942": {
+      "id": "942",
+      "name": "Cité El Amal 2, Fouchana, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 814154,
+      "sampleTitle": "A vendre maison à fouchana",
+      "extractedAt": "2025-08-09T02:57:43.600Z"
+    },
+    "946": {
+      "id": "946",
+      "name": "Cité El Hidhab, Fouchana, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1087433,
+      "sampleTitle": "Deux niveaux separés",
+      "extractedAt": "2025-08-09T02:58:04.940Z"
+    },
+    "948": {
+      "id": "948",
+      "name": "Cité El Misk, Fouchana, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 834568,
+      "sampleTitle": "Appartement s2",
+      "extractedAt": "2025-08-09T02:57:27.376Z"
+    },
+    "951": {
+      "id": "951",
+      "name": "Cité El Wifak, Fouchana, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 842793,
+      "sampleTitle": "Magnifique villa à vendre à Cité El Wifak. Surface de 214 m². Belle terrasse et jardin.",
+      "extractedAt": "2025-08-09T02:57:51.884Z"
+    },
+    "956": {
+      "id": "956",
+      "name": "Cité Khouaja, Fouchana, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 824906,
+      "sampleTitle": "Bonne occasion à ne pas rater",
+      "extractedAt": "2025-08-09T02:56:57.866Z"
+    },
+    "961": {
+      "id": "961",
+      "name": "Fouchana, Fouchana, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1087431,
+      "sampleTitle": "Maison RDC",
+      "extractedAt": "2025-08-09T02:57:35.553Z"
+    },
+    "962": {
+      "id": "962",
+      "name": "Meghira, Fouchana, Ben Arous",
+      "propertyCount": 10,
+      "sampleListingId": 991518,
+      "sampleTitle": "A vendre villa 185 m a takassim mghira",
+      "extractedAt": "2025-08-09T02:49:10.594Z"
+    },
+    "963": {
+      "id": "963",
+      "name": "Meghira Inzel, Fouchana, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 772,
+      "sampleTitle": "A vendre maison S+2 MGHIRA INZEL",
+      "extractedAt": "2025-08-09T02:56:30.505Z"
+    },
+    "964": {
+      "id": "964",
+      "name": "Naassen, Fouchana, Ben Arous",
+      "propertyCount": 14,
+      "sampleListingId": 652962,
+      "sampleTitle": "Maison naassen",
+      "extractedAt": "2025-08-09T02:54:20.562Z"
+    },
+    "966": {
+      "id": "966",
+      "name": "Bir El Bey, Hammam Chatt, Ben Arous",
+      "propertyCount": 19,
+      "sampleListingId": 948301,
+      "sampleTitle": "Maison 3pièces plus local commercial plus terrasse",
+      "extractedAt": "2025-08-09T02:36:50.980Z"
+    },
+    "967": {
+      "id": "967",
+      "name": "Borj Cedria, Hammam Chatt, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1087302,
+      "sampleTitle": "Villa   borj cedria ref348a",
+      "extractedAt": "2025-08-09T02:36:34.372Z"
+    },
+    "968": {
+      "id": "968",
+      "name": "Hammam Chatt, Hammam Chatt, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 935615,
+      "sampleTitle": "Appart Colin à Hammem Chat",
+      "extractedAt": "2025-08-09T02:36:59.436Z"
+    },
+    "969": {
+      "id": "969",
+      "name": "Bou Kornine, Hammam Lif, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1078477,
+      "sampleTitle": "A VENDRE  S+2 BOUGARNINE HAMMAM-LIF.",
+      "extractedAt": "2025-08-09T02:41:00.006Z"
+    },
+    "987": {
+      "id": "987",
+      "name": "Hammam Lif, Hammam Lif, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 916174,
+      "sampleTitle": "Maison a vendre hammam lif",
+      "extractedAt": "2025-08-09T02:45:50.610Z"
+    },
+    "989": {
+      "id": "989",
+      "name": "Mégrine, Mégrine, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 686221,
+      "sampleTitle": "Appart S2 Dina à Mégrine",
+      "extractedAt": "2025-08-09T02:38:54.942Z"
+    },
+    "990": {
+      "id": "990",
+      "name": "Mégrine Chaker, Mégrine, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 95943,
+      "sampleTitle": "منزل للبيع",
+      "extractedAt": "2025-08-09T02:30:49.996Z"
+    },
+    "991": {
+      "id": "991",
+      "name": "Mégrine Coteaux, Mégrine, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1076220,
+      "sampleTitle": "Appartement À vendre  neuf",
+      "extractedAt": "2025-08-09T02:38:46.674Z"
+    },
+    "992": {
+      "id": "992",
+      "name": "Mégrine Jaouhara, Mégrine, Ben Arous",
+      "propertyCount": 5,
+      "sampleListingId": 867976,
+      "sampleTitle": "villa megrine",
+      "extractedAt": "2025-08-09T02:39:13.540Z"
+    },
+    "993": {
+      "id": "993",
+      "name": "Mégrine Riadh, Mégrine, Ben Arous",
+      "propertyCount": 13,
+      "sampleListingId": 764188,
+      "sampleTitle": "Villa Jermane à Mégrine Riadh",
+      "extractedAt": "2025-08-09T02:39:46.489Z"
+    },
+    "996": {
+      "id": "996",
+      "name": "Sidi Rezig, Mégrine, Ben Arous",
+      "propertyCount": 13,
+      "sampleListingId": 525789,
+      "sampleTitle": "Avendre appart a sidi rezig",
+      "extractedAt": "2025-08-09T02:39:05.510Z"
+    },
+    "1000": {
+      "id": "1000",
+      "name": "Cité Cebbalet Chikh, Mohammedia, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 937348,
+      "sampleTitle": "Luxueuse villa de compagne",
+      "extractedAt": "2025-08-09T03:02:15.742Z"
+    },
+    "1001": {
+      "id": "1001",
+      "name": "Sidi Fraj, Mohammedia, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 865374,
+      "sampleTitle": "👉Terrain avec Villa a Mohamadia (3000m²)",
+      "extractedAt": "2025-08-09T03:08:35.579Z"
+    },
+    "1013": {
+      "id": "1013",
+      "name": "Cité El Hana, Mohammedia, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 1061791,
+      "sampleTitle": "Maison",
+      "extractedAt": "2025-08-09T03:01:38.817Z"
+    },
+    "1014": {
+      "id": "1014",
+      "name": "Cité El Ksar, Mohammedia, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 264480,
+      "sampleTitle": "Maison mhamdia",
+      "extractedAt": "2025-08-09T02:57:17.812Z"
+    },
+    "1018": {
+      "id": "1018",
+      "name": "Cité Ennacim, Mohammedia, Ben Arous",
+      "propertyCount": 11,
+      "sampleListingId": 866631,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T03:01:58.199Z"
+    },
+    "1022": {
+      "id": "1022",
+      "name": "Cité Essaada, Mohammedia, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 1062639,
+      "sampleTitle": "à vendre appartement",
+      "extractedAt": "2025-08-09T03:01:49.602Z"
+    },
+    "1028": {
+      "id": "1028",
+      "name": "Cité Ezzitoun, Mohammedia, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 1076957,
+      "sampleTitle": "Villa neuve à vendre à Mohamadia. Cité des Oliviers",
+      "extractedAt": "2025-08-09T03:01:30.659Z"
+    },
+    "1030": {
+      "id": "1030",
+      "name": "Cité Hached 1, Mohammedia, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 1072668,
+      "sampleTitle": "Maison a vendre",
+      "extractedAt": "2025-08-09T02:56:39.217Z"
+    },
+    "1040": {
+      "id": "1040",
+      "name": "Mohammedia, Mohammedia, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 648994,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T03:02:06.679Z"
+    },
+    "1045": {
+      "id": "1045",
+      "name": "Ahmed Zaied, Mornag, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 888676,
+      "sampleTitle": "Forsa 1er etage non construit 100 m garage a 18000 dt",
+      "extractedAt": "2025-08-09T02:46:06.027Z"
+    },
+    "1047": {
+      "id": "1047",
+      "name": "Cité Echeikh, Mornag, Ben Arous",
+      "propertyCount": 4,
+      "sampleListingId": 782650,
+      "sampleTitle": "Cause départ agréable villa a cité echchikh morneg",
+      "extractedAt": "2025-08-09T02:46:55.337Z"
+    },
+    "1051": {
+      "id": "1051",
+      "name": "Bou Jerdga, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 1012547,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T02:51:00.837Z"
+    },
+    "1052": {
+      "id": "1052",
+      "name": "Chala, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 1018554,
+      "sampleTitle": "Belle Villa à mornag",
+      "extractedAt": "2025-08-09T02:46:34.496Z"
+    },
+    "1060": {
+      "id": "1060",
+      "name": "El Alelgua, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 732308,
+      "sampleTitle": "Maison incomplète",
+      "extractedAt": "2025-08-09T02:46:18.213Z"
+    },
+    "1063": {
+      "id": "1063",
+      "name": "El Gounna, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 1045879,
+      "sampleTitle": "Une très belle villa à el gonna  mornag",
+      "extractedAt": "2025-08-09T02:54:37.314Z"
+    },
+    "1066": {
+      "id": "1066",
+      "name": "El Ksibi, Mornag, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 1048468,
+      "sampleTitle": "Appartement s 2",
+      "extractedAt": "2025-08-09T02:47:03.660Z"
+    },
+    "1069": {
+      "id": "1069",
+      "name": "Cité el mezyen, Mornag, Ben Arous",
+      "propertyCount": 6,
+      "sampleListingId": 1069110,
+      "sampleTitle": "Mornag cite elmeziane",
+      "extractedAt": "2025-08-09T02:46:26.211Z"
+    },
+    "1075": {
+      "id": "1075",
+      "name": "Jebel Ersass, Mornag, Ben Arous",
+      "propertyCount": 5,
+      "sampleListingId": 1053377,
+      "sampleTitle": "À VENDRE ou ÉCHANGE | Propriété agricole avec maison d’hôtes en cours de construction – Mornag",
+      "extractedAt": "2025-08-09T02:34:53.064Z"
+    },
+    "1077": {
+      "id": "1077",
+      "name": "Khelidia, Mornag, Ben Arous",
+      "propertyCount": 11,
+      "sampleListingId": 1004727,
+      "sampleTitle": "Villa à vendre",
+      "extractedAt": "2025-08-09T02:54:29.002Z"
+    },
+    "1080": {
+      "id": "1080",
+      "name": "Mornag, Mornag, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1086994,
+      "sampleTitle": "Villa de 849 m a mornag",
+      "extractedAt": "2025-08-09T02:46:47.074Z"
+    },
+    "1084": {
+      "id": "1084",
+      "name": "Sidi Saad, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 907649,
+      "sampleTitle": "Villa plus terrain à morneg",
+      "extractedAt": "2025-08-09T02:47:11.854Z"
+    },
+    "1087": {
+      "id": "1087",
+      "name": "Tarhouna, Mornag, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 1013178,
+      "sampleTitle": "Une nouvelle villa",
+      "extractedAt": "2025-08-09T02:34:44.773Z"
+    },
+    "1089": {
+      "id": "1089",
+      "name": "Zaouiet Mornag, Mornag, Ben Arous",
+      "propertyCount": 6,
+      "sampleListingId": 1081646,
+      "sampleTitle": "Rare opportunité: Double Maisons avec accés séparé",
+      "extractedAt": "2025-08-09T02:51:41.954Z"
+    },
+    "1090": {
+      "id": "1090",
+      "name": "El Yasminette, Médina Jadida, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1029625,
+      "sampleTitle": "A vendre une villa RDC s+3 à nouvelle médina prés hôpital yassminette",
+      "extractedAt": "2025-08-09T02:42:27.270Z"
+    },
+    "1091": {
+      "id": "1091",
+      "name": "Médina Jadida 1, Médina Jadida, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1082075,
+      "sampleTitle": "Villa 2 étages à madina jadida 1",
+      "extractedAt": "2025-08-09T02:39:29.868Z"
+    },
+    "1092": {
+      "id": "1092",
+      "name": "Chouchet Radès, Radès, Ben Arous",
+      "propertyCount": 7,
+      "sampleListingId": 125003,
+      "sampleTitle": "Appartement \" Le Feu vert \"",
+      "extractedAt": "2025-08-09T02:39:21.701Z"
+    },
+    "1096": {
+      "id": "1096",
+      "name": "Cité Mohamed Ali, Radès, Ben Arous",
+      "propertyCount": 6,
+      "sampleListingId": 1005280,
+      "sampleTitle": "Villa à Rades cité mohamed Ali",
+      "extractedAt": "2025-08-09T02:29:55.665Z"
+    },
+    "1106": {
+      "id": "1106",
+      "name": "Radès Ville, Radès, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1062432,
+      "sampleTitle": "Apparemment",
+      "extractedAt": "2025-08-09T02:30:08.602Z"
+    },
+    "1108": {
+      "id": "1108",
+      "name": "Radès El Mrah, Radès, Ben Arous",
+      "propertyCount": 2,
+      "sampleListingId": 938523,
+      "sampleTitle": "Une tres belle maison à rades",
+      "extractedAt": "2025-08-09T02:30:24.932Z"
+    },
+    "1109": {
+      "id": "1109",
+      "name": "Radès Forêt, Radès, Ben Arous",
+      "propertyCount": 12,
+      "sampleListingId": 1077198,
+      "sampleTitle": "A vendre appartement",
+      "extractedAt": "2025-08-09T02:32:19.031Z"
+    },
+    "1111": {
+      "id": "1111",
+      "name": "Radès Meliane, Radès, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1087535,
+      "sampleTitle": "Appartement haut standing",
+      "extractedAt": "2025-08-09T02:30:33.167Z"
+    },
+    "1112": {
+      "id": "1112",
+      "name": "Radès Mongil, Radès, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1087072,
+      "sampleTitle": "À vendre Villa à rénover ou à démolir Radès Mongil",
+      "extractedAt": "2025-08-09T02:30:16.764Z"
+    },
+    "1113": {
+      "id": "1113",
+      "name": "Radès Plage, Radès, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 951285,
+      "sampleTitle": "🏡 Maison Moderne S+2 à Vendre – Rades Plage 🌊",
+      "extractedAt": "2025-08-09T02:21:02.194Z"
+    },
+    "1116": {
+      "id": "1116",
+      "name": "Cité Olympique, Radès, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1042540,
+      "sampleTitle": "Appartement à Rades à ne pas rater",
+      "extractedAt": "2025-08-09T02:30:58.330Z"
+    },
+    "1120": {
+      "id": "1120",
+      "name": "Bizerte Ville, Bizerte Nord, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 945867,
+      "sampleTitle": "Appartement s+2 a vendre à Bizerte centre ville",
+      "extractedAt": "2025-08-09T03:09:32.069Z"
+    },
+    "1121": {
+      "id": "1121",
+      "name": "Bizerte Bab Mateur, Bizerte Nord, Bizerte",
+      "propertyCount": 11,
+      "sampleListingId": 1081582,
+      "sampleTitle": "Villa sur 3 etages à bizerte",
+      "extractedAt": "2025-08-09T03:09:40.431Z"
+    },
+    "1122": {
+      "locationName": "Cité el malouf, Bizerte Nord, Bizerte",
+      "listingId": 785325,
+      "sampleTitle": "A Vendre Appartement à Cité El Melouf",
+      "propertyCount": 4,
+      "extractedAt": "2025-08-09T20:22:54.360Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 4,
+      "isRetry": true
+    },
+    "1124": {
+      "id": "1124",
+      "name": "Ain Meriem, Bizerte Nord, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 1080704,
+      "sampleTitle": "A Vendre un S2 à Ain Meriem Bizerte",
+      "extractedAt": "2025-08-09T03:18:52.110Z"
+    },
+    "1126": {
+      "id": "1126",
+      "name": "Cité Belvedere, Bizerte Nord, Bizerte",
+      "propertyCount": 3,
+      "sampleListingId": 1008765,
+      "sampleTitle": "Appartement à vendre à Vendre à cité belvédère Bizerte",
+      "extractedAt": "2025-08-09T03:10:27.178Z"
+    },
+    "1128": {
+      "id": "1128",
+      "name": "Borj Taleb, Bizerte Nord, Bizerte",
+      "propertyCount": 9,
+      "sampleListingId": 805005,
+      "sampleTitle": "Une très belle maison",
+      "extractedAt": "2025-08-09T03:09:49.895Z"
+    },
+    "1129": {
+      "locationName": "Sidi Salem, Bizerte Nord, Bizerte",
+      "listingId": 377574,
+      "sampleTitle": "Appartement à Sidi Salem Pleine Vue sur Mer",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:23:27.883Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "1130": {
+      "id": "1130",
+      "name": "Cité les pins, Bizerte Nord, Bizerte",
+      "propertyCount": 3,
+      "sampleListingId": 938675,
+      "sampleTitle": "Villa glaieul à cité sanawbar bizerte",
+      "extractedAt": "2025-08-09T03:17:09.214Z"
+    },
+    "1131": {
+      "id": "1131",
+      "name": "Bhira, Bizerte Nord, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 622732,
+      "sampleTitle": "Appartement Plein Vue Sur Mer à Cité EL Borej",
+      "extractedAt": "2025-08-09T03:18:27.681Z"
+    },
+    "1132": {
+      "id": "1132",
+      "name": "Cité de la Sante, Bizerte Nord, Bizerte",
+      "propertyCount": 5,
+      "sampleListingId": 39193,
+      "sampleTitle": "Appartement à Cité La Santé",
+      "extractedAt": "2025-08-09T03:18:10.995Z"
+    },
+    "1133": {
+      "locationName": "Les grottes, Bizerte Nord, Bizerte",
+      "listingId": 590330,
+      "sampleTitle": "Terrain Villa Elinar à Bizerte",
+      "propertyCount": 5,
+      "extractedAt": "2025-08-09T20:32:45.400Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "1134": {
+      "id": "1134",
+      "name": "Cité El Hana, Bizerte Nord, Bizerte",
+      "propertyCount": 11,
+      "sampleListingId": 656854,
+      "sampleTitle": "Studio avec jardin",
+      "extractedAt": "2025-08-09T03:17:46.219Z"
+    },
+    "1135": {
+      "locationName": "Bizerte Corniche, Bizerte Nord, Bizerte",
+      "listingId": 1078472,
+      "sampleTitle": "RDC a vendre",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:24:17.694Z",
+      "sampleIndex": 2,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "1136": {
+      "id": "1136",
+      "name": "Cité nakhla, Bizerte Nord, Bizerte",
+      "propertyCount": 7,
+      "sampleListingId": 1057184,
+      "sampleTitle": "S1 direct promoteur",
+      "extractedAt": "2025-08-09T03:18:19.255Z"
+    },
+    "1138": {
+      "id": "1138",
+      "name": "Cité El waha, Bizerte Nord, Bizerte",
+      "propertyCount": 12,
+      "sampleListingId": 645940,
+      "sampleTitle": "Appart S2 Rimas à Bizerte",
+      "extractedAt": "2025-08-09T03:18:43.917Z"
+    },
+    "1139": {
+      "locationName": "Ain El Berda, Bizerte Nord, Bizerte",
+      "listingId": 683962,
+      "sampleTitle": "Terrain de Villa Bleuy à Ain Berda, Bizerte",
+      "propertyCount": 2,
+      "extractedAt": "2025-08-09T20:31:33.170Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 2,
+      "isRetry": true
+    },
+    "1140": {
+      "locationName": "El Kodia, Bizerte Nord, Bizerte",
+      "listingId": 844879,
+      "sampleTitle": "Appartement  dhehar el kodia  bizerte",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:20:57.642Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "1143": {
+      "id": "1143",
+      "name": "Cité El Jala, Bizerte Nord, Bizerte",
+      "propertyCount": 6,
+      "sampleListingId": 659548,
+      "sampleTitle": "Appartement S plus 2 à Cité Jalaa Bizerte",
+      "extractedAt": "2025-08-09T03:10:43.534Z"
+    },
+    "1144": {
+      "id": "1144",
+      "name": "Sekma, Bizerte Nord, Bizerte",
+      "propertyCount": 3,
+      "sampleListingId": 672629,
+      "sampleTitle": "Maison à Sekma",
+      "extractedAt": "2025-08-09T03:17:17.439Z"
+    },
+    "1145": {
+      "id": "1145",
+      "name": "Cité El Andalous, Bizerte Nord, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 1068369,
+      "sampleTitle": "Maison nouvellement construite",
+      "extractedAt": "2025-08-09T03:18:02.959Z"
+    },
+    "1146": {
+      "id": "1146",
+      "name": "Cité tayarane, Bizerte Nord, Bizerte",
+      "propertyCount": 4,
+      "sampleListingId": 1062860,
+      "sampleTitle": "Vaste Appartement style américain à Cité Tayaran Bizerte",
+      "extractedAt": "2025-08-09T03:10:08.394Z"
+    },
+    "1147": {
+      "locationName": "Boukhris, Bizerte Nord, Bizerte",
+      "listingId": 975743,
+      "sampleTitle": "Studio s1 à vendre à Boukhriss Bizerte",
+      "propertyCount": 7,
+      "extractedAt": "2025-08-09T20:24:53.941Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 7,
+      "isRetry": true
+    },
+    "1148": {
+      "locationName": "Nadhour, Bizerte Nord, Bizerte",
+      "listingId": 1080126,
+      "sampleTitle": "villa",
+      "propertyCount": 6,
+      "extractedAt": "2025-08-09T20:31:52.554Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 6,
+      "isRetry": true
+    },
+    "1149": {
+      "id": "1149",
+      "name": "Borj Ghammez, Bizerte Nord, Bizerte",
+      "propertyCount": 13,
+      "sampleListingId": 1048940,
+      "sampleTitle": "maison à vendre à proximité du  résidence Soltana Bizerte",
+      "extractedAt": "2025-08-09T03:18:35.819Z"
+    },
+    "1153": {
+      "id": "1153",
+      "name": "Oued El Marj, Bizerte Nord, Bizerte",
+      "propertyCount": 8,
+      "sampleListingId": 1073059,
+      "sampleTitle": "Villa Razan à vendre à Bizerte",
+      "extractedAt": "2025-08-09T03:17:54.864Z"
+    },
+    "1154": {
+      "id": "1154",
+      "name": "Sidi Ahmed, Bizerte Nord, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 902282,
+      "sampleTitle": "Belle maison  a vendre",
+      "extractedAt": "2025-08-09T03:22:23.986Z"
+    },
+    "1157": {
+      "id": "1157",
+      "name": "Bizerte Hached, Bizerte Sud, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 926128,
+      "sampleTitle": "4 maisons garage",
+      "extractedAt": "2025-08-09T03:17:25.618Z"
+    },
+    "1158": {
+      "id": "1158",
+      "name": "Borj Challouf, Bizerte Sud, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 772202,
+      "sampleTitle": "Maison à vendre situé à Borj Challouf, Bizerte Sud",
+      "extractedAt": "2025-08-09T03:22:32.444Z"
+    },
+    "1161": {
+      "id": "1161",
+      "name": "Beni Nafaa, Bizerte Sud, Bizerte",
+      "propertyCount": 6,
+      "sampleListingId": 1032259,
+      "sampleTitle": "Réf 2295 : 2 maisons à Bni nefaa Bizerte",
+      "extractedAt": "2025-08-09T03:22:51.027Z"
+    },
+    "1162": {
+      "id": "1162",
+      "name": "El Mrazig, Bizerte Sud, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 882675,
+      "sampleTitle": "Cherche terrain et villa a bizerte sud",
+      "extractedAt": "2025-08-09T03:22:40.631Z"
+    },
+    "1163": {
+      "id": "1163",
+      "name": "La Pecherie, Bizerte Sud, Bizerte",
+      "propertyCount": 4,
+      "sampleListingId": 1023587,
+      "sampleTitle": "Bel Maison à vendre à la Pecherie",
+      "extractedAt": "2025-08-09T03:17:33.703Z"
+    },
+    "1164": {
+      "locationName": "Louata, Bizerte Sud, Bizerte",
+      "listingId": 861542,
+      "sampleTitle": "Maison spacieuse",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:22:42.144Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "1165": {
+      "locationName": "Methline, Bizerte Sud, Bizerte",
+      "listingId": 1037606,
+      "sampleTitle": "villa avec 4 appartements",
+      "propertyCount": 4,
+      "extractedAt": "2025-08-09T20:30:47.796Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 4,
+      "isRetry": true
+    },
+    "1168": {
+      "id": "1168",
+      "name": "El Alia, El Alia, Bizerte",
+      "propertyCount": 12,
+      "sampleListingId": 685004,
+      "sampleTitle": "Terrain de Villa Syna à Bizerte",
+      "extractedAt": "2025-08-09T02:58:15.232Z"
+    },
+    "1169": {
+      "id": "1169",
+      "name": "El Hariza, El Alia, Bizerte",
+      "propertyCount": 3,
+      "sampleListingId": 1087023,
+      "sampleTitle": "firme à vendre sur la route principale de Hriza Bizerte",
+      "extractedAt": "2025-08-09T02:58:33.451Z"
+    },
+    "1174": {
+      "id": "1174",
+      "name": "Bajou, Ghar El Melh, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 1080209,
+      "sampleTitle": "Maison sur terrain de 1460 m2 à ghar el melh",
+      "extractedAt": "2025-08-09T02:58:25.518Z"
+    },
+    "1181": {
+      "id": "1181",
+      "name": "Aousja, Ghar El Melh, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 994075,
+      "sampleTitle": "A Vendre villa de Luxe à Aousja, Ghar El Melh",
+      "extractedAt": "2025-08-09T02:49:38.858Z"
+    },
+    "1182": {
+      "id": "1182",
+      "name": "Ghar El Melh, Ghar El Melh, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 819655,
+      "sampleTitle": "2 appartements  titre bleu",
+      "extractedAt": "2025-08-09T02:58:52.210Z"
+    },
+    "1184": {
+      "id": "1184",
+      "name": "Zouaouine, Ghar El Melh, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 926826,
+      "sampleTitle": "terrain avec petite maison",
+      "extractedAt": "2025-08-09T02:49:28.018Z"
+    },
+    "1208": {
+      "id": "1208",
+      "name": "Cité Errimel, Zarzouna, Bizerte",
+      "propertyCount": 3,
+      "sampleListingId": 975327,
+      "sampleTitle": "N A Vendre une Somptueuse Villa à Rimmel Bizerte",
+      "extractedAt": "2025-08-09T03:05:53.173Z"
+    },
+    "1218": {
+      "id": "1218",
+      "name": "Zarzouna, Zarzouna, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 554020,
+      "sampleTitle": "Maison Indépendante à Jarzouna, Bizerte",
+      "extractedAt": "2025-08-09T03:09:17.341Z"
+    },
+    "1259": {
+      "id": "1259",
+      "name": "Chelaghmia, Menzel Bourguiba, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 1042483,
+      "sampleTitle": "🏡 A vendre",
+      "extractedAt": "2025-08-09T03:16:12.003Z"
+    },
+    "1260": {
+      "locationName": "Om Heni, Menzel Bourguiba, Bizerte",
+      "listingId": 901268,
+      "sampleTitle": "A vendre maison snit",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:20:38.301Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "1263": {
+      "id": "1263",
+      "name": "Menzel Bourguiba, Menzel Bourguiba, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 756624,
+      "sampleTitle": "Vente Appartement Bizerte Menzel Bourguiba",
+      "extractedAt": "2025-08-09T03:16:20.278Z"
+    },
+    "1289": {
+      "id": "1289",
+      "name": "El Azib, Menzel Jemil, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 857386,
+      "sampleTitle": "Maison couverte en cours de construction",
+      "extractedAt": "2025-08-09T03:04:25.885Z"
+    },
+    "1291": {
+      "id": "1291",
+      "name": "Maghraoua, Menzel Jemil, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 1005990,
+      "sampleTitle": "Charmante maison inachevé situéé Maghraoua Bizert",
+      "extractedAt": "2025-08-09T03:04:09.264Z"
+    },
+    "1292": {
+      "id": "1292",
+      "name": "Menzel Abderrahmen, Menzel Jemil, Bizerte",
+      "propertyCount": 7,
+      "sampleListingId": 953340,
+      "sampleTitle": "Villa menzel abdrahmen",
+      "extractedAt": "2025-08-09T03:09:06.807Z"
+    },
+    "1293": {
+      "id": "1293",
+      "name": "Menzel Jemil, Menzel Jemil, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 678228,
+      "sampleTitle": "Maison indépendante avec garage situé à Menzel jemil , Bizerte",
+      "extractedAt": "2025-08-09T03:06:01.185Z"
+    },
+    "1294": {
+      "id": "1294",
+      "name": "Beni Atta, Ras Jebel, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 883421,
+      "sampleTitle": "Villa de 3000 beni atta",
+      "extractedAt": "2025-08-09T03:04:44.951Z"
+    },
+    "1295": {
+      "locationName": "Cap Zbib, Ras Jebel, Bizerte",
+      "listingId": 823394,
+      "sampleTitle": "Superbe Villa à Vendre sur Mer à Cap Zebib Bizerte – Proche de la Plage",
+      "propertyCount": 8,
+      "extractedAt": "2025-08-09T20:18:57.359Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 8,
+      "isRetry": true
+    },
+    "1296": {
+      "id": "1296",
+      "name": "Ain Charchara, Ras Jebel, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 883510,
+      "sampleTitle": "Av belle villa style américain à 2 pas de la mer",
+      "extractedAt": "2025-08-09T03:05:27.583Z"
+    },
+    "1298": {
+      "locationName": "Chatt Mami, Ras Jebel, Bizerte",
+      "listingId": 1012441,
+      "sampleTitle": "A Vendre villa avec piscine à Chatt Mami",
+      "propertyCount": 3,
+      "extractedAt": "2025-08-09T20:18:30.155Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 3,
+      "isRetry": true
+    },
+    "1301": {
+      "id": "1301",
+      "name": "Cité Kaa El Ballout, Ras Jebel, Bizerte",
+      "propertyCount": 2,
+      "sampleListingId": 1015294,
+      "sampleTitle": "Maison s 2  terrain 308 m 2 à 700 de rue",
+      "extractedAt": "2025-08-09T02:59:08.810Z"
+    },
+    "1304": {
+      "id": "1304",
+      "name": "Metline, Ras Jebel, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 1083511,
+      "sampleTitle": "Maison 2 étages a metline bizerte",
+      "extractedAt": "2025-08-09T03:04:56.117Z"
+    },
+    "1305": {
+      "id": "1305",
+      "name": "Rafraf, Ras Jebel, Bizerte",
+      "propertyCount": 16,
+      "sampleListingId": 1082056,
+      "sampleTitle": "Terrain rafraf 3050 m2 avec maison à rénover",
+      "extractedAt": "2025-08-09T03:05:36.826Z"
+    },
+    "1306": {
+      "id": "1306",
+      "name": "Rafraf Plage, Ras Jebel, Bizerte",
+      "propertyCount": 16,
+      "sampleListingId": 995490,
+      "sampleTitle": "Maison à vendre 216 m2 Rafraf plage",
+      "extractedAt": "2025-08-09T03:05:45.009Z"
+    },
+    "1307": {
+      "id": "1307",
+      "name": "Ras Jebel, Ras Jebel, Bizerte",
+      "propertyCount": 20,
+      "sampleListingId": 1080151,
+      "sampleTitle": "A Vendre Maison  senia à Ras Jebel",
+      "extractedAt": "2025-08-09T02:59:00.363Z"
+    },
+    "1308": {
+      "id": "1308",
+      "name": "Sounine, Ras Jebel, Bizerte",
+      "propertyCount": 12,
+      "sampleListingId": 1020548,
+      "sampleTitle": "🌊 Magnifique Villa 3 Étages Pieds dans l’Eau à Sounine – 320 m² avec Jardin & Titre Bleu – Opportunité à Saisir !",
+      "extractedAt": "2025-08-09T02:59:16.948Z"
+    },
+    "1348": {
+      "id": "1348",
+      "name": "Tinja, Tinja, Bizerte",
+      "propertyCount": 8,
+      "sampleListingId": 1079012,
+      "sampleTitle": "Villa à vendre",
+      "extractedAt": "2025-08-09T03:16:28.456Z"
+    },
+    "1355": {
+      "id": "1355",
+      "name": "Zehana, Utique, Bizerte",
+      "propertyCount": 1,
+      "sampleListingId": 808024,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T02:38:21.498Z"
+    },
+    "1369": {
+      "id": "1369",
+      "name": "Utique, Utique, Bizerte",
+      "propertyCount": 13,
+      "sampleListingId": 1051736,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T02:44:37.814Z"
+    },
+    "2015": {
+      "id": "2015",
+      "name": "Cité Okba, Kairouan Nord, Kairouan",
+      "propertyCount": 20,
+      "sampleListingId": 943183,
+      "sampleTitle": "A  maison deux maisons mitoyennes ref169a",
+      "extractedAt": "2025-08-09T01:32:15.441Z"
+    },
+    "2016": {
+      "id": "2016",
+      "name": "Cité el manar, Kairouan Nord, Kairouan",
+      "propertyCount": 5,
+      "sampleListingId": 1031280,
+      "sampleTitle": "Rez de chaussée S+2 en Vente",
+      "extractedAt": "2025-08-09T01:32:25.756Z"
+    },
+    "2019": {
+      "id": "2019",
+      "name": "Cité Sahbi, Kairouan Nord, Kairouan",
+      "propertyCount": 6,
+      "sampleListingId": 942406,
+      "sampleTitle": "Maison   dans la zone sahabi 3 ref146a",
+      "extractedAt": "2025-08-09T01:32:38.064Z"
+    },
+    "2025": {
+      "id": "2025",
+      "name": "Kairouan Ville, Kairouan Nord, Kairouan",
+      "propertyCount": 20,
+      "sampleListingId": 1087798,
+      "sampleTitle": "Somptueuse maison à vendre. Superficie 290 m². Belle terrasse et jardin",
+      "extractedAt": "2025-08-09T01:17:18.795Z"
+    },
+    "2029": {
+      "id": "2029",
+      "name": "Route de Haffouz, Kairouan Sud, Kairouan",
+      "propertyCount": 5,
+      "sampleListingId": 1087763,
+      "sampleTitle": "villa a vendre",
+      "extractedAt": "2025-08-09T01:17:26.874Z"
+    },
+    "2041": {
+      "id": "2041",
+      "name": "El Mansoura, Kairouan Sud, Kairouan",
+      "propertyCount": 8,
+      "sampleListingId": 801227,
+      "sampleTitle": "شقة للبيع بالتقسيط المريح في المنصورة القيروان",
+      "extractedAt": "2025-08-09T01:31:47.676Z"
+    },
+    "2043": {
+      "locationName": "Raccada, Kairouan Sud, Kairouan",
+      "listingId": 901558,
+      "sampleTitle": "للبيع بطريق رقادة قرب بروموقرو استراحة كبيرة",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:00:46.944Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "2321": {
+      "id": "2321",
+      "name": "Borj El Amri, Borj El Amri, La Manouba",
+      "propertyCount": 7,
+      "sampleListingId": 845118,
+      "sampleTitle": "Villa neuve à Borj El Amri",
+      "extractedAt": "2025-08-09T02:58:44.058Z"
+    },
+    "2323": {
+      "id": "2323",
+      "name": "Cité El Hafsia, Borj El Amri, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 1031766,
+      "sampleTitle": "Bonne occasion",
+      "extractedAt": "2025-08-09T02:56:22.542Z"
+    },
+    "2330": {
+      "id": "2330",
+      "name": "El Msaadine, Borj El Amri, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 1023973,
+      "sampleTitle": "Belle villa",
+      "extractedAt": "2025-08-09T03:04:01.291Z"
+    },
+    "2335": {
+      "id": "2335",
+      "name": "Cité Khaled Ibn El Walid, Douar Hicher, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 972473,
+      "sampleTitle": "Maison à 2étages",
+      "extractedAt": "2025-08-09T02:18:26.100Z"
+    },
+    "2336": {
+      "id": "2336",
+      "name": "Douar Hicher, Douar Hicher, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 1023280,
+      "sampleTitle": "Deux maisons à vendre",
+      "extractedAt": "2025-08-09T02:06:01.844Z"
+    },
+    "2350": {
+      "id": "2350",
+      "name": "Chaouat, Djedeida, La Manouba",
+      "propertyCount": 2,
+      "sampleListingId": 951319,
+      "sampleTitle": "Maison S2 à Chaouat, Jedaida à vendre",
+      "extractedAt": "2025-08-09T02:38:10.898Z"
+    },
+    "2361": {
+      "id": "2361",
+      "name": "Cité Ennajet, Djedeida, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 907764,
+      "sampleTitle": "Prix choc villa avc seulement 42000dt à la mannouba",
+      "extractedAt": "2025-08-09T02:27:45.315Z"
+    },
+    "2379": {
+      "id": "2379",
+      "name": "El Habibia, Djedeida, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 901577,
+      "sampleTitle": "Belle villa avec (frigo) chambre froide",
+      "extractedAt": "2025-08-09T02:48:20.888Z"
+    },
+    "2384": {
+      "id": "2384",
+      "name": "Djedeida, Djedeida, La Manouba",
+      "propertyCount": 16,
+      "sampleListingId": 609249,
+      "sampleTitle": "Villa Culkin à Jdeida",
+      "extractedAt": "2025-08-09T02:48:29.026Z"
+    },
+    "2385": {
+      "id": "2385",
+      "name": "Denden, La Manouba, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 948756,
+      "sampleTitle": "entrepreneur de batiment",
+      "extractedAt": "2025-08-09T02:19:02.075Z"
+    },
+    "2386": {
+      "id": "2386",
+      "name": "La Manouba, La Manouba, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 1013157,
+      "sampleTitle": "A vendre s2/1er étage Mannouba centre sprols",
+      "extractedAt": "2025-08-09T02:18:45.088Z"
+    },
+    "2393": {
+      "id": "2393",
+      "name": "El Fejja, Mornaguia, La Manouba",
+      "propertyCount": 4,
+      "sampleListingId": 1032191,
+      "sampleTitle": "À vendre Immeuble à fejja \nmornaguia",
+      "extractedAt": "2025-08-09T03:03:48.220Z"
+    },
+    "2394": {
+      "id": "2394",
+      "name": "El Hamayem, Mornaguia, La Manouba",
+      "propertyCount": 4,
+      "sampleListingId": 420193,
+      "sampleTitle": "Villa Mornaguia",
+      "extractedAt": "2025-08-09T03:03:39.791Z"
+    },
+    "2396": {
+      "id": "2396",
+      "name": "Mornaguia, Mornaguia, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 142981,
+      "sampleTitle": "Appart  s plus 2",
+      "extractedAt": "2025-08-09T02:55:36.676Z"
+    },
+    "2397": {
+      "id": "2397",
+      "name": "Mornaguia 20 Mars, Mornaguia, La Manouba",
+      "propertyCount": 3,
+      "sampleListingId": 1020952,
+      "sampleTitle": "À vendre – Villa lumineuse de 370 m² sur un coin, emplacement idéal à Mornaguia 20 Mars, Manubah.",
+      "extractedAt": "2025-08-09T02:55:44.655Z"
+    },
+    "2407": {
+      "id": "2407",
+      "name": "Chebbaou, Oued Ellil, La Manouba",
+      "propertyCount": 10,
+      "sampleListingId": 951251,
+      "sampleTitle": "Appartements neufs foprolos 2 à oued ellil",
+      "extractedAt": "2025-08-09T02:37:17.999Z"
+    },
+    "2409": {
+      "id": "2409",
+      "name": "Bejaoua, Oued Ellil, La Manouba",
+      "propertyCount": 8,
+      "sampleListingId": 857025,
+      "sampleTitle": "Maison S3 Indépendante à Vendre Bjeoua oued ellil",
+      "extractedAt": "2025-08-09T02:37:41.863Z"
+    },
+    "2418": {
+      "id": "2418",
+      "name": "Essaida, Oued Ellil, La Manouba",
+      "propertyCount": 9,
+      "sampleListingId": 632241,
+      "sampleTitle": "Terrain Villa Nassim à Essaida Manouba",
+      "extractedAt": "2025-08-09T02:38:29.754Z"
+    },
+    "2419": {
+      "id": "2419",
+      "name": "Oued Ellil, Oued Ellil, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 1083126,
+      "sampleTitle": "دار للبيع 130مجددة في حي راقي وممتاز وهادئ وادي الليل حي العنبر ولاية منوبة",
+      "extractedAt": "2025-08-09T02:27:37.049Z"
+    },
+    "2440": {
+      "id": "2440",
+      "name": "Cité Errimel, Tébourba, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 818093,
+      "sampleTitle": "Villa a vendre a tebourba terrain 700 m²",
+      "extractedAt": "2025-08-09T02:56:05.560Z"
+    },
+    "2458": {
+      "id": "2458",
+      "name": "Tébourba, Tébourba, La Manouba",
+      "propertyCount": 17,
+      "sampleListingId": 685333,
+      "sampleTitle": "Terrain villa Orkida à Tébourba",
+      "extractedAt": "2025-08-09T02:55:57.632Z"
+    },
+    "2796": {
+      "locationName": "El Khmara, Ksour Essef, Mahdia",
+      "listingId": 1079725,
+      "sampleTitle": "villa plage mahdia",
+      "propertyCount": 3,
+      "extractedAt": "2025-08-09T20:33:32.012Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 3,
+      "isRetry": true
+    },
+    "2797": {
+      "id": "2797",
+      "name": "Ksour Essef, Ksour Essef, Mahdia",
+      "propertyCount": 10,
+      "sampleListingId": 1080210,
+      "sampleTitle": "Maison indépendant de 150m²  située à Ksour essef centre.",
+      "extractedAt": "2025-08-09T03:12:55.868Z"
+    },
+    "2801": {
+      "id": "2801",
+      "name": "Salakta, Ksour Essef, Mahdia",
+      "propertyCount": 16,
+      "sampleListingId": 1072473,
+      "sampleTitle": "Appartement haut standing, jamais habité à Salakta",
+      "extractedAt": "2025-08-09T03:20:15.847Z"
+    },
+    "2805": {
+      "locationName": "La Chebba, La Chebba, Mahdia",
+      "listingId": 753521,
+      "sampleTitle": "Maison Haut Standing sur 1031 m2 à la Chebba",
+      "propertyCount": 9,
+      "extractedAt": "2025-08-09T20:34:01.394Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "2808": {
+      "id": "2808",
+      "name": "Cité Erroudha, Mahdia, Mahdia",
+      "propertyCount": 1,
+      "sampleListingId": 831835,
+      "sampleTitle": "S+2 Neuf Jamais Habité à Roudha Mahdia",
+      "extractedAt": "2025-08-09T03:12:45.220Z"
+    },
+    "2810": {
+      "id": "2810",
+      "name": "Borj Arif, Mahdia, Mahdia",
+      "propertyCount": 6,
+      "sampleListingId": 757039,
+      "sampleTitle": "S2 à borj arif neuf",
+      "extractedAt": "2025-08-09T03:12:03.762Z"
+    },
+    "2813": {
+      "id": "2813",
+      "name": "Jbal dar ouaja, Mahdia, Mahdia",
+      "propertyCount": 2,
+      "sampleListingId": 1019491,
+      "sampleTitle": "Appartement S+2 à vendre – Mahdia, à proximité de l’hôpital Taher Sfar.",
+      "extractedAt": "2025-08-09T03:12:28.681Z"
+    },
+    "2817": {
+      "id": "2817",
+      "name": "Zouila, Mahdia, Mahdia",
+      "propertyCount": 4,
+      "sampleListingId": 866756,
+      "sampleTitle": "appartement s2/S3 (maison a vendre)",
+      "extractedAt": "2025-08-09T03:19:27.533Z"
+    },
+    "2818": {
+      "id": "2818",
+      "name": "Mahdia Corniche, Mahdia, Mahdia",
+      "propertyCount": 20,
+      "sampleListingId": 789430,
+      "sampleTitle": "𝒂̀ 𝒗𝒆𝒏𝒅𝒓𝒆 𝒂𝒑𝒑𝒂𝒓𝒕𝒆𝒎𝒆𝒏𝒕 𝒔+2 𝒑𝒊𝒆𝒅 𝒅𝒂𝒏𝒔 𝒍'𝒆𝒂𝒖 𝒔𝒖𝒓 𝒄𝒐𝒓𝒏𝒊𝒄𝒉𝒆 𝒎𝒂𝒉𝒅𝒊𝒂",
+      "extractedAt": "2025-08-09T03:19:44.362Z"
+    },
+    "2819": {
+      "id": "2819",
+      "name": "Cité Sidi Messaoud, Mahdia, Mahdia",
+      "propertyCount": 6,
+      "sampleListingId": 577472,
+      "sampleTitle": "Maison sur un grand terrain de 1606 m² à Mahdia",
+      "extractedAt": "2025-08-09T03:11:47.408Z"
+    },
+    "2825": {
+      "id": "2825",
+      "name": "Mahdia ville, Mahdia, Mahdia",
+      "propertyCount": 20,
+      "sampleListingId": 826309,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T03:19:52.649Z"
+    },
+    "2826": {
+      "id": "2826",
+      "name": "Tormous, Mahdia, Mahdia",
+      "propertyCount": 1,
+      "sampleListingId": 951744,
+      "sampleTitle": "Maison a vendre",
+      "extractedAt": "2025-08-09T03:19:00.202Z"
+    },
+    "2827": {
+      "id": "2827",
+      "name": "Ezzahra, Mahdia, Mahdia",
+      "propertyCount": 3,
+      "sampleListingId": 1080555,
+      "sampleTitle": "appartement a vendre s2 et s3",
+      "extractedAt": "2025-08-09T03:19:10.568Z"
+    },
+    "2828": {
+      "id": "2828",
+      "name": "Hiboun, Mahdia, Mahdia",
+      "propertyCount": 20,
+      "sampleListingId": 1009697,
+      "sampleTitle": "S2 en vente",
+      "extractedAt": "2025-08-09T03:12:20.511Z"
+    },
+    "2830": {
+      "id": "2830",
+      "name": "Borj Erras, Mahdia, Mahdia",
+      "propertyCount": 19,
+      "sampleListingId": 863282,
+      "sampleTitle": "Belle maison arabe",
+      "extractedAt": "2025-08-09T03:20:03.345Z"
+    },
+    "2831": {
+      "id": "2831",
+      "name": "Rejiche, Mahdia, Mahdia",
+      "propertyCount": 20,
+      "sampleListingId": 364711,
+      "sampleTitle": "فيلا للبيع",
+      "extractedAt": "2025-08-09T03:19:18.991Z"
+    },
+    "2832": {
+      "id": "2832",
+      "name": "Zone touristique de Mahdia, Mahdia, Mahdia",
+      "propertyCount": 20,
+      "sampleListingId": 1087426,
+      "sampleTitle": "𝒃𝒊𝒆𝒏 𝒂̀ 𝒗𝒆𝒏𝒅𝒓𝒆 𝒔+3 𝒅𝒊𝒓𝒆𝒄𝒕𝒆𝒎𝒆𝒏𝒕 𝒑𝒓𝒐𝒎𝒐𝒕𝒆𝒖𝒓 𝒂𝒗𝒆𝒄 𝒑𝒊𝒔𝒄𝒊𝒏𝒆 𝒂̀ 𝒎𝒂𝒉𝒅𝒊𝒂",
+      "extractedAt": "2025-08-09T03:19:35.958Z"
+    },
+    "2863": {
+      "locationName": "Sidi Alouane, Sidi Alouane, Mahdia",
+      "listingId": 1076102,
+      "sampleTitle": "Maisons",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:21:19.113Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "3081": {
+      "id": "3081",
+      "name": "Baghdadi, Bekalta, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 135907,
+      "sampleTitle": "Appartement S+2 vue sur mer à baghdedi Mahdia",
+      "extractedAt": "2025-08-09T03:12:36.851Z"
+    },
+    "3082": {
+      "id": "3082",
+      "name": "Bekalta, Bekalta, Monastir",
+      "propertyCount": 13,
+      "sampleListingId": 1044052,
+      "sampleTitle": "Maison S+2 A vendre",
+      "extractedAt": "2025-08-09T03:11:02.106Z"
+    },
+    "3083": {
+      "id": "3083",
+      "name": "Charaf, Bekalta, Monastir",
+      "propertyCount": 6,
+      "sampleListingId": 971846,
+      "sampleTitle": "A Vendre Appartement S2 Chraf investissement",
+      "extractedAt": "2025-08-09T03:11:29.417Z"
+    },
+    "3085": {
+      "id": "3085",
+      "name": "Dimess, Bekalta, Monastir",
+      "propertyCount": 2,
+      "sampleListingId": 1073016,
+      "sampleTitle": "Appartement S3 Dimes bekalta 5 min de la plage",
+      "extractedAt": "2025-08-09T03:11:21.341Z"
+    },
+    "3092": {
+      "id": "3092",
+      "name": "Zebid, Bekalta, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 944499,
+      "sampleTitle": "Maison Indépendante  à BEKALTA",
+      "extractedAt": "2025-08-09T03:11:10.445Z"
+    },
+    "3093": {
+      "id": "3093",
+      "name": "Bembla, Bembla, Monastir",
+      "propertyCount": 5,
+      "sampleListingId": 1049499,
+      "sampleTitle": "villa style americain sur 4 niveaux",
+      "extractedAt": "2025-08-09T02:43:45.624Z"
+    },
+    "3103": {
+      "id": "3103",
+      "name": "Menzel Ennour, Bembla, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 979089,
+      "sampleTitle": "Jolie maison à menzel ennour \n15mn de monastir",
+      "extractedAt": "2025-08-09T02:43:29.254Z"
+    },
+    "3106": {
+      "id": "3106",
+      "name": "Beni Hassen, Beni Hassen, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 978249,
+      "sampleTitle": "Magnifique villa à vendre à Benhassan",
+      "extractedAt": "2025-08-09T02:52:56.566Z"
+    },
+    "3141": {
+      "id": "3141",
+      "name": "Jemmel, Jemmel, Monastir",
+      "propertyCount": 4,
+      "sampleListingId": 1067357,
+      "sampleTitle": "Villa haute standing a vendre",
+      "extractedAt": "2025-08-09T02:43:37.441Z"
+    },
+    "3143": {
+      "id": "3143",
+      "name": "Menzel Kamel, Jemmel, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 1044975,
+      "sampleTitle": "terain a vendre\n( Menzel kemel )\nالمكان : منزل كامل",
+      "extractedAt": "2025-08-09T02:42:37.950Z"
+    },
+    "3144": {
+      "id": "3144",
+      "name": "Zaouiet Kontech, Jemmel, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 1069528,
+      "sampleTitle": "Villa haut standing",
+      "extractedAt": "2025-08-09T02:43:21.014Z"
+    },
+    "3147": {
+      "id": "3147",
+      "name": "Sidi Lasmar, Ksar Hellal, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 957907,
+      "sampleTitle": "Villa à ksar hellal",
+      "extractedAt": "2025-08-09T03:00:37.496Z"
+    },
+    "3159": {
+      "id": "3159",
+      "name": "Zone Industrielle, Ksar Hellal, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 871208,
+      "sampleTitle": "Villa jumelée en vente",
+      "extractedAt": "2025-08-09T03:00:29.561Z"
+    },
+    "3163": {
+      "id": "3163",
+      "name": "Ksar Hellal, Ksar Hellal, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 1087404,
+      "sampleTitle": "Appartement S2 à vendre à Ksour Hellal",
+      "extractedAt": "2025-08-09T03:00:45.627Z"
+    },
+    "3164": {
+      "id": "3164",
+      "name": "Ksar Hellal Riadh, Ksar Hellal, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 988490,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T03:00:21.325Z"
+    },
+    "3165": {
+      "id": "3165",
+      "name": "Bennane, Ksibet El Médiouni, Monastir",
+      "propertyCount": 2,
+      "sampleListingId": 954522,
+      "sampleTitle": "Maison à vendre منزل للبيع",
+      "extractedAt": "2025-08-09T02:52:37.775Z"
+    },
+    "3184": {
+      "id": "3184",
+      "name": "Ksibet El Médiouni, Ksibet El Médiouni, Monastir",
+      "propertyCount": 15,
+      "sampleListingId": 1084248,
+      "sampleTitle": "Maison arabe à Vendre",
+      "extractedAt": "2025-08-09T02:52:48.498Z"
+    },
+    "3208": {
+      "id": "3208",
+      "name": "Moknine, Moknine, Monastir",
+      "propertyCount": 5,
+      "sampleListingId": 1078934,
+      "sampleTitle": "منزل قديم في موقع ممتاز 300م2",
+      "extractedAt": "2025-08-09T03:01:06.593Z"
+    },
+    "3211": {
+      "id": "3211",
+      "name": "Skanes La Falaise, Monastir, Monastir",
+      "propertyCount": 19,
+      "sampleListingId": 1069179,
+      "sampleTitle": "apparemment s3",
+      "extractedAt": "2025-08-09T02:52:27.244Z"
+    },
+    "3212": {
+      "id": "3212",
+      "name": "Monastir Z.I, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 939525,
+      "sampleTitle": "Deux Maisons à Monastir pas cher négociable",
+      "extractedAt": "2025-08-09T02:53:07.415Z"
+    },
+    "3213": {
+      "id": "3213",
+      "name": "Skanes Ennozha, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 1053385,
+      "sampleTitle": "À Vendre – Villa Haut Standing – Skanes Hay Nozha, Monastir",
+      "extractedAt": "2025-08-09T02:44:12.758Z"
+    },
+    "3214": {
+      "id": "3214",
+      "name": "Cité El Omrane, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 1077612,
+      "sampleTitle": "Appartement s2 1er à cité el omran",
+      "extractedAt": "2025-08-09T02:44:20.928Z"
+    },
+    "3215": {
+      "id": "3215",
+      "name": "Cité El Bassatine, Monastir, Monastir",
+      "propertyCount": 3,
+      "sampleListingId": 808672,
+      "sampleTitle": "Une merveilleuse villa s+5 à vendre située à Monastir el Basatine",
+      "extractedAt": "2025-08-09T02:53:42.767Z"
+    },
+    "3216": {
+      "id": "3216",
+      "name": "Monastir Zone touristique, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 943652,
+      "sampleTitle": "Des appartements haut standing direct promoteur à vendre",
+      "extractedAt": "2025-08-09T02:33:52.119Z"
+    },
+    "3217": {
+      "id": "3217",
+      "name": "C2, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 888106,
+      "sampleTitle": "Appartement s+3 près le corniche",
+      "extractedAt": "2025-08-09T02:53:26.712Z"
+    },
+    "3218": {
+      "id": "3218",
+      "name": "Cité frina, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 932634,
+      "sampleTitle": "Appartement Meublé à Vendre",
+      "extractedAt": "2025-08-09T02:52:00.536Z"
+    },
+    "3219": {
+      "id": "3219",
+      "name": "Cité Erriadh, Monastir, Monastir",
+      "propertyCount": 9,
+      "sampleListingId": 971227,
+      "sampleTitle": "S+2 de 90 m²- Cité Riadh",
+      "extractedAt": "2025-08-09T02:44:29.035Z"
+    },
+    "3220": {
+      "id": "3220",
+      "name": "Cité el Agba, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 1015942,
+      "sampleTitle": "Maison à vendre, prix négociable، شهادة ملكية فردية",
+      "extractedAt": "2025-08-09T02:53:15.685Z"
+    },
+    "3221": {
+      "id": "3221",
+      "name": "Stah Jabeur, Monastir, Monastir",
+      "propertyCount": 7,
+      "sampleListingId": 934931,
+      "sampleTitle": "Avendre jolie Appartement A monastir",
+      "extractedAt": "2025-08-09T03:00:13.175Z"
+    },
+    "3222": {
+      "id": "3222",
+      "name": "Cité Sidi Nasser, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 811353,
+      "sampleTitle": "2 studios à Monastir RDC",
+      "extractedAt": "2025-08-09T02:52:10.848Z"
+    },
+    "3224": {
+      "id": "3224",
+      "name": "Khenis, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 1023607,
+      "sampleTitle": "Belle villa",
+      "extractedAt": "2025-08-09T02:51:52.312Z"
+    },
+    "3225": {
+      "id": "3225",
+      "name": "Monastir centre ville, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 949217,
+      "sampleTitle": "a vendre",
+      "extractedAt": "2025-08-09T02:53:59.450Z"
+    },
+    "3226": {
+      "id": "3226",
+      "name": "Cité Essouani, Monastir, Monastir",
+      "propertyCount": 12,
+      "sampleListingId": 1070874,
+      "sampleTitle": "Villa Souani",
+      "extractedAt": "2025-08-09T02:52:19.115Z"
+    },
+    "3227": {
+      "id": "3227",
+      "name": "R4, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 884431,
+      "sampleTitle": "Vends appartement haut standing monastir",
+      "extractedAt": "2025-08-09T02:53:34.693Z"
+    },
+    "3228": {
+      "id": "3228",
+      "name": "R6, Monastir, Monastir",
+      "propertyCount": 12,
+      "sampleListingId": 784997,
+      "sampleTitle": "Appartement à  Vendre à l'R6",
+      "extractedAt": "2025-08-09T02:54:07.549Z"
+    },
+    "3230": {
+      "id": "3230",
+      "name": "Skanes, Monastir, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 1078066,
+      "sampleTitle": "A Skanes à vendre un S plus deux standing avec place parking",
+      "extractedAt": "2025-08-09T02:44:04.519Z"
+    },
+    "3239": {
+      "locationName": "Ouardanine, Ouardanine, Monastir",
+      "listingId": 812231,
+      "sampleTitle": "Villa gros oeuvre semi fini à vendre",
+      "propertyCount": 2,
+      "extractedAt": "2025-08-09T20:14:19.631Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 2,
+      "isRetry": true
+    },
+    "3242": {
+      "id": "3242",
+      "name": "Mesjed Issa, Sahline, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 861932,
+      "sampleTitle": "منزل",
+      "extractedAt": "2025-08-09T02:42:56.372Z"
+    },
+    "3244": {
+      "id": "3244",
+      "name": "Sahline, Sahline, Monastir",
+      "propertyCount": 20,
+      "sampleListingId": 1087905,
+      "sampleTitle": "Villa jumelée en vente",
+      "extractedAt": "2025-08-09T02:33:44.100Z"
+    },
+    "3245": {
+      "id": "3245",
+      "name": "Sidi Ameur, Sahline, Monastir",
+      "propertyCount": 5,
+      "sampleListingId": 1083377,
+      "sampleTitle": "Villa inachevée en vente",
+      "extractedAt": "2025-08-09T02:42:48.243Z"
+    },
+    "3259": {
+      "id": "3259",
+      "name": "Téboulba, Téboulba, Monastir",
+      "propertyCount": 11,
+      "sampleListingId": 1072984,
+      "sampleTitle": "Villa independante a fadline",
+      "extractedAt": "2025-08-09T03:06:18.044Z"
+    },
+    "3266": {
+      "id": "3266",
+      "name": "Béni Khalled, Béni Khalled, Nabeul",
+      "propertyCount": 11,
+      "sampleListingId": 1036402,
+      "sampleTitle": "Villa A Vendre",
+      "extractedAt": "2025-08-09T02:18:15.614Z"
+    },
+    "3267": {
+      "id": "3267",
+      "name": "Bir Drassen, Béni Khalled, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 901854,
+      "sampleTitle": "Vente d'une grande maison a bir dressen",
+      "extractedAt": "2025-08-09T02:25:03.548Z"
+    },
+    "3293": {
+      "id": "3293",
+      "name": "Beni Khiar, Beni Khiar, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 964317,
+      "sampleTitle": "affaire: particulier met en vente villa S5 à la route principale de la port bni khiar",
+      "extractedAt": "2025-08-09T02:25:24.709Z"
+    },
+    "3296": {
+      "id": "3296",
+      "name": "Beni Khiar Plage, Beni Khiar, Nabeul",
+      "propertyCount": 16,
+      "sampleListingId": 987083,
+      "sampleTitle": "Villa S4 avec piscine à beni khiar plage",
+      "extractedAt": "2025-08-09T02:25:33.107Z"
+    },
+    "3304": {
+      "id": "3304",
+      "name": "Jinen Beni Khiar, Beni Khiar, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 623549,
+      "sampleTitle": "V404 Villa RICCI",
+      "extractedAt": "2025-08-09T02:17:27.594Z"
+    },
+    "3306": {
+      "id": "3306",
+      "name": "Dharoufa, Beni Khiar, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 896131,
+      "sampleTitle": "Villa avec grand jardin à 200 m de la plage à dharoufa",
+      "extractedAt": "2025-08-09T02:25:14.425Z"
+    },
+    "3307": {
+      "id": "3307",
+      "name": "El Maamoura, Beni Khiar, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 961583,
+      "sampleTitle": "Villa \" Diamant \" pied dans l'eau",
+      "extractedAt": "2025-08-09T02:25:41.209Z"
+    },
+    "3309": {
+      "id": "3309",
+      "name": "Somaa, Beni Khiar, Nabeul",
+      "propertyCount": 11,
+      "sampleListingId": 994579,
+      "sampleTitle": "Appartement somaa",
+      "extractedAt": "2025-08-09T02:24:52.902Z"
+    },
+    "3312": {
+      "id": "3312",
+      "name": "Borj Hafaiedh, Bou Argoub, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 767057,
+      "sampleTitle": "Villa à Borj hfayedh",
+      "extractedAt": "2025-08-09T01:44:06.111Z"
+    },
+    "3314": {
+      "id": "3314",
+      "name": "s+8+, Typologie",
+      "propertyCount": 20,
+      "sampleListingId": 774898,
+      "sampleTitle": "A vendre villa de maitre",
+      "extractedAt": "2025-08-09T02:01:05.407Z"
+    },
+    "3331": {
+      "id": "3331",
+      "name": "El Kharrouba, Bou Argoub, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 775536,
+      "sampleTitle": "Un appartement à kharouba hammamet",
+      "extractedAt": "2025-08-09T02:05:15.967Z"
+    },
+    "3332": {
+      "id": "3332",
+      "name": "El Machrouha, Bou Argoub, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 749388,
+      "sampleTitle": "2 maisons à vendre à Cité Machrouha Bou Argoub",
+      "extractedAt": "2025-08-09T02:00:57.423Z"
+    },
+    "3333": {
+      "id": "3333",
+      "name": "El Mhedhba, Bou Argoub, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 829943,
+      "sampleTitle": "3 maisons à vendre à Cité Mhedhba Bou Argoub",
+      "extractedAt": "2025-08-09T02:05:01.248Z"
+    },
+    "3344": {
+      "id": "3344",
+      "name": "Dar Chaabane, Dar Chaabane, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1026458,
+      "sampleTitle": "فيلا  طريق ليدو دار شعبان الفهرية",
+      "extractedAt": "2025-08-09T02:17:08.401Z"
+    },
+    "3345": {
+      "id": "3345",
+      "name": "Dar Chaabane Plage, Dar Chaabane, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1019194,
+      "sampleTitle": "Maison extensible pour 2 autres étage",
+      "extractedAt": "2025-08-09T02:17:19.156Z"
+    },
+    "3348": {
+      "id": "3348",
+      "name": "Bir El Jedey, El Haouaria, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 1078345,
+      "sampleTitle": "Terrain villa olga  à nabeul",
+      "extractedAt": "2025-08-09T03:15:29.977Z"
+    },
+    "3351": {
+      "id": "3351",
+      "name": "Charaf, El Haouaria, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 688764,
+      "sampleTitle": "دار و أرض فيها 6000 م² و بير ب 40مليون",
+      "extractedAt": "2025-08-09T03:21:21.328Z"
+    },
+    "3357": {
+      "locationName": "Borj Salhi, El Haouaria, Nabeul",
+      "listingId": 669591,
+      "sampleTitle": "Villa Simon à Borj Salhi Haouaria",
+      "propertyCount": 4,
+      "extractedAt": "2025-08-09T20:30:06.253Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 4,
+      "isRetry": true
+    },
+    "3362": {
+      "locationName": "El Haouaria plage, El Haouaria, Nabeul",
+      "listingId": 1078505,
+      "sampleTitle": "Maison A vendre  El Haouaria plage",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:29:18.950Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3363": {
+      "id": "3363",
+      "name": "El Gorfa, El Haouaria, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 739606,
+      "sampleTitle": "Villa avec agréable vue montagne",
+      "extractedAt": "2025-08-09T03:21:13.196Z"
+    },
+    "3364": {
+      "locationName": "El Haouaria, El Haouaria, Nabeul",
+      "listingId": 1089214,
+      "sampleTitle": "Maison à vendre",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:27:02.249Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3365": {
+      "id": "3365",
+      "name": "El Kedoua, El Haouaria, Nabeul",
+      "propertyCount": 4,
+      "sampleListingId": 931562,
+      "sampleTitle": "6000m2 avec un studio arabres olives",
+      "extractedAt": "2025-08-09T03:21:30.595Z"
+    },
+    "3366": {
+      "locationName": "Chatt El Argoub, El Haouaria, Nabeul",
+      "listingId": 882074,
+      "sampleTitle": "Une villa pieds dans l'eau",
+      "propertyCount": 4,
+      "extractedAt": "2025-08-09T20:28:24.833Z",
+      "sampleIndex": 4,
+      "totalSamplesTested": 4,
+      "isRetry": true
+    },
+    "3368": {
+      "locationName": "Menzel Salem, El Haouaria, Nabeul",
+      "listingId": 863083,
+      "sampleTitle": "الهوارية  .... أرض شاطئ منزل سالم....",
+      "propertyCount": 2,
+      "extractedAt": "2025-08-09T20:27:43.482Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 2,
+      "isRetry": true
+    },
+    "3369": {
+      "id": "3369",
+      "name": "Saheb Jebel, El Haouaria, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 725604,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T03:21:41.411Z"
+    },
+    "3370": {
+      "locationName": "Sidi Daoud, El Haouaria, Nabeul",
+      "listingId": 770963,
+      "sampleTitle": "maison arbi a la plage sidi daoud elhaouaria",
+      "propertyCount": 5,
+      "extractedAt": "2025-08-09T20:28:35.097Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3371": {
+      "locationName": "Echat el kebli, El Haouaria, Nabeul",
+      "listingId": 925455,
+      "sampleTitle": "Deux maisons vue sur mer plage elhaouaria",
+      "propertyCount": 10,
+      "extractedAt": "2025-08-09T20:26:35.467Z",
+      "sampleIndex": 3,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3373": {
+      "id": "3373",
+      "name": "Zaouiet El Mgaies, El Haouaria, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 1078330,
+      "sampleTitle": "Terrain villa zembra à nabeul",
+      "extractedAt": "2025-08-09T03:15:38.132Z"
+    },
+    "3380": {
+      "id": "3380",
+      "name": "El Mida, El Mida, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 881899,
+      "sampleTitle": "Villa a el mida vue mer",
+      "extractedAt": "2025-08-09T02:55:10.407Z"
+    },
+    "3392": {
+      "id": "3392",
+      "name": "Ganiouba, Grombalia, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 885094,
+      "sampleTitle": "Villa khouloud grombalia a",
+      "extractedAt": "2025-08-09T02:17:55.774Z"
+    },
+    "3421": {
+      "id": "3421",
+      "name": "Fondouk Jedid, Grombalia, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 1078780,
+      "sampleTitle": "A VENDRE",
+      "extractedAt": "2025-08-09T02:26:55.959Z"
+    },
+    "3422": {
+      "id": "3422",
+      "name": "Grombalia, Grombalia, Nabeul",
+      "propertyCount": 13,
+      "sampleListingId": 1007571,
+      "sampleTitle": "petite villa bien placer centre-ville",
+      "extractedAt": "2025-08-09T02:17:47.367Z"
+    },
+    "3432": {
+      "id": "3432",
+      "name": "Seltene, Grombalia, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 1041576,
+      "sampleTitle": "A vendre maison à cité seltène à coté de borj cedria. Tel:",
+      "extractedAt": "2025-08-09T02:34:36.456Z"
+    },
+    "3433": {
+      "id": "3433",
+      "name": "Turki, Grombalia, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 908139,
+      "sampleTitle": "A vendre villa à turki grombelia",
+      "extractedAt": "2025-08-09T02:05:24.366Z"
+    },
+    "3436": {
+      "id": "3436",
+      "name": "Ezzahra, Hammam El Ghezaz, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1078397,
+      "sampleTitle": "appartement vue de mer a ezzahra",
+      "extractedAt": "2025-08-09T03:20:24.250Z"
+    },
+    "3437": {
+      "id": "3437",
+      "name": "Hammam El Ghezaz, Hammam El Ghezaz, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1087107,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T03:14:37.765Z"
+    },
+    "3438": {
+      "id": "3438",
+      "name": "Hammam Jebli, Hammam El Ghezaz, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 1001459,
+      "sampleTitle": "منزل للبيع في حمام الجبلي معتمدية حمام الغزاز",
+      "extractedAt": "2025-08-09T03:15:02.436Z"
+    },
+    "3439": {
+      "id": "3439",
+      "name": "Tamazrat, Hammam El Ghezaz, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 858225,
+      "sampleTitle": "Villa avec ferme à vendre à kelibia",
+      "extractedAt": "2025-08-09T03:14:54.248Z"
+    },
+    "3440": {
+      "id": "3440",
+      "name": "Manaret hammamet, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1077816,
+      "sampleTitle": "a vendre maison s+3 à Hammamet AFH Barket sahel  📞2",
+      "extractedAt": "2025-08-09T01:16:37.420Z"
+    },
+    "3441": {
+      "id": "3441",
+      "name": "Bir Bouragba, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1085900,
+      "sampleTitle": "VENDS VILLA AZZA HAMMAMET 255MD",
+      "extractedAt": "2025-08-09T01:26:33.888Z"
+    },
+    "3442": {
+      "id": "3442",
+      "name": "El Mrezga, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1046992,
+      "sampleTitle": "A Vendre Appartement S+2 Haut Standing à AFH Mrezga, Nabeul",
+      "extractedAt": "2025-08-09T01:44:14.601Z"
+    },
+    "3448": {
+      "locationName": "Cité Chraf, Hammamet, Nabeul",
+      "listingId": 1039500,
+      "sampleTitle": "Villa folla 2 hammamet folla",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T19:59:41.896Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3451": {
+      "id": "3451",
+      "name": "Beni Wael, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1085164,
+      "sampleTitle": "maison beniweal",
+      "extractedAt": "2025-08-09T01:28:15.136Z"
+    },
+    "3452": {
+      "id": "3452",
+      "name": "Sidi Hammed, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 993122,
+      "sampleTitle": "V549 Villa PARFOIS",
+      "extractedAt": "2025-08-09T01:27:33.419Z"
+    },
+    "3456": {
+      "id": "3456",
+      "name": "Campagne de Hammamet, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1087267,
+      "sampleTitle": "AV belle villa de 500m pas loin de hammamet yasmine",
+      "extractedAt": "2025-08-09T01:28:06.870Z"
+    },
+    "3458": {
+      "id": "3458",
+      "name": "Cité Nadhour, Hammamet, Nabeul",
+      "propertyCount": 7,
+      "sampleListingId": 985049,
+      "sampleTitle": "un studio a cité nadhour",
+      "extractedAt": "2025-08-09T01:27:41.491Z"
+    },
+    "3460": {
+      "id": "3460",
+      "name": "Cité Erriadh, Hammamet, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 878192,
+      "sampleTitle": "Maison tradionnelle 241 vue de mer hammamet",
+      "extractedAt": "2025-08-09T01:27:01.095Z"
+    },
+    "3464": {
+      "id": "3464",
+      "name": "Latrech, Hammamet, Nabeul",
+      "propertyCount": 18,
+      "sampleListingId": 808522,
+      "sampleTitle": "Villa biella réf v2800",
+      "extractedAt": "2025-08-09T01:45:05.374Z"
+    },
+    "3465": {
+      "id": "3465",
+      "name": "Douikhla, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 926672,
+      "sampleTitle": "maison a dwikhla 1500 m",
+      "extractedAt": "2025-08-09T01:27:58.735Z"
+    },
+    "3469": {
+      "id": "3469",
+      "name": "Jinen Hammamet, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1086354,
+      "sampleTitle": "maison 170 m",
+      "extractedAt": "2025-08-09T01:25:10.923Z"
+    },
+    "3475": {
+      "id": "3475",
+      "name": "Besbessia, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1034425,
+      "sampleTitle": "Villa dorra 3 elbessbessia",
+      "extractedAt": "2025-08-09T01:25:27.582Z"
+    },
+    "3476": {
+      "id": "3476",
+      "name": "Cité El Faouara, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 823390,
+      "sampleTitle": "Maison fawara",
+      "extractedAt": "2025-08-09T01:26:09.526Z"
+    },
+    "3477": {
+      "id": "3477",
+      "name": "El Monchar, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 988076,
+      "sampleTitle": "V412 Villa MAJORELLE",
+      "extractedAt": "2025-08-09T01:27:50.070Z"
+    },
+    "3479": {
+      "id": "3479",
+      "name": "Hammamet Centre, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1021494,
+      "sampleTitle": "S1 en vente",
+      "extractedAt": "2025-08-09T01:27:09.254Z"
+    },
+    "3483": {
+      "id": "3483",
+      "name": "Sidi Jedidi, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1074419,
+      "sampleTitle": "Villa de luxe avec piscine à Hammamet",
+      "extractedAt": "2025-08-09T01:43:57.963Z"
+    },
+    "3485": {
+      "id": "3485",
+      "name": "Abene, Kélibia, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 680448,
+      "sampleTitle": "Terrain et une maison à vendre",
+      "extractedAt": "2025-08-09T03:20:56.724Z"
+    },
+    "3486": {
+      "id": "3486",
+      "name": "Azmour, Kélibia, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 1083187,
+      "sampleTitle": "maison avec piscine à vendre",
+      "extractedAt": "2025-08-09T03:15:10.760Z"
+    },
+    "3487": {
+      "id": "3487",
+      "name": "Ain Grinz, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1080357,
+      "sampleTitle": "Appartement S+2",
+      "extractedAt": "2025-08-09T03:06:56.297Z"
+    },
+    "3488": {
+      "id": "3488",
+      "name": "Merdes, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 847522,
+      "sampleTitle": "Appartements inachevés a cite merdes kelibia",
+      "extractedAt": "2025-08-09T03:14:20.277Z"
+    },
+    "3489": {
+      "id": "3489",
+      "name": "Cité El Boustene, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 821582,
+      "sampleTitle": "A vendre appartement neuf s+2 à kélibia",
+      "extractedAt": "2025-08-09T03:07:13.120Z"
+    },
+    "3490": {
+      "id": "3490",
+      "name": "Sidi mansour, Kélibia, Nabeul",
+      "propertyCount": 9,
+      "sampleListingId": 1063054,
+      "sampleTitle": "Appartement S2 à vendre à kélibia la blanche",
+      "extractedAt": "2025-08-09T03:15:18.906Z"
+    },
+    "3491": {
+      "id": "3491",
+      "name": "Cité Ksiba, Kélibia, Nabeul",
+      "propertyCount": 15,
+      "sampleListingId": 1054894,
+      "sampleTitle": "Appartements à cité Ksiba Kelibia",
+      "extractedAt": "2025-08-09T03:13:37.717Z"
+    },
+    "3492": {
+      "id": "3492",
+      "name": "Cité Riadh, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1049632,
+      "sampleTitle": "Villa inachevée à vendre",
+      "extractedAt": "2025-08-09T03:07:30.336Z"
+    },
+    "3493": {
+      "id": "3493",
+      "name": "Dar Allouche, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1083750,
+      "sampleTitle": "Terrain villa  randa à dar allouch",
+      "extractedAt": "2025-08-09T03:20:40.246Z"
+    },
+    "3494": {
+      "id": "3494",
+      "name": "Chiwa, Kélibia, Nabeul",
+      "propertyCount": 2,
+      "sampleListingId": 897121,
+      "sampleTitle": "Av maison à kélibia oued chiwa",
+      "extractedAt": "2025-08-09T03:07:22.138Z"
+    },
+    "3495": {
+      "locationName": "Jinen El Mansoura, Kélibia, Nabeul",
+      "listingId": 970269,
+      "sampleTitle": "appartement avec facilite a jinen mansoura kélibia",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:21:29.280Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3496": {
+      "id": "3496",
+      "name": "Kélibia, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 867654,
+      "sampleTitle": "villa independent a kélibia",
+      "extractedAt": "2025-08-09T03:07:38.380Z"
+    },
+    "3498": {
+      "id": "3498",
+      "name": "Kerkouane, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1083205,
+      "sampleTitle": "Appartement a vendre 1 ere étage meublé a vendre a kerkoune",
+      "extractedAt": "2025-08-09T03:20:48.587Z"
+    },
+    "3499": {
+      "id": "3499",
+      "name": "El Mansoura, Kélibia, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1033854,
+      "sampleTitle": "Appartement S2 proche de la mansourah à Vendre",
+      "extractedAt": "2025-08-09T03:14:28.938Z"
+    },
+    "3500": {
+      "id": "3500",
+      "name": "Oued El Khatef, Kélibia, Nabeul",
+      "propertyCount": 2,
+      "sampleListingId": 890552,
+      "sampleTitle": "Maison campagne plus terrain 7500m wed elkhatf",
+      "extractedAt": "2025-08-09T03:07:05.039Z"
+    },
+    "3501": {
+      "id": "3501",
+      "name": "Sidi Madhkour, Kélibia, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 1077700,
+      "sampleTitle": "maison arabe à vendre",
+      "extractedAt": "2025-08-09T03:21:04.949Z"
+    },
+    "3521": {
+      "id": "3521",
+      "name": "Korba, Korba, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1084180,
+      "sampleTitle": "Maison arabesque S+5 à vendre à Korba",
+      "extractedAt": "2025-08-09T02:35:11.669Z"
+    },
+    "3522": {
+      "id": "3522",
+      "name": "Korba Plage, Korba, Nabeul",
+      "propertyCount": 10,
+      "sampleListingId": 799267,
+      "sampleTitle": "Maison arabe a vendre",
+      "extractedAt": "2025-08-09T02:35:19.994Z"
+    },
+    "3526": {
+      "id": "3526",
+      "name": "Tazarka, Korba, Nabeul",
+      "propertyCount": 17,
+      "sampleListingId": 62837,
+      "sampleTitle": "Maison arabe bon etat avec jardin",
+      "extractedAt": "2025-08-09T02:35:01.247Z"
+    },
+    "3558": {
+      "id": "3558",
+      "name": "Menzel Bouzelfa, Menzel Bouzelfa, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 778286,
+      "sampleTitle": "villa avendre  \nمنزل بوزلفه",
+      "extractedAt": "2025-08-09T02:26:47.644Z"
+    },
+    "3563": {
+      "id": "3563",
+      "name": "Chatt Ezzouhour, Menzel Temime, Nabeul",
+      "propertyCount": 9,
+      "sampleListingId": 1087242,
+      "sampleTitle": "Terrain villa  baya à korba",
+      "extractedAt": "2025-08-09T02:47:24.758Z"
+    },
+    "3565": {
+      "id": "3565",
+      "name": "Chatt Mrigueb, Menzel Temime, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 25454,
+      "sampleTitle": "Maison 820 m² pieds dans l’eau à chatt mrigueb menzel temim",
+      "extractedAt": "2025-08-09T02:55:02.409Z"
+    },
+    "3566": {
+      "id": "3566",
+      "name": "Cité Sidi Salem, Menzel Temime, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 908196,
+      "sampleTitle": "Une villa spacieuse à menzel temime",
+      "extractedAt": "2025-08-09T03:02:25.937Z"
+    },
+    "3575": {
+      "id": "3575",
+      "name": "Lebna, Menzel Temime, Nabeul",
+      "propertyCount": 8,
+      "sampleListingId": 973453,
+      "sampleTitle": "A vendre villa au bord de la mer à Lebna, Nabeul",
+      "extractedAt": "2025-08-09T02:54:45.395Z"
+    },
+    "3576": {
+      "id": "3576",
+      "name": "Menzel Horr, Menzel Temime, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 858361,
+      "sampleTitle": "Maison à vendre à Manzel Tamim Manzel Hor",
+      "extractedAt": "2025-08-09T02:54:53.645Z"
+    },
+    "3578": {
+      "id": "3578",
+      "name": "Menzel Temime, Menzel Temime, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1075305,
+      "sampleTitle": "appartement",
+      "extractedAt": "2025-08-09T03:02:34.036Z"
+    },
+    "3581": {
+      "id": "3581",
+      "name": "Sidi Jameleddine, Menzel Temime, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 583179,
+      "sampleTitle": "Terrain avec maison en cours cde construction",
+      "extractedAt": "2025-08-09T03:02:44.953Z"
+    },
+    "3582": {
+      "id": "3582",
+      "name": "Skalba, Menzel Temime, Nabeul",
+      "propertyCount": 2,
+      "sampleListingId": 892734,
+      "sampleTitle": "A vendre une villa à la cité chmardel menzel temime",
+      "extractedAt": "2025-08-09T03:02:53.480Z"
+    },
+    "3583": {
+      "id": "3583",
+      "name": "Ain Kemicha, Nabeul, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 858066,
+      "sampleTitle": "Maison 8 km de nabeul",
+      "extractedAt": "2025-08-09T02:01:16.555Z"
+    },
+    "3585": {
+      "id": "3585",
+      "name": "Sidi Achour, Nabeul, Nabeul",
+      "propertyCount": 10,
+      "sampleListingId": 1078784,
+      "sampleTitle": "Deux appartements à vendre à Sidi Achour Nabeul",
+      "extractedAt": "2025-08-09T02:02:45.922Z"
+    },
+    "3587": {
+      "id": "3587",
+      "name": "Les deux oueds, Nabeul, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 816972,
+      "sampleTitle": "Villa individuelle en vente",
+      "extractedAt": "2025-08-09T01:44:47.445Z"
+    },
+    "3588": {
+      "id": "3588",
+      "name": "Oued Souhil, Nabeul, Nabeul",
+      "propertyCount": 4,
+      "sampleListingId": 822779,
+      "sampleTitle": "79eme appartement à nabeul",
+      "extractedAt": "2025-08-09T02:01:49.405Z"
+    },
+    "3590": {
+      "locationName": "Néapolis, Nabeul, Nabeul",
+      "listingId": 666229,
+      "sampleTitle": "",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:06:44.583Z",
+      "sampleIndex": 2,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3592": {
+      "id": "3592",
+      "name": "Bir Challouf, Nabeul, Nabeul",
+      "propertyCount": 13,
+      "sampleListingId": 1039078,
+      "sampleTitle": "Maison à vendre nabeul",
+      "extractedAt": "2025-08-09T02:02:29.537Z"
+    },
+    "3593": {
+      "id": "3593",
+      "name": "Sidi El Mahrsi, Nabeul, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1014451,
+      "sampleTitle": "V482 Villa ROYALE",
+      "extractedAt": "2025-08-09T02:01:24.991Z"
+    },
+    "3596": {
+      "id": "3596",
+      "name": "Cité Ennacim, Nabeul, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 950217,
+      "sampleTitle": "Villa individuelle en vente",
+      "extractedAt": "2025-08-09T02:01:41.162Z"
+    },
+    "3601": {
+      "id": "3601",
+      "name": "Cité Les Jasmins, Nabeul, Nabeul",
+      "propertyCount": 17,
+      "sampleListingId": 828890,
+      "sampleTitle": "Maison de 471 m2 plein zone touristique",
+      "extractedAt": "2025-08-09T02:01:33.071Z"
+    },
+    "3603": {
+      "locationName": "Cité Sidi Amor, Nabeul, Nabeul",
+      "listingId": 877377,
+      "sampleTitle": "Bel appartement s+3 à nabeul",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:06:02.033Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "3604": {
+      "id": "3604",
+      "name": "Cité Sidi Slimane, Nabeul, Nabeul",
+      "propertyCount": 6,
+      "sampleListingId": 859582,
+      "sampleTitle": "Villa jumelée en vente",
+      "extractedAt": "2025-08-09T02:02:37.700Z"
+    },
+    "3608": {
+      "id": "3608",
+      "name": "Mimosas Villas Et Bungalows, Nabeul, Nabeul",
+      "propertyCount": 6,
+      "sampleListingId": 583325,
+      "sampleTitle": "Villa salma 1000 au bord de la mer mimousa nabeul",
+      "extractedAt": "2025-08-09T01:44:23.145Z"
+    },
+    "3609": {
+      "locationName": "Nabeul, Nabeul, Nabeul",
+      "listingId": 1055943,
+      "sampleTitle": "À vendre Maison arabesque à la Médina Nabeul",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:07:19.447Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "3614": {
+      "id": "3614",
+      "name": "Cherifate, Soliman, Nabeul",
+      "propertyCount": 4,
+      "sampleListingId": 942922,
+      "sampleTitle": "Villa slimen",
+      "extractedAt": "2025-08-09T02:27:20.408Z"
+    },
+    "3619": {
+      "id": "3619",
+      "name": "Dhahri, Soliman, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 924104,
+      "sampleTitle": "Maison inachevé à cité riadh",
+      "extractedAt": "2025-08-09T02:27:12.043Z"
+    },
+    "3620": {
+      "id": "3620",
+      "name": "Soliman Plage, Soliman, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 635423,
+      "sampleTitle": "Jolie Villa indépendante au cœur du village de Soliman plage région du CAP BON TUNISIE",
+      "extractedAt": "2025-08-09T02:36:42.669Z"
+    },
+    "3621": {
+      "id": "3621",
+      "name": "El Marja, Soliman, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 1056981,
+      "sampleTitle": "Villa route de korbous",
+      "extractedAt": "2025-08-09T02:27:28.685Z"
+    },
+    "3622": {
+      "id": "3622",
+      "name": "Korbous, Soliman, Nabeul",
+      "propertyCount": 5,
+      "sampleListingId": 825398,
+      "sampleTitle": "Villa haut standing à 2 min de la mer",
+      "extractedAt": "2025-08-09T02:48:10.506Z"
+    },
+    "3624": {
+      "id": "3624",
+      "name": "Soliman, Soliman, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1083318,
+      "sampleTitle": "منزل للبيع بسليمان",
+      "extractedAt": "2025-08-09T02:27:03.992Z"
+    },
+    "3636": {
+      "id": "3636",
+      "name": "Rtiba, Takelsa, Nabeul",
+      "propertyCount": 9,
+      "sampleListingId": 910060,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T03:15:50.902Z"
+    },
+    "3637": {
+      "id": "3637",
+      "name": "Sidi Aissa, Takelsa, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 898607,
+      "sampleTitle": "Maison 198 a sidi aissa takelsa",
+      "extractedAt": "2025-08-09T02:47:59.494Z"
+    },
+    "3638": {
+      "id": "3638",
+      "name": "Takelsa, Takelsa, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 745296,
+      "sampleTitle": "Senia avec maison",
+      "extractedAt": "2025-08-09T02:47:49.264Z"
+    },
+    "4438": {
+      "id": "4438",
+      "name": "Akouda, Akouda, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1070332,
+      "sampleTitle": "Villa à akouda sousse خلف قاعة الغدامسي للأفراح",
+      "extractedAt": "2025-08-09T01:16:20.970Z"
+    },
+    "4439": {
+      "id": "4439",
+      "name": "Chatt Meriem, Akouda, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 952578,
+      "sampleTitle": "A vendre un appartement S+1 au 2éme étage",
+      "extractedAt": "2025-08-09T01:39:05.784Z"
+    },
+    "4440": {
+      "id": "4440",
+      "name": "Remila, Akouda, Sousse",
+      "propertyCount": 3,
+      "sampleListingId": 999879,
+      "sampleTitle": "Villa individuelle à chott Mariem",
+      "extractedAt": "2025-08-09T01:38:39.842Z"
+    },
+    "4441": {
+      "id": "4441",
+      "name": "Chatt Erromene, Akouda, Sousse",
+      "propertyCount": 6,
+      "sampleListingId": 838755,
+      "sampleTitle": "Maison manque de quelque retouche chott romaine",
+      "extractedAt": "2025-08-09T01:20:14.676Z"
+    },
+    "4443": {
+      "id": "4443",
+      "name": "Foukaia, Akouda, Sousse",
+      "propertyCount": 2,
+      "sampleListingId": 775549,
+      "sampleTitle": "Villa inachevée",
+      "extractedAt": "2025-08-09T01:56:19.837Z"
+    },
+    "4444": {
+      "locationName": "Tantana, Akouda, Sousse",
+      "listingId": 1023335,
+      "sampleTitle": "Opportunité à tantana chott meriem",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:03:17.713Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "4445": {
+      "id": "4445",
+      "name": "Ain Errahma, Bouficha, Sousse",
+      "propertyCount": 3,
+      "sampleListingId": 845294,
+      "sampleTitle": "فيلا 400 م للبيع",
+      "extractedAt": "2025-08-09T02:04:50.131Z"
+    },
+    "4446": {
+      "id": "4446",
+      "name": "Bouficha, Bouficha, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1081948,
+      "sampleTitle": "A vendre",
+      "extractedAt": "2025-08-09T01:45:21.685Z"
+    },
+    "4454": {
+      "id": "4454",
+      "name": "Essalloum, Bouficha, Sousse",
+      "propertyCount": 12,
+      "sampleListingId": 777720,
+      "sampleTitle": "Bonne affaire appartement vue sur mer à 68 MD",
+      "extractedAt": "2025-08-09T02:04:29.441Z"
+    },
+    "4457": {
+      "id": "4457",
+      "name": "Sidi Khelifa, Bouficha, Sousse",
+      "propertyCount": 2,
+      "sampleListingId": 959319,
+      "sampleTitle": "Maison inachevee",
+      "extractedAt": "2025-08-09T02:04:42.080Z"
+    },
+    "4458": {
+      "id": "4458",
+      "name": "Sidi Mtir, Bouficha, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 931892,
+      "sampleTitle": "Villa s3 et maison s2 10min de hammamet sud",
+      "extractedAt": "2025-08-09T01:27:25.021Z"
+    },
+    "4459": {
+      "id": "4459",
+      "name": "Sidi Said, Bouficha, Sousse",
+      "propertyCount": 2,
+      "sampleListingId": 1050261,
+      "sampleTitle": "Maison et café a vendre",
+      "extractedAt": "2025-08-09T01:44:56.862Z"
+    },
+    "4479": {
+      "id": "4479",
+      "name": "Enfidha, Enfidha, Sousse",
+      "propertyCount": 16,
+      "sampleListingId": 834652,
+      "sampleTitle": "Maison haut standing et un appartement à enfidha c",
+      "extractedAt": "2025-08-09T02:26:02.828Z"
+    },
+    "4495": {
+      "id": "4495",
+      "name": "Route de la Plage, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1082476,
+      "sampleTitle": "Studios au 2éme position de la plage hammem sousse",
+      "extractedAt": "2025-08-09T01:21:36.846Z"
+    },
+    "4499": {
+      "id": "4499",
+      "name": "El Menchia, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 580784,
+      "sampleTitle": "Bel S2 en vente à Menchia Hamem Sousse",
+      "extractedAt": "2025-08-09T01:21:27.822Z"
+    },
+    "4502": {
+      "id": "4502",
+      "name": "El Kantaoui, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 772942,
+      "sampleTitle": "À vendre appartement meublé lumineux calme vue sur mer à El Kantaoui",
+      "extractedAt": "2025-08-09T01:21:11.284Z"
+    },
+    "4503": {
+      "id": "4503",
+      "name": "Hammam Sousse, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1084642,
+      "sampleTitle": "Maison inachevé",
+      "extractedAt": "2025-08-09T01:20:47.415Z"
+    },
+    "4504": {
+      "id": "4504",
+      "name": "Hammam Sousse Ghrabi, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1082418,
+      "sampleTitle": "A vendre une villa indépendante à Ghrabi",
+      "extractedAt": "2025-08-09T01:20:55.509Z"
+    },
+    "4505": {
+      "id": "4505",
+      "name": "Hergla Corniche, Hergla, Sousse",
+      "propertyCount": 18,
+      "sampleListingId": 1083156,
+      "sampleTitle": "Appartement s+1 en vente",
+      "extractedAt": "2025-08-09T02:14:13.025Z"
+    },
+    "4506": {
+      "id": "4506",
+      "name": "Hergla, Hergla, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 964398,
+      "sampleTitle": "A vendre villa a Hergla 550m",
+      "extractedAt": "2025-08-09T02:14:21.155Z"
+    },
+    "4526": {
+      "id": "4526",
+      "name": "Kalâa Kebira, Kalâa Kebira, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1083690,
+      "sampleTitle": "Des villas avec piscine neuf à kalaa kebira",
+      "extractedAt": "2025-08-09T01:20:39.214Z"
+    },
+    "4530": {
+      "id": "4530",
+      "name": "s+8+, Typologie",
+      "propertyCount": 2,
+      "sampleListingId": 1069066,
+      "sampleTitle": "Maison inachevée  style américain",
+      "extractedAt": "2025-08-09T01:37:48.122Z"
+    },
+    "4531": {
+      "locationName": "Cité El Manezeh, Kalâa Seghira, Sousse",
+      "listingId": 1070881,
+      "sampleTitle": "à vendre villa cite manazeh",
+      "propertyCount": 7,
+      "extractedAt": "2025-08-09T20:04:02.590Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 7,
+      "isRetry": true
+    },
+    "4532": {
+      "locationName": "Sabbaghine, Kalâa Seghira, Sousse",
+      "listingId": 744162,
+      "sampleTitle": "Titre blue",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:05:04.407Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "4533": {
+      "id": "4533",
+      "name": "Ennagr, Kalâa Seghira, Sousse",
+      "propertyCount": 1,
+      "sampleListingId": 664129,
+      "sampleTitle": "Maison kalaa sghira ennagr",
+      "extractedAt": "2025-08-09T01:56:49.597Z"
+    },
+    "4534": {
+      "id": "4534",
+      "name": "Kalâa Seghira, Kalâa Seghira, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 977866,
+      "sampleTitle": "Immeuble nouvelle Construction à Kalàa Sghira",
+      "extractedAt": "2025-08-09T01:38:12.107Z"
+    },
+    "4539": {
+      "id": "4539",
+      "name": "Kondar, Kondar, Sousse",
+      "propertyCount": 2,
+      "sampleListingId": 882005,
+      "sampleTitle": "Villa de maitre a kondar",
+      "extractedAt": "2025-08-09T02:22:34.016Z"
+    },
+    "4543": {
+      "locationName": "Beni Kalthoum, M'saken, Sousse",
+      "listingId": 903972,
+      "sampleTitle": "Un maison de votre choix!",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:11:56.341Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "4556": {
+      "id": "4556",
+      "name": "Messadine, M'saken, Sousse",
+      "propertyCount": 6,
+      "sampleListingId": 1038343,
+      "sampleTitle": "للبيع – قطع أراضٍ في المسعدين – سوسة",
+      "extractedAt": "2025-08-09T02:13:22.810Z"
+    },
+    "4557": {
+      "id": "4557",
+      "name": "Moureddine, M'saken, Sousse",
+      "propertyCount": 3,
+      "sampleListingId": 810887,
+      "sampleTitle": "دار للبيع",
+      "extractedAt": "2025-08-09T02:14:55.753Z"
+    },
+    "4558": {
+      "locationName": "M'saken, M'saken, Sousse",
+      "listingId": 598151,
+      "sampleTitle": "maison",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:11:12.869Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "4572": {
+      "id": "4572",
+      "name": "s+8+, Typologie",
+      "propertyCount": 5,
+      "sampleListingId": 937198,
+      "sampleTitle": "Maison d'hôtes à Sidi Bouali prix intéressant",
+      "extractedAt": "2025-08-09T01:56:36.163Z"
+    },
+    "4586": {
+      "id": "4586",
+      "name": "Cité Jawhara, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1087214,
+      "sampleTitle": "A Vendre Penthouse Vue Panoramique",
+      "extractedAt": "2025-08-09T01:40:10.268Z"
+    },
+    "4587": {
+      "id": "4587",
+      "name": "Sfaya, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 600303,
+      "sampleTitle": "Spacieux appartement s3 prés de clinique essalem",
+      "extractedAt": "2025-08-09T01:39:21.826Z"
+    },
+    "4588": {
+      "locationName": "Oued El Kharroub, Sousse Jawhara, Sousse",
+      "listingId": 1034178,
+      "sampleTitle": "Maison (S+3)",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:05:17.797Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "4590": {
+      "id": "4590",
+      "name": "Sahloul 1, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1054942,
+      "sampleTitle": "À Vendre – Spacieux Appartement S+2 à Sahloul – Opportunité",
+      "extractedAt": "2025-08-09T01:22:03.657Z"
+    },
+    "4593": {
+      "id": "4593",
+      "name": "Khezama Ouest, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 953708,
+      "sampleTitle": "Villa plain pied à khzema prés café el classico",
+      "extractedAt": "2025-08-09T01:22:28.666Z"
+    },
+    "4594": {
+      "id": "4594",
+      "name": "Sahloul 2, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 943746,
+      "sampleTitle": "a vendre s2 sahloul 2 haut standing meublé titre blue individuale",
+      "extractedAt": "2025-08-09T01:21:54.595Z"
+    },
+    "4596": {
+      "id": "4596",
+      "name": "Khezama, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 639878,
+      "sampleTitle": "Vendre appt S+1 à Khézama, sousse.",
+      "extractedAt": "2025-08-09T01:38:21.328Z"
+    },
+    "4597": {
+      "id": "4597",
+      "name": "Cité Errayhane, Sousse Riadh, Sousse",
+      "propertyCount": 6,
+      "sampleListingId": 940767,
+      "sampleTitle": "(S+2) Directe Promoteur à Cité Rayhanne",
+      "extractedAt": "2025-08-09T01:55:41.770Z"
+    },
+    "4598": {
+      "id": "4598",
+      "name": "Hammem maarouf, Sousse Riadh, Sousse",
+      "propertyCount": 1,
+      "sampleListingId": 1076552,
+      "sampleTitle": "Maison à vendre – Hammem Maârouf, Riadh Sousse",
+      "extractedAt": "2025-08-09T01:39:30.072Z"
+    },
+    "4600": {
+      "id": "4600",
+      "name": "Ksibet Sousse, Sousse Riadh, Sousse",
+      "propertyCount": 9,
+      "sampleListingId": 767716,
+      "sampleTitle": "Terrain ksibet sousse zone villa",
+      "extractedAt": "2025-08-09T02:13:31.452Z"
+    },
+    "4601": {
+      "id": "4601",
+      "name": "Sousse Ezzouhour, Sousse Riadh, Sousse",
+      "propertyCount": 4,
+      "sampleListingId": 1009919,
+      "sampleTitle": "🏡 À VENDRE | Maison à Petit Prix à cite EZZOUHOUR SOUSSE – Idéale pour les Petits Budgets ! 🏡/🏡 **للبيع | دار بسوم لقطة في حي هادئ – مثالية للعائلات والميزانيات المعقولة!** 🏡 ! 🏡",
+      "extractedAt": "2025-08-09T01:55:57.735Z"
+    },
+    "4602": {
+      "id": "4602",
+      "name": "Cité Riadh 1, Sousse Riadh, Sousse",
+      "propertyCount": 10,
+      "sampleListingId": 1023798,
+      "sampleTitle": "Villa de charme style américain avec jardin, au cœur d’un quartier résidentiel à Riadh 1",
+      "extractedAt": "2025-08-09T01:57:31.680Z"
+    },
+    "4603": {
+      "id": "4603",
+      "name": "Thrayette, Sousse Riadh, Sousse",
+      "propertyCount": 3,
+      "sampleListingId": 929374,
+      "sampleTitle": "بيع منزل غير مكتمل للبناء في حي جديد و جميل مساحة 208م",
+      "extractedAt": "2025-08-09T02:13:47.974Z"
+    },
+    "4604": {
+      "id": "4604",
+      "name": "Zaouiet Sousse, Sousse Riadh, Sousse",
+      "propertyCount": 13,
+      "sampleListingId": 997127,
+      "sampleTitle": "Bel appartement à vendre à Zaouiet Sousse. Superficie 150 m²",
+      "extractedAt": "2025-08-09T02:22:05.464Z"
+    },
+    "4605": {
+      "id": "4605",
+      "name": "Cité Boukhzar, Sousse Ville, Sousse",
+      "propertyCount": 4,
+      "sampleListingId": 1047897,
+      "sampleTitle": "A céder une villa rdc récemment construite",
+      "extractedAt": "2025-08-09T01:57:23.387Z"
+    },
+    "4607": {
+      "id": "4607",
+      "name": "Cité Ezzahra, Sousse Ville, Sousse",
+      "propertyCount": 8,
+      "sampleListingId": 1081243,
+      "sampleTitle": "À VENDRE – Villa Plain pied à Cité Zahra SOUSSE",
+      "extractedAt": "2025-08-09T01:57:39.734Z"
+    },
+    "4609": {
+      "id": "4609",
+      "name": "Cité Hached, Sousse Ville, Sousse",
+      "propertyCount": 3,
+      "sampleListingId": 855593,
+      "sampleTitle": "Villa de 300 m2 couvert sur un terrain de 1000 m2",
+      "extractedAt": "2025-08-09T01:40:01.929Z"
+    },
+    "4610": {
+      "id": "4610",
+      "name": "La médina, Sousse Ville, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1078476,
+      "sampleTitle": "Maison R+1",
+      "extractedAt": "2025-08-09T01:57:05.910Z"
+    },
+    "4612": {
+      "id": "4612",
+      "name": "Beb bhar, Sousse Ville, Sousse",
+      "propertyCount": 4,
+      "sampleListingId": 744498,
+      "sampleTitle": "Ancien #Maison à démolir Prés #l'école de Soeur #Beb Bhar",
+      "extractedAt": "2025-08-09T01:58:44.547Z"
+    },
+    "4613": {
+      "id": "4613",
+      "name": "Cité Militaire, Sousse Ville, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1045911,
+      "sampleTitle": "À 𝐕𝐄𝐍𝐃𝐑𝐄  𝐒+𝟐 📌𝐂𝐢𝐭é 𝐆𝐚𝐳𝐞𝐫𝐧𝐞 𝐒𝐨𝐮𝐬𝐬𝐞 𝟏𝟓𝟖 𝐃𝐓💰📞𝟓|",
+      "extractedAt": "2025-08-09T01:57:14.197Z"
+    },
+    "4615": {
+      "id": "4615",
+      "name": "Senghor, Sousse Ville, Sousse",
+      "propertyCount": 6,
+      "sampleListingId": 994238,
+      "sampleTitle": "Un appartement s+3 à vendre situé à Garanemssa",
+      "extractedAt": "2025-08-09T01:40:34.160Z"
+    },
+    "4616": {
+      "id": "4616",
+      "name": "Sousse Centre Ville, Sousse Ville, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 707044,
+      "sampleTitle": "Beau Appartement",
+      "extractedAt": "2025-08-09T01:56:57.836Z"
+    },
+    "4617": {
+      "id": "4617",
+      "name": "Sousse Corniche, Sousse Ville, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1070385,
+      "sampleTitle": "Occasion à Saisir: Derniers Appartements à vendre",
+      "extractedAt": "2025-08-09T01:40:42.300Z"
+    },
+    "4808": {
+      "id": "4808",
+      "name": "Bab Bhar, Bab Bhar, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 711192,
+      "sampleTitle": "Une grande maison dans la ville arabe et le marché de la mos",
+      "extractedAt": "2025-08-09T02:16:22.762Z"
+    },
+    "4809": {
+      "id": "4809",
+      "name": "Bab El Jazira, Bab Bhar, Tunis",
+      "propertyCount": 9,
+      "sampleListingId": 939061,
+      "sampleTitle": "Appartement",
+      "extractedAt": "2025-08-09T02:24:04.639Z"
+    },
+    "4812": {
+      "id": "4812",
+      "name": "Montplaisir, Bab Bhar, Tunis",
+      "propertyCount": 11,
+      "sampleListingId": 861809,
+      "sampleTitle": "Une suberbe villa à monplaisir",
+      "extractedAt": "2025-08-09T01:59:43.541Z"
+    },
+    "4813": {
+      "id": "4813",
+      "name": "Le Passage, Bab Bhar, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 858949,
+      "sampleTitle": "Le passage villa rue borj bourguiba",
+      "extractedAt": "2025-08-09T02:00:32.910Z"
+    },
+    "4816": {
+      "id": "4816",
+      "name": "Bab El Akoues, Bab Souika, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 1080786,
+      "sampleTitle": "Très bonne affaire",
+      "extractedAt": "2025-08-09T02:15:55.890Z"
+    },
+    "4818": {
+      "id": "4818",
+      "name": "Bab El Assel, Bab Souika, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 1023922,
+      "sampleTitle": "maison et terrain",
+      "extractedAt": "2025-08-09T02:00:16.678Z"
+    },
+    "4819": {
+      "id": "4819",
+      "name": "Bab El Khadra, Bab Souika, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 123203,
+      "sampleTitle": "Titre foncier de l’immeuble",
+      "extractedAt": "2025-08-09T02:00:08.583Z"
+    },
+    "4820": {
+      "id": "4820",
+      "name": "Bab Saadoun, Bab Souika, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1084335,
+      "sampleTitle": "Grande Maison 7 Chambres 2 Locaux À Beb Saadoun",
+      "extractedAt": "2025-08-09T02:06:19.300Z"
+    },
+    "4821": {
+      "id": "4821",
+      "name": "Bab Sidi Abdessalem, Bab Souika, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 861738,
+      "sampleTitle": "Maison à Vendre",
+      "extractedAt": "2025-08-09T02:06:29.727Z"
+    },
+    "4822": {
+      "id": "4822",
+      "name": "Bab Souika, Bab Souika, Tunis",
+      "propertyCount": 18,
+      "sampleListingId": 744580,
+      "sampleTitle": "Maison arabe",
+      "extractedAt": "2025-08-09T02:15:47.686Z"
+    },
+    "4823": {
+      "id": "4823",
+      "name": "Borj Zouara, Bab Souika, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 777825,
+      "sampleTitle": "A Vendre Terrain &Villa à Bab Saadoun",
+      "extractedAt": "2025-08-09T02:08:03.399Z"
+    },
+    "4824": {
+      "id": "4824",
+      "name": "El Halfaouine, Bab Souika, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 703101,
+      "sampleTitle": "Maison arabe traditionnelle halfaouine tunis",
+      "extractedAt": "2025-08-09T02:15:30.806Z"
+    },
+    "4825": {
+      "id": "4825",
+      "name": "Hammam El Remimi, Bab Souika, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 987308,
+      "sampleTitle": "Charmante maison arabe à vendre composée de deux étages avec un studio avec une entrée indépendante:",
+      "extractedAt": "2025-08-09T02:15:38.926Z"
+    },
+    "4827": {
+      "id": "4827",
+      "name": "Tronja, Bab Souika, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 901874,
+      "sampleTitle": "Vente appartement au centre ville",
+      "extractedAt": "2025-08-09T02:16:03.986Z"
+    },
+    "4829": {
+      "id": "4829",
+      "name": "Amilcar, Carthage, Tunis",
+      "propertyCount": 10,
+      "sampleListingId": 1036751,
+      "sampleTitle": "A vendre villa à carthage amilcar",
+      "extractedAt": "2025-08-09T02:11:54.769Z"
+    },
+    "4830": {
+      "id": "4830",
+      "name": "Carthage Byrsa, Carthage, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1007630,
+      "sampleTitle": "Entre Carthage Byrsa et Carthage Salambo sur l’Avenue principale Habib Bourguiba : A Vendre Villa sur deux niveaux séparés",
+      "extractedAt": "2025-08-09T01:53:48.340Z"
+    },
+    "4832": {
+      "id": "4832",
+      "name": "Carthage, Carthage, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1058511,
+      "sampleTitle": "🏡 À VENDRE – VILLA DE CHARME À CARTHAGE",
+      "extractedAt": "2025-08-09T01:54:28.659Z"
+    },
+    "4834": {
+      "id": "4834",
+      "name": "Cité Mohamed Ali, Carthage, Tunis",
+      "propertyCount": 13,
+      "sampleListingId": 1061269,
+      "sampleTitle": "maison à vendre",
+      "extractedAt": "2025-08-09T01:51:23.092Z"
+    },
+    "4835": {
+      "id": "4835",
+      "name": "El Yasmina, Carthage, Tunis",
+      "propertyCount": 19,
+      "sampleListingId": 12724,
+      "sampleTitle": "Immeuble INVEST Jakarta à Carthage Yasmina",
+      "extractedAt": "2025-08-09T01:52:35.428Z"
+    },
+    "4836": {
+      "id": "4836",
+      "name": "Salambo, Carthage, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 725583,
+      "sampleTitle": "Villa Hannon à Vendre à Carthage Salambo",
+      "extractedAt": "2025-08-09T02:09:52.107Z"
+    },
+    "4837": {
+      "id": "4837",
+      "name": "Sidi Bousaid, Carthage, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1001855,
+      "sampleTitle": "À VENDRE : Un appartement S+2 situé à SIDI BOUSSAID",
+      "extractedAt": "2025-08-09T02:12:22.105Z"
+    },
+    "4838": {
+      "id": "4838",
+      "name": "Cité El Khadra, Cité El Khadra, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1083063,
+      "sampleTitle": "S2 a hay el khadra",
+      "extractedAt": "2025-08-09T01:55:08.598Z"
+    },
+    "4840": {
+      "id": "4840",
+      "name": "Cité Jardins, Cité El Khadra, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 23465,
+      "sampleTitle": "Villa Louis Braille",
+      "extractedAt": "2025-08-09T01:43:25.822Z"
+    },
+    "4841": {
+      "id": "4841",
+      "name": "Cité Olympique, Cité El Khadra, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1033638,
+      "sampleTitle": "Appt S3 Rénové Cité Olympique, Tunis",
+      "extractedAt": "2025-08-09T01:42:59.627Z"
+    },
+    "4846": {
+      "id": "4846",
+      "name": "Cité Bougatfa, El Hrairia, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 905362,
+      "sampleTitle": "Magnifique  propriété avec villa de maître à tunis,",
+      "extractedAt": "2025-08-09T02:28:51.305Z"
+    },
+    "4848": {
+      "id": "4848",
+      "name": "Cité El Mechtel, El Hrairia, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 903848,
+      "sampleTitle": "Ventes d'une d'un bloc de 3 appartements",
+      "extractedAt": "2025-08-09T02:28:09.805Z"
+    },
+    "4850": {
+      "id": "4850",
+      "name": "Cité Essalama, El Hrairia, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 820480,
+      "sampleTitle": "Maison à terminer travaux en cours",
+      "extractedAt": "2025-08-09T02:28:34.689Z"
+    },
+    "4855": {
+      "id": "4855",
+      "name": "El Hrairia, El Hrairia, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 1076547,
+      "sampleTitle": "TRES BONNE OCCASION - APPARTEMENT A VENDRE",
+      "extractedAt": "2025-08-09T02:28:26.527Z"
+    },
+    "4856": {
+      "id": "4856",
+      "name": "Ezzahrouni, El Hrairia, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 314830,
+      "sampleTitle": "A vendre",
+      "extractedAt": "2025-08-09T02:28:18.091Z"
+    },
+    "4857": {
+      "id": "4857",
+      "name": "Cité Ezzouhour 5, El Hrairia, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 973951,
+      "sampleTitle": "دار للبيع",
+      "extractedAt": "2025-08-09T02:19:51.342Z"
+    },
+    "4859": {
+      "id": "4859",
+      "name": "El Kabaria, El Kabaria, Tunis",
+      "propertyCount": 8,
+      "sampleListingId": 551292,
+      "sampleTitle": "منزل للبيع بالكبارية",
+      "extractedAt": "2025-08-09T02:50:52.435Z"
+    },
+    "4864": {
+      "id": "4864",
+      "name": "El Ouardia 4, El Kabaria, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 1082275,
+      "sampleTitle": "🏠 منزل للبيع في الوردية 4 - تونس العاصمة",
+      "extractedAt": "2025-08-09T02:50:19.955Z"
+    },
+    "4865": {
+      "id": "4865",
+      "name": "Cité Ibn Sina, El Kabaria, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1081576,
+      "sampleTitle": "Maison à vendre à Ibn Sina",
+      "extractedAt": "2025-08-09T02:50:44.369Z"
+    },
+    "4868": {
+      "id": "4868",
+      "name": "Le Kram, Le Kram, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1078160,
+      "sampleTitle": "À VENDRE – Appartement S+2 Haut Standing au 1 er étage – Résidence FIRST",
+      "extractedAt": "2025-08-09T02:10:40.487Z"
+    },
+    "4869": {
+      "id": "4869",
+      "name": "Le Kram Est, Le Kram, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1048866,
+      "sampleTitle": "vente appartement kram-est côté plage",
+      "extractedAt": "2025-08-09T02:10:00.115Z"
+    },
+    "4870": {
+      "id": "4870",
+      "name": "Le Kram Ouest, Le Kram, Tunis",
+      "propertyCount": 16,
+      "sampleListingId": 964798,
+      "sampleTitle": "A vendre une maison sur trois niveau bâtie sur terrain 100m2 au le kram ouest",
+      "extractedAt": "2025-08-09T01:53:15.626Z"
+    },
+    "4871": {
+      "id": "4871",
+      "name": "Sidi Amor, Le Kram, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1075670,
+      "sampleTitle": "Bel appartement à vendre à Sidi Amor. 4 pièces confortables",
+      "extractedAt": "2025-08-09T01:52:19.777Z"
+    },
+    "4875": {
+      "id": "4875",
+      "name": "Cité Mahrajene, El Menzah, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 972359,
+      "sampleTitle": "Vente appartement s3 a cité mahragène",
+      "extractedAt": "2025-08-09T01:43:17.696Z"
+    },
+    "4879": {
+      "id": "4879",
+      "name": "El Manar 2, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 636567,
+      "sampleTitle": "s plus 3 a el manar 2 wb486",
+      "extractedAt": "2025-08-09T01:29:19.582Z"
+    },
+    "4880": {
+      "id": "4880",
+      "name": "El Menzah 1, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 947469,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T01:41:39.198Z"
+    },
+    "4881": {
+      "id": "4881",
+      "name": "Jardins d'El Menzah 2, Mnihla, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1053748,
+      "sampleTitle": "Jardin menzah2 vnt s0 50m2 ppss",
+      "extractedAt": "2025-08-09T01:30:24.347Z"
+    },
+    "4882": {
+      "locationName": "Jardins d'El Menzah 3, Mnihla, Ariana",
+      "listingId": 478510,
+      "sampleTitle": "Villa 400 r+2 jardin el menzah",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:05:28.434Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "4883": {
+      "id": "4883",
+      "name": "El Menzah 4, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 786567,
+      "sampleTitle": "s plus 3 a el manzah 4 wb3801",
+      "extractedAt": "2025-08-09T01:24:26.454Z"
+    },
+    "4885": {
+      "id": "4885",
+      "name": "Mutuelle Ville, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 924284,
+      "sampleTitle": "A VENDRE VILLA A MUTUELLEVILLE",
+      "extractedAt": "2025-08-09T01:42:27.374Z"
+    },
+    "4886": {
+      "id": "4886",
+      "name": "Belvédère, El Menzah, Tunis",
+      "propertyCount": 19,
+      "sampleListingId": 701240,
+      "sampleTitle": "Terrain Villa CHRISTOPHER à Belvédère",
+      "extractedAt": "2025-08-09T01:59:26.968Z"
+    },
+    "4890": {
+      "id": "4890",
+      "name": "Cité des Oliviers, El Omrane, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 976703,
+      "sampleTitle": "Maison a vendre a rénover Particulier",
+      "extractedAt": "2025-08-09T01:46:55.213Z"
+    },
+    "4894": {
+      "id": "4894",
+      "name": "El Omrane, El Omrane, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 735385,
+      "sampleTitle": "Villa Dalel à vendre à Omrane",
+      "extractedAt": "2025-08-09T01:59:35.320Z"
+    },
+    "4896": {
+      "id": "4896",
+      "name": "Ras Tabia, El Omrane, Tunis",
+      "propertyCount": 15,
+      "sampleListingId": 842439,
+      "sampleTitle": "S+2 en très bon état + Cellier + Parking",
+      "extractedAt": "2025-08-09T02:06:10.019Z"
+    },
+    "4897": {
+      "id": "4897",
+      "name": "Cité EL Intilaka, El Omrane Supérieur, Tunis",
+      "propertyCount": 18,
+      "sampleListingId": 1083751,
+      "sampleTitle": "Maison à 2 niveaux",
+      "extractedAt": "2025-08-09T01:45:50.333Z"
+    },
+    "4898": {
+      "id": "4898",
+      "name": "Cité Ibn Khaldoun, El Omrane Supérieur, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 964973,
+      "sampleTitle": "2 appartements s2 a cité ibn khaldoun",
+      "extractedAt": "2025-08-09T01:47:37.302Z"
+    },
+    "4901": {
+      "id": "4901",
+      "name": "El Omrane Supérieur, El Omrane Supérieur, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 80998,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T01:29:27.719Z"
+    },
+    "4902": {
+      "id": "4902",
+      "name": "Rommana, El Omrane Supérieur, Tunis",
+      "propertyCount": 7,
+      "sampleListingId": 955300,
+      "sampleTitle": "Superbe Villa de coin de 551m² à VENDRE",
+      "extractedAt": "2025-08-09T01:48:17.275Z"
+    },
+    "4903": {
+      "id": "4903",
+      "name": "Bellevue, El Ouardia, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 25262,
+      "sampleTitle": "A VENDRE: villa haut standing à Bellevue",
+      "extractedAt": "2025-08-09T02:44:54.034Z"
+    },
+    "4906": {
+      "id": "4906",
+      "name": "Cité Mohamed Ali, El Ouardia, Tunis",
+      "propertyCount": 2,
+      "sampleListingId": 839963,
+      "sampleTitle": "À vendre MaisonStudio",
+      "extractedAt": "2025-08-09T02:50:03.357Z"
+    },
+    "4907": {
+      "id": "4907",
+      "name": "Dibouzville, El Ouardia, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 675747,
+      "sampleTitle": "A VENDRE: Villa à Dubosville",
+      "extractedAt": "2025-08-09T02:40:23.246Z"
+    },
+    "4908": {
+      "id": "4908",
+      "name": "El Ouardia 1, El Ouardia, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1081789,
+      "sampleTitle": "A vendre Appartement s+3 à ouardia 1",
+      "extractedAt": "2025-08-09T02:45:34.351Z"
+    },
+    "4909": {
+      "id": "4909",
+      "name": "Lacagna, El Ouardia, Tunis",
+      "propertyCount": 11,
+      "sampleListingId": 1079661,
+      "sampleTitle": "Villa toscana ref v2954",
+      "extractedAt": "2025-08-09T02:45:42.485Z"
+    },
+    "4912": {
+      "id": "4912",
+      "name": "Monome, El Ouardia, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 78061,
+      "sampleTitle": "Appart Nantes à EL Ouardia",
+      "extractedAt": "2025-08-09T02:44:46.029Z"
+    },
+    "4913": {
+      "id": "4913",
+      "name": "Sijoumi, Sijoumi, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 579548,
+      "sampleTitle": "Urgent vend maison familiale 2 etages",
+      "extractedAt": "2025-08-09T02:34:10.529Z"
+    },
+    "4914": {
+      "id": "4914",
+      "name": "El Mellassine, Sijoumi, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1075652,
+      "sampleTitle": "Local de coin 300 m2 en face station de train Mellaaaine",
+      "extractedAt": "2025-08-09T02:19:10.104Z"
+    },
+    "4915": {
+      "id": "4915",
+      "name": "Cité du Jardin, Ettahrir, Tunis",
+      "propertyCount": 9,
+      "sampleListingId": 962135,
+      "sampleTitle": "Appartement à cité el hadika tunis",
+      "extractedAt": "2025-08-09T01:48:33.289Z"
+    },
+    "4918": {
+      "id": "4918",
+      "name": "Cité Ettahrir Supérieur, Ettahrir, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 1070217,
+      "sampleTitle": "A vendre Villa RDC (S S +3)  + Etage Independant (H+4) +3 locaux commerciaux + Studio (S+0)",
+      "extractedAt": "2025-08-09T01:47:53.301Z"
+    },
+    "4919": {
+      "id": "4919",
+      "name": "Cité Ettahrir, Ettahrir, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 808916,
+      "sampleTitle": "Maison prés de toutes les commodités à Ettahrir 1",
+      "extractedAt": "2025-08-09T01:47:13.576Z"
+    },
+    "4923": {
+      "id": "4923",
+      "name": "Cité Essaada, Ezzouhour, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 767425,
+      "sampleTitle": "A Vendre Villa Sis au Cité Saada - Bardo",
+      "extractedAt": "2025-08-09T02:19:18.244Z"
+    },
+    "4924": {
+      "id": "4924",
+      "name": "Cité Essomrane, Ezzouhour, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 1080640,
+      "sampleTitle": "Appartement à vendre",
+      "extractedAt": "2025-08-09T02:08:26.923Z"
+    },
+    "4926": {
+      "id": "4926",
+      "name": "Cité Ezzouhour 4, Ezzouhour, Tunis",
+      "propertyCount": 13,
+      "sampleListingId": 1081829,
+      "sampleTitle": "طابق أرضي من منزل للبيع",
+      "extractedAt": "2025-08-09T02:20:15.860Z"
+    },
+    "4930": {
+      "id": "4930",
+      "name": "Cité El Fath, Djebel Jelloud, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 1012200,
+      "sampleTitle": "appartement",
+      "extractedAt": "2025-08-09T02:40:31.482Z"
+    },
+    "4932": {
+      "id": "4932",
+      "name": "Djebel Jelloud, Djebel Jelloud, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 1082004,
+      "sampleTitle": "Maison a vendre",
+      "extractedAt": "2025-08-09T02:39:56.687Z"
+    },
+    "4933": {
+      "id": "4933",
+      "name": "Sidi Fathallah, Djebel Jelloud, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1026010,
+      "sampleTitle": "A saisir",
+      "extractedAt": "2025-08-09T02:40:04.837Z"
+    },
+    "4934": {
+      "id": "4934",
+      "name": "Casino La Goulette, La Goulette, Tunis",
+      "propertyCount": 11,
+      "sampleListingId": 1082042,
+      "sampleTitle": "A vendre appartement vue sur mer à la goulette",
+      "extractedAt": "2025-08-09T02:10:56.668Z"
+    },
+    "4938": {
+      "id": "4938",
+      "name": "Khaireddine, La Goulette, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1086519,
+      "sampleTitle": "Villa a khaireddine 395 2",
+      "extractedAt": "2025-08-09T02:10:48.653Z"
+    },
+    "4939": {
+      "id": "4939",
+      "name": "La Goulette, La Goulette, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 997297,
+      "sampleTitle": "Vente Immeuble à la goulette",
+      "extractedAt": "2025-08-09T02:12:03.409Z"
+    },
+    "4940": {
+      "id": "4940",
+      "name": "La Goulette Nouvelle, La Goulette, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 995926,
+      "sampleTitle": "Appartement a la goulette nouvelle",
+      "extractedAt": "2025-08-09T02:11:12.514Z"
+    },
+    "4941": {
+      "locationName": "La Goulette Port, La Goulette, Tunis",
+      "listingId": 7887,
+      "sampleTitle": "Appart  très propre",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:09:45.867Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "4942": {
+      "id": "4942",
+      "name": "Lac 1, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1084401,
+      "sampleTitle": "À VENDRE  – APPARTEMENT  USAGE BUREAUTIQUE Lac 1  3ème étage avec ascenseur + place parking",
+      "extractedAt": "2025-08-09T01:36:47.054Z"
+    },
+    "4946": {
+      "id": "4946",
+      "name": "Cité Bhar Lazreg, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 815267,
+      "sampleTitle": "La Marsa Bhar Lazreg pas loin de La Soukra Sidi Fraj : A Vendre Villa trés Haut Standing sur un seul niveau",
+      "extractedAt": "2025-08-09T01:33:51.559Z"
+    },
+    "4947": {
+      "id": "4947",
+      "name": "Cité Borj El Houki, La Marsa, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 885904,
+      "sampleTitle": "Villa À la marsa sidi abed el aziz citÉ borj houki",
+      "extractedAt": "2025-08-09T01:51:06.763Z"
+    },
+    "4950": {
+      "id": "4950",
+      "name": "Cité des Juges, La Marsa, Tunis",
+      "propertyCount": 16,
+      "sampleListingId": 1078817,
+      "sampleTitle": "Un appartement S2",
+      "extractedAt": "2025-08-09T01:51:55.268Z"
+    },
+    "4953": {
+      "id": "4953",
+      "name": "Cité du Stade, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1087021,
+      "sampleTitle": "Immeuble Haider à Vendre à Cité stade",
+      "extractedAt": "2025-08-09T01:50:15.083Z"
+    },
+    "4956": {
+      "id": "4956",
+      "name": "Cité El Hana, La Marsa, Tunis",
+      "propertyCount": 15,
+      "sampleListingId": 931968,
+      "sampleTitle": "Magnifique villa à vendre à Cité El Hana. 9 chambres. Vue exceptionnelle sur les montagnes, porte blindée",
+      "extractedAt": "2025-08-09T01:49:58.510Z"
+    },
+    "4957": {
+      "locationName": "Cité El Khalil, La Marsa, Tunis",
+      "listingId": 1055901,
+      "sampleTitle": "Immeuble trois appartement",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:01:01.992Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "4959": {
+      "id": "4959",
+      "name": "Cité El Moez, La Marsa, Tunis",
+      "propertyCount": 7,
+      "sampleListingId": 1082838,
+      "sampleTitle": "S2 en vente",
+      "extractedAt": "2025-08-09T01:49:34.479Z"
+    },
+    "4963": {
+      "id": "4963",
+      "name": "Cité Erriadh, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 614377,
+      "sampleTitle": "Villa Amata à Cité Ennasr La Marsa",
+      "extractedAt": "2025-08-09T01:50:06.630Z"
+    },
+    "4964": {
+      "id": "4964",
+      "name": "L'Aouina Cité Essalama, La Marsa, Tunis",
+      "propertyCount": 16,
+      "sampleListingId": 1012513,
+      "sampleTitle": "A Vendre Un Appartement s1 Laouina",
+      "extractedAt": "2025-08-09T01:33:11.050Z"
+    },
+    "4965": {
+      "id": "4965",
+      "name": "Jinen Eddonia, La Marsa, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 777767,
+      "sampleTitle": "Magnifique appartement S+3 cote carrefour la Marsa",
+      "extractedAt": "2025-08-09T01:34:23.449Z"
+    },
+    "4971": {
+      "id": "4971",
+      "name": "Gammarth, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1087326,
+      "sampleTitle": "A Vendre s2 vue sur mer à Gammarth",
+      "extractedAt": "2025-08-09T01:51:14.987Z"
+    },
+    "4973": {
+      "id": "4973",
+      "name": "Marsa Safsaf, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 867564,
+      "sampleTitle": "Appartement s4 à marsa ville ref sh011",
+      "extractedAt": "2025-08-09T02:09:27.484Z"
+    },
+    "4974": {
+      "locationName": "Sidi Daoud, La Marsa, Tunis",
+      "listingId": 630371,
+      "sampleTitle": "S1 Gaïa à Vendre à la Marsa",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:02:29.950Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "4975": {
+      "id": "4975",
+      "name": "Bab Bnet, La Médina, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 819132,
+      "sampleTitle": "Bayt el hekma à bab bnat",
+      "extractedAt": "2025-08-09T02:16:40.360Z"
+    },
+    "4976": {
+      "id": "4976",
+      "name": "Bab Jedid, La Médina, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 1069641,
+      "sampleTitle": "Dar/Maison fi Bab Jdid Tunis",
+      "extractedAt": "2025-08-09T02:23:48.163Z"
+    },
+    "4977": {
+      "id": "4977",
+      "name": "Bab Mnara, La Médina, Tunis",
+      "propertyCount": 14,
+      "sampleListingId": 994265,
+      "sampleTitle": "Un immeuble et une maison r+1 a béb mnara",
+      "extractedAt": "2025-08-09T02:24:15.133Z"
+    },
+    "4978": {
+      "id": "4978",
+      "name": "El Hafsia, La Médina, Tunis",
+      "propertyCount": 8,
+      "sampleListingId": 1079819,
+      "sampleTitle": "Appartement Hafsia Tunis prix 75mille",
+      "extractedAt": "2025-08-09T02:16:12.349Z"
+    },
+    "4979": {
+      "id": "4979",
+      "name": "El Médina, La Médina, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1083618,
+      "sampleTitle": "appartement a vendre tunis",
+      "extractedAt": "2025-08-09T02:16:31.155Z"
+    },
+    "4980": {
+      "id": "4980",
+      "name": "El Sabaghine, La Médina, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 976742,
+      "sampleTitle": "Appartement",
+      "extractedAt": "2025-08-09T02:23:40.177Z"
+    },
+    "4981": {
+      "id": "4981",
+      "name": "Cité Ettaoufik, La Médina, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 754110,
+      "sampleTitle": "Maison de haut standing à vendre à Cité Ettaoufik",
+      "extractedAt": "2025-08-09T02:19:26.430Z"
+    },
+    "4986": {
+      "id": "4986",
+      "name": "Tourbet El Bey, La Médina, Tunis",
+      "propertyCount": 7,
+      "sampleListingId": 1063006,
+      "sampleTitle": "À VENDRE Maison à la Médina de Tunis Torbet El bey",
+      "extractedAt": "2025-08-09T02:21:14.762Z"
+    },
+    "4988": {
+      "id": "4988",
+      "name": "Bouchoucha, Le Bardo, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 1076932,
+      "sampleTitle": "Résidence R2 à Bardo",
+      "extractedAt": "2025-08-09T02:07:52.385Z"
+    },
+    "4989": {
+      "id": "4989",
+      "name": "Bardo 2, Le Bardo, Tunis",
+      "propertyCount": 14,
+      "sampleListingId": 1077432,
+      "sampleTitle": "S1 bardo rdc",
+      "extractedAt": "2025-08-09T01:48:41.406Z"
+    },
+    "4992": {
+      "id": "4992",
+      "name": "Essaidia, Le Bardo, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 935911,
+      "sampleTitle": "A Vendre Villa au Bardo Saidiya",
+      "extractedAt": "2025-08-09T02:08:18.263Z"
+    },
+    "4993": {
+      "id": "4993",
+      "name": "Khaznadar, Le Bardo, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 978491,
+      "sampleTitle": "A vendre un appartement S2 à Khaznadar",
+      "extractedAt": "2025-08-09T02:07:44.220Z"
+    },
+    "4994": {
+      "id": "4994",
+      "name": "Ksar Said 1, Le Bardo, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1083242,
+      "sampleTitle": "شقة لبيع داخل عمارة في تونس قصر السعيد",
+      "extractedAt": "2025-08-09T02:06:37.623Z"
+    },
+    "4995": {
+      "id": "4995",
+      "name": "Le Bardo, Le Bardo, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1057334,
+      "sampleTitle": "À vendre Appartement S3 au Bardo",
+      "extractedAt": "2025-08-09T02:06:53.440Z"
+    },
+    "4997": {
+      "id": "4997",
+      "name": "Bab Alioua, Sidi El Béchir, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1072216,
+      "sampleTitle": "Un appartement S3 au premier étage à belle vue",
+      "extractedAt": "2025-08-09T02:24:23.178Z"
+    },
+    "4998": {
+      "id": "4998",
+      "name": "Bab El Falla, Sidi El Béchir, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 697493,
+      "sampleTitle": "S3 FLORES à Bab Fella Montfleury",
+      "extractedAt": "2025-08-09T02:24:31.505Z"
+    },
+    "4999": {
+      "id": "4999",
+      "name": "El Gourjani, Sidi El Béchir, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 837057,
+      "sampleTitle": "Maison terrain garage hammam",
+      "extractedAt": "2025-08-09T02:28:42.819Z"
+    },
+    "5001": {
+      "id": "5001",
+      "name": "Maakel Ezzaim, Sidi El Béchir, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 1080620,
+      "sampleTitle": "Appartement s+1 à Tunis",
+      "extractedAt": "2025-08-09T02:23:32.070Z"
+    },
+    "5002": {
+      "id": "5002",
+      "name": "Montfleury, Sidi El Béchir, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 636392,
+      "sampleTitle": "A VENDRE: Appartement à Montflery",
+      "extractedAt": "2025-08-09T02:34:28.077Z"
+    },
+    "5003": {
+      "id": "5003",
+      "name": "Saida Manoubia, Sidi El Béchir, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 964363,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T02:34:19.528Z"
+    },
+    "5004": {
+      "id": "5004",
+      "name": "Sidi El Béchir, Sidi El Béchir, Tunis",
+      "propertyCount": 8,
+      "sampleListingId": 979056,
+      "sampleTitle": "A vendre maison S+3 à sidi Bechir",
+      "extractedAt": "2025-08-09T02:23:56.333Z"
+    },
+    "5006": {
+      "id": "5006",
+      "name": "Birine, Sidi Hassine, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 1061417,
+      "sampleTitle": "منزل للبيع",
+      "extractedAt": "2025-08-09T02:49:02.620Z"
+    },
+    "5007": {
+      "id": "5007",
+      "name": "Borj Chekir, Sidi Hassine, Tunis",
+      "propertyCount": 2,
+      "sampleListingId": 1077996,
+      "sampleTitle": "A vendre une maison en Tunisie bourg chakir à côté autouroute beja , terrain 448 mètre avec certificat propriétaire aucun crédit R plus 2, un café 120m2 avec gérant libre, plus 3 boutiques, plus Sept appartements F3,F4,F5. \ntéléphoner au 00216/ . \nprix à discuter sur place.",
+      "extractedAt": "2025-08-09T02:48:54.467Z"
+    },
+    "5016": {
+      "id": "5016",
+      "name": "Jayara, Sidi Hassine, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 1074370,
+      "sampleTitle": "Maison en cours de construction",
+      "extractedAt": "2025-08-09T02:37:52.331Z"
+    },
+    "5017": {
+      "id": "5017",
+      "name": "Sidi Hassine, Sidi Hassine, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1087080,
+      "sampleTitle": "A vendre",
+      "extractedAt": "2025-08-09T02:38:00.438Z"
+    },
+    "5018": {
+      "id": "5018",
+      "name": "Ain El Asker, Bir Mcherga, Zaghouan",
+      "propertyCount": 3,
+      "sampleListingId": 556951,
+      "sampleTitle": "1hectre pour maison de campagne",
+      "extractedAt": "2025-08-09T03:08:12.686Z"
+    },
+    "5019": {
+      "id": "5019",
+      "name": "Bir Mcherga, Bir Mcherga, Zaghouan",
+      "propertyCount": 4,
+      "sampleListingId": 1072369,
+      "sampleTitle": "Maison à vendre",
+      "extractedAt": "2025-08-09T03:03:03.781Z"
+    },
+    "5022": {
+      "id": "5022",
+      "name": "Delaiel El Arouss, Bir Mcherga, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 123532,
+      "sampleTitle": "Maison de campagne 2hectares",
+      "extractedAt": "2025-08-09T03:08:22.907Z"
+    },
+    "5023": {
+      "id": "5023",
+      "name": "Jebel El Oust, Bir Mcherga, Zaghouan",
+      "propertyCount": 2,
+      "sampleListingId": 106566,
+      "sampleTitle": "Bonne occasion pour un hôtel où clinique",
+      "extractedAt": "2025-08-09T03:06:40.112Z"
+    },
+    "5038": {
+      "id": "5038",
+      "name": "Cité Essaada, El Fahs, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 855405,
+      "sampleTitle": "une maison a nendre",
+      "extractedAt": "2025-08-09T03:03:11.927Z"
+    },
+    "5045": {
+      "id": "5045",
+      "name": "El Fahs, El Fahs, Zaghouan",
+      "propertyCount": 8,
+      "sampleListingId": 1069467,
+      "sampleTitle": "Villa à vendre",
+      "extractedAt": "2025-08-09T03:03:20.194Z"
+    },
+    "5092": {
+      "id": "5092",
+      "name": "Hammam Zriba, Hammam Zriba, Zaghouan",
+      "propertyCount": 5,
+      "sampleListingId": 802436,
+      "sampleTitle": "🏡 للبيع – عقار 400 م² في شارع الشهيد – حي الهدى – زريبة حمام",
+      "extractedAt": "2025-08-09T02:25:49.278Z"
+    },
+    "5114": {
+      "id": "5114",
+      "name": "Bir Halima, Zaghouan, Zaghouan",
+      "propertyCount": 2,
+      "sampleListingId": 1041666,
+      "sampleTitle": "3h à vendre entre bir halima et zaghouan pres de la route au prix de 200Md negociable",
+      "extractedAt": "2025-08-09T02:47:41.304Z"
+    },
+    "5123": {
+      "id": "5123",
+      "name": "Cité des Nymphes, Zaghouan, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 997238,
+      "sampleTitle": "Titre individuelle",
+      "extractedAt": "2025-08-09T02:35:57.138Z"
+    },
+    "5125": {
+      "id": "5125",
+      "name": "Cité El Bassatine, Zaghouan, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 1082317,
+      "sampleTitle": "Maison à zaghouan",
+      "extractedAt": "2025-08-09T02:35:38.598Z"
+    },
+    "5133": {
+      "id": "5133",
+      "name": "Mogren, Zaghouan, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 1083348,
+      "sampleTitle": "منزل للبيع شهادة ملكية dar lel bi3",
+      "extractedAt": "2025-08-09T02:47:32.756Z"
+    },
+    "5138": {
+      "id": "5138",
+      "name": "Kantra El Kahla, Zaghouan, Zaghouan",
+      "propertyCount": 1,
+      "sampleListingId": 977804,
+      "sampleTitle": "Villa a zaghouane",
+      "extractedAt": "2025-08-09T02:35:49.032Z"
+    },
+    "5145": {
+      "id": "5145",
+      "name": "Zaghouan ville, Zaghouan, Zaghouan",
+      "propertyCount": 20,
+      "sampleListingId": 1082084,
+      "sampleTitle": "منزل للبيع Maison à vendre",
+      "extractedAt": "2025-08-09T02:35:30.486Z"
+    },
+    "5146": {
+      "locationName": "Jardins De Carthage, Carthage, Tunis",
+      "listingId": 997146,
+      "sampleTitle": "A vendre S1 direct promoteur aux jardins de Carthage",
+      "propertyCount": 20,
+      "extractedAt": "2025-08-09T20:01:47.912Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 5,
+      "isRetry": true
+    },
+    "5147": {
+      "id": "5147",
+      "name": "Cité El Wafa, Nabeul, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1061621,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T01:44:31.494Z"
+    },
+    "5173": {
+      "id": "5173",
+      "name": "Raoued Plage, Raoued, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1077921,
+      "sampleTitle": "villa à vendre",
+      "extractedAt": "2025-08-09T02:24:40.022Z"
+    },
+    "5174": {
+      "id": "5174",
+      "name": "El Mourouj 1, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 634055,
+      "sampleTitle": "Appart S2 Daniela à EL Mourouj 1",
+      "extractedAt": "2025-08-09T02:51:25.756Z"
+    },
+    "5175": {
+      "id": "5175",
+      "name": "El Mourouj 4, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1083549,
+      "sampleTitle": "villa a vendre",
+      "extractedAt": "2025-08-09T02:59:25.331Z"
+    },
+    "5176": {
+      "id": "5176",
+      "name": "El Mourouj 5, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1058653,
+      "sampleTitle": "Appartement mourouj5 bachir",
+      "extractedAt": "2025-08-09T02:59:51.196Z"
+    },
+    "5177": {
+      "id": "5177",
+      "name": "El Mourouj 6, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1069053,
+      "sampleTitle": "Appartement s+2 a vendre",
+      "extractedAt": "2025-08-09T02:59:33.772Z"
+    },
+    "5182": {
+      "id": "5182",
+      "name": "Hammamet Nord, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1074955,
+      "sampleTitle": "Coquet appartement meublé à Hammamet Nord à vendre",
+      "extractedAt": "2025-08-09T01:26:42.356Z"
+    },
+    "5183": {
+      "id": "5183",
+      "name": "Hammamet Sud, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 1056176,
+      "sampleTitle": "a vendre villa de charme à Hammamet sud",
+      "extractedAt": "2025-08-09T01:16:53.911Z"
+    },
+    "5184": {
+      "id": "5184",
+      "name": "Yasmine Hammamet, Hammamet, Nabeul",
+      "propertyCount": 20,
+      "sampleListingId": 948132,
+      "sampleTitle": "للبيع برطمان S+2 في ياسمين الحمامات",
+      "extractedAt": "2025-08-09T01:16:45.635Z"
+    },
+    "5186": {
+      "id": "5186",
+      "name": "Khezama Est, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1084246,
+      "sampleTitle": "Appartement [#S+2] #Khzema #à 80m de la Route Touristique",
+      "extractedAt": "2025-08-09T01:22:12.640Z"
+    },
+    "5187": {
+      "id": "5187",
+      "name": "Ain Zaghouan, Le Kram, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1082937,
+      "sampleTitle": "🏡 À Vendre – Appartements S+1 & S+2 Haut Standing – Ain Zaghouan | Direct Promoteur",
+      "extractedAt": "2025-08-09T01:33:27.188Z"
+    },
+    "5188": {
+      "id": "5188",
+      "name": "Ain Zaghouan Nord, Le Kram, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 843918,
+      "sampleTitle": "A vendre des sappartements s1 a ain zaghouan nord  direct promoteur",
+      "extractedAt": "2025-08-09T01:34:39.927Z"
+    },
+    "5189": {
+      "id": "5189",
+      "name": "Ain Zaghouan Sud, Le Kram, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1084340,
+      "sampleTitle": "A vendre S+2 à Ain Zaghouan",
+      "extractedAt": "2025-08-09T01:35:22.630Z"
+    },
+    "5190": {
+      "id": "5190",
+      "name": "Centre Urbain Nord, Cité El Khadra, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1061547,
+      "sampleTitle": "Vente grand s 1 au centre urbain nord",
+      "extractedAt": "2025-08-09T01:41:23.000Z"
+    },
+    "5191": {
+      "id": "5191",
+      "name": "L'Aouina, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1087540,
+      "sampleTitle": "À vendre  : appartement s+1 a L’Aouina",
+      "extractedAt": "2025-08-09T01:19:15.542Z"
+    },
+    "5192": {
+      "id": "5192",
+      "name": "El Manar 1, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1087389,
+      "sampleTitle": "Appartement Manar 1",
+      "extractedAt": "2025-08-09T01:29:36.098Z"
+    },
+    "5193": {
+      "id": "5193",
+      "name": "El Manar 3, El Menzah, Tunis",
+      "propertyCount": 15,
+      "sampleListingId": 859226,
+      "sampleTitle": "Villa el manar 3",
+      "extractedAt": "2025-08-09T01:24:36.322Z"
+    },
+    "5194": {
+      "id": "5194",
+      "name": "Gammarth Supérieur, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 961015,
+      "sampleTitle": "A vendre villa en S4 avec piscine à Gammarth Supérieur",
+      "extractedAt": "2025-08-09T01:50:39.018Z"
+    },
+    "5196": {
+      "id": "5196",
+      "name": "La Kasba, La Médina, Tunis",
+      "propertyCount": 2,
+      "sampleListingId": 907022,
+      "sampleTitle": "Affaire à ne pas rater pour  projet ou habitation",
+      "extractedAt": "2025-08-09T02:23:23.744Z"
+    },
+    "5197": {
+      "id": "5197",
+      "name": "Lafayette, Bab Bhar, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 936883,
+      "sampleTitle": "S1 en vente",
+      "extractedAt": "2025-08-09T02:00:00.224Z"
+    },
+    "5199": {
+      "id": "5199",
+      "name": "Lac 2, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1078207,
+      "sampleTitle": "A Vendre : Penthouse aux berges du Lac 2",
+      "extractedAt": "2025-08-09T01:36:38.944Z"
+    },
+    "5200": {
+      "id": "5200",
+      "name": "Sidi Dhrif, Carthage, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 1000007,
+      "sampleTitle": "À vendre maison à Sidi Dhrif",
+      "extractedAt": "2025-08-09T02:10:16.325Z"
+    },
+    "5201": {
+      "id": "5201",
+      "name": "Tunis Centre, Bab Bhar, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1079146,
+      "sampleTitle": "S2 en vente",
+      "extractedAt": "2025-08-09T02:12:30.445Z"
+    },
+    "5202": {
+      "id": "5202",
+      "name": "Lac 3 / Zone d'activité Kheireddine, La Goulette, Tunis",
+      "propertyCount": 9,
+      "sampleListingId": 754407,
+      "sampleTitle": "À VENDRE – Appartement S3 au Lac 3",
+      "extractedAt": "2025-08-09T01:53:40.197Z"
+    },
+    "5203": {
+      "id": "5203",
+      "name": "Jardins d'El Menzah 1, Mnihla, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1078054,
+      "sampleTitle": "Appartement s2 très beau",
+      "extractedAt": "2025-08-09T01:29:11.306Z"
+    },
+    "5204": {
+      "id": "5204",
+      "name": "Les Jardins de l'Aouina, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1061855,
+      "sampleTitle": "Appartement s4 spacieux à jardin l'aouina",
+      "extractedAt": "2025-08-09T01:19:39.391Z"
+    },
+    "5205": {
+      "id": "5205",
+      "name": "Marsa Cube, La Marsa, Tunis",
+      "propertyCount": 8,
+      "sampleListingId": 975236,
+      "sampleTitle": "Villa à marsa cube",
+      "extractedAt": "2025-08-09T01:52:11.727Z"
+    },
+    "5206": {
+      "id": "5206",
+      "name": "Marsa Plage, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1035791,
+      "sampleTitle": "Maison a la marsa plage",
+      "extractedAt": "2025-08-09T02:10:08.306Z"
+    },
+    "5207": {
+      "id": "5207",
+      "name": "El Menzah 9A, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1042049,
+      "sampleTitle": "Appartement S+2",
+      "extractedAt": "2025-08-09T01:28:47.173Z"
+    },
+    "5208": {
+      "id": "5208",
+      "name": "El Menzah 9B, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 970588,
+      "sampleTitle": "Villa a menzeh 9b",
+      "extractedAt": "2025-08-09T01:17:02.181Z"
+    },
+    "5209": {
+      "id": "5209",
+      "name": "El Menzah 9C, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 781051,
+      "sampleTitle": "Bel Apt S+1 Avec Jardin El Menzah 9 C",
+      "extractedAt": "2025-08-09T01:28:39.016Z"
+    },
+    "5210": {
+      "id": "5210",
+      "name": "Cité El Habib, La Marsa, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 860420,
+      "sampleTitle": "Maison a la marsa cité habib",
+      "extractedAt": "2025-08-09T01:34:15.336Z"
+    },
+    "5211": {
+      "id": "5211",
+      "name": "Cité Ettabak, La Marsa, Tunis",
+      "propertyCount": 16,
+      "sampleListingId": 588110,
+      "sampleTitle": "Terrain Villa à Cité Ettabak, La Marsa",
+      "extractedAt": "2025-08-09T01:36:22.872Z"
+    },
+    "5212": {
+      "id": "5212",
+      "name": "Gammarth Touristique, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 856294,
+      "sampleTitle": "Appart Dorada Tulip à Vendre à Golden Tulip",
+      "extractedAt": "2025-08-09T02:09:35.733Z"
+    },
+    "5213": {
+      "id": "5213",
+      "name": "Gammarth Village, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 43640,
+      "sampleTitle": "Appart Limoges à Gammarth Village",
+      "extractedAt": "2025-08-09T01:50:30.997Z"
+    },
+    "5214": {
+      "id": "5214",
+      "name": "Jebel El Khaoui, La Marsa, Tunis",
+      "propertyCount": 9,
+      "sampleListingId": 1082993,
+      "sampleTitle": "Immeuble à vendre",
+      "extractedAt": "2025-08-09T01:49:42.508Z"
+    },
+    "5215": {
+      "id": "5215",
+      "name": "Lahouèche, La Marsa, Tunis",
+      "propertyCount": 2,
+      "sampleListingId": 740596,
+      "sampleTitle": "Terrain de villa brena à la marsa lahwech",
+      "extractedAt": "2025-08-09T01:51:39.384Z"
+    },
+    "5216": {
+      "id": "5216",
+      "name": "Marsa Corniche, La Marsa, Tunis",
+      "propertyCount": 9,
+      "sampleListingId": 1069713,
+      "sampleTitle": "Maison marsa corniche",
+      "extractedAt": "2025-08-09T02:09:18.950Z"
+    },
+    "5217": {
+      "id": "5217",
+      "name": "Marsa Ennassim, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1082590,
+      "sampleTitle": "Villa Hacienda avec piscine à Vendre à La Marsa Ennasim",
+      "extractedAt": "2025-08-09T02:08:53.749Z"
+    },
+    "5218": {
+      "id": "5218",
+      "name": "Marsa Les Pins, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 818216,
+      "sampleTitle": "Villa avec piscine à vendre Cité les Pins",
+      "extractedAt": "2025-08-09T01:54:12.351Z"
+    },
+    "5219": {
+      "id": "5219",
+      "name": "Marsa Saada, La Marsa, Tunis",
+      "propertyCount": 1,
+      "sampleListingId": 1080719,
+      "sampleTitle": "Appartement S3 Haya à vendre à la Marsa",
+      "extractedAt": "2025-08-09T02:09:10.315Z"
+    },
+    "5220": {
+      "id": "5220",
+      "name": "Marsa Ville, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1000989,
+      "sampleTitle": "Magnifique s2 neuf à la marsa",
+      "extractedAt": "2025-08-09T02:09:02.163Z"
+    },
+    "5221": {
+      "id": "5221",
+      "name": "Carthage Dermech, Carthage, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 863258,
+      "sampleTitle": "Villa S+3 avec studio indépendant à Carthage ZVV0401",
+      "extractedAt": "2025-08-09T01:54:04.106Z"
+    },
+    "5222": {
+      "id": "5222",
+      "name": "Carthage Hannibal, Carthage, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 944597,
+      "sampleTitle": "Villa Bounouma à Vendre à Carthage",
+      "extractedAt": "2025-08-09T02:09:43.962Z"
+    },
+    "5223": {
+      "locationName": "Carthage Présidence, Carthage, Tunis",
+      "listingId": 847980,
+      "sampleTitle": "Villa S4 avec jardin, Carthage Présidence",
+      "propertyCount": 8,
+      "extractedAt": "2025-08-09T20:08:52.685Z",
+      "sampleIndex": 3,
+      "totalSamplesTested": 8,
+      "isRetry": true
+    },
+    "5283": {
+      "id": "5283",
+      "name": "El Mourouj 2, El Kabaria, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1029992,
+      "sampleTitle": "Maison à vendre S+2 avec garage",
+      "extractedAt": "2025-08-09T02:50:36.336Z"
+    },
+    "5284": {
+      "id": "5284",
+      "name": "El Mourouj 3, El Mourouj, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1081771,
+      "sampleTitle": "Villa style américain à el mourouj 3",
+      "extractedAt": "2025-08-09T02:51:33.771Z"
+    },
+    "5288": {
+      "id": "5288",
+      "name": "El Agba, El Hrairia, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 739462,
+      "sampleTitle": "entrepreneur pour villa et maison",
+      "extractedAt": "2025-08-09T02:19:43.232Z"
+    },
+    "5289": {
+      "id": "5289",
+      "name": "Médina Jadida 2, Médina Jadida, Ben Arous",
+      "propertyCount": 18,
+      "sampleListingId": 965996,
+      "sampleTitle": "Appartement s3 à saint jacques",
+      "extractedAt": "2025-08-09T02:39:38.215Z"
+    },
+    "5290": {
+      "id": "5290",
+      "name": "Gammarth Forêt, La Marsa, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 1042959,
+      "sampleTitle": "Vila de reve",
+      "extractedAt": "2025-08-09T01:50:57.951Z"
+    },
+    "5292": {
+      "id": "5292",
+      "name": "Route de Gammarth, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1073130,
+      "sampleTitle": "À Vendre une Superbe Villa Haut Standing à Route de Relais -Gammarth",
+      "extractedAt": "2025-08-09T01:34:47.947Z"
+    },
+    "5293": {
+      "id": "5293",
+      "name": "Ariana Supérieure, Ariana Ville, Ariana",
+      "propertyCount": 14,
+      "sampleListingId": 1039074,
+      "sampleTitle": "Villa avec jardin à vendre \nAriana Supérieur",
+      "extractedAt": "2025-08-09T01:23:26.944Z"
+    },
+    "5294": {
+      "id": "5294",
+      "name": "Cité El Faouz, Ariana Ville, Ariana",
+      "propertyCount": 12,
+      "sampleListingId": 676261,
+      "sampleTitle": "Terrain de Villa EL Fawz à Ennasr",
+      "extractedAt": "2025-08-09T01:28:55.344Z"
+    },
+    "5295": {
+      "id": "5295",
+      "name": "El Menzah 7bis, Ariana Ville, Ariana",
+      "propertyCount": 20,
+      "sampleListingId": 1043692,
+      "sampleTitle": "Appartement s3 de 105m2 à Menzah 7 bis",
+      "extractedAt": "2025-08-09T01:24:54.284Z"
+    },
+    "5296": {
+      "id": "5296",
+      "name": "Nord Hilton, El Menzah, Tunis",
+      "propertyCount": 12,
+      "sampleListingId": 962395,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T01:42:43.474Z"
+    },
+    "5297": {
+      "id": "5297",
+      "name": "Notre Dame, El Menzah, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 977620,
+      "sampleTitle": "Villa   notre   dame",
+      "extractedAt": "2025-08-09T01:42:11.245Z"
+    },
+    "5298": {
+      "id": "5298",
+      "name": "Marsa Sidi Abdelaziz, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 941148,
+      "sampleTitle": "La Marsa à vendre une villa sur 3 niveaux avec un jardin",
+      "extractedAt": "2025-08-09T01:52:03.579Z"
+    },
+    "5299": {
+      "id": "5299",
+      "name": "L'Aouina Cité des Palmeraies, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 42520,
+      "sampleTitle": "A VENDRE: Appartement S3 à Cité Wahat les Palmeraies / l’Aaouina",
+      "extractedAt": "2025-08-09T01:18:24.120Z"
+    },
+    "5300": {
+      "id": "5300",
+      "name": "El Maalga, La Marsa, Tunis",
+      "propertyCount": 2,
+      "sampleListingId": 1006690,
+      "sampleTitle": "Villa de maitre la marsa",
+      "extractedAt": "2025-08-09T01:53:31.777Z"
+    },
+    "5301": {
+      "id": "5301",
+      "name": "Cité El Wifak, La Marsa, Tunis",
+      "propertyCount": 5,
+      "sampleListingId": 1077619,
+      "sampleTitle": "Villa marsa wifek",
+      "extractedAt": "2025-08-09T01:54:20.397Z"
+    },
+    "5302": {
+      "id": "5302",
+      "name": "Cité Riadh 2, Sousse Riadh, Sousse",
+      "propertyCount": 1,
+      "sampleListingId": 103180,
+      "sampleTitle": "Villa très haute standing à cité Riadh 2",
+      "extractedAt": "2025-08-09T01:56:05.600Z"
+    },
+    "5303": {
+      "id": "5303",
+      "name": "Cité Riadh 3, Sousse Riadh, Sousse",
+      "propertyCount": 7,
+      "sampleListingId": 781368,
+      "sampleTitle": "Villa R plus 2 plus studio",
+      "extractedAt": "2025-08-09T01:55:33.284Z"
+    },
+    "5305": {
+      "id": "5305",
+      "name": "Cité Riadh 5, Sousse Riadh, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 874132,
+      "sampleTitle": "(S+2) à  Cité Riadh  5",
+      "extractedAt": "2025-08-09T01:55:24.796Z"
+    },
+    "5306": {
+      "id": "5306",
+      "name": "Bouhsina, Sousse Ville, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1081287,
+      "sampleTitle": "A vendre maison indépendant sur trois niveaux à Bohsina",
+      "extractedAt": "2025-08-09T01:55:16.779Z"
+    },
+    "5307": {
+      "id": "5307",
+      "name": "Cité Ettaamir, Sousse Ville, Sousse",
+      "propertyCount": 6,
+      "sampleListingId": 978687,
+      "sampleTitle": "A vendre appartement S+2 au rdc a cité Etaamir",
+      "extractedAt": "2025-08-09T01:57:56.001Z"
+    },
+    "5308": {
+      "id": "5308",
+      "name": "Cité Olympique, Sousse Ville, Sousse",
+      "propertyCount": 13,
+      "sampleListingId": 1035564,
+      "sampleTitle": "Un appartement sous type d'un s+2 de haut standing jamais habité",
+      "extractedAt": "2025-08-09T01:39:50.837Z"
+    },
+    "5309": {
+      "id": "5309",
+      "name": "Sahloul 3, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 636879,
+      "sampleTitle": "Maison S+3 à Sahloul 3",
+      "extractedAt": "2025-08-09T01:38:29.538Z"
+    },
+    "5310": {
+      "id": "5310",
+      "name": "Sahloul 4, Sousse Jawhara, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 853436,
+      "sampleTitle": "Appartements neufs à vendre à sahloul 4",
+      "extractedAt": "2025-08-09T01:38:57.785Z"
+    },
+    "5312": {
+      "id": "5312",
+      "name": "Bhaier, Hammam Sousse, Sousse",
+      "propertyCount": 20,
+      "sampleListingId": 1017700,
+      "sampleTitle": "Appartement s3 jamais habité hammem sousse bhayer",
+      "extractedAt": "2025-08-09T01:20:30.939Z"
+    },
+    "5313": {
+      "id": "5313",
+      "name": "Bel Air, Boumhel El Bassatine, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1081211,
+      "sampleTitle": "S6 à boumhal belair",
+      "extractedAt": "2025-08-09T02:41:31.947Z"
+    },
+    "5314": {
+      "id": "5314",
+      "name": "Cité El Milaha, Ariana Ville, Ariana",
+      "propertyCount": 3,
+      "sampleListingId": 1007239,
+      "sampleTitle": "A ne pas rater cité milaha apprt trés spatieux s3",
+      "extractedAt": "2025-08-09T01:23:10.853Z"
+    },
+    "5315": {
+      "id": "5315",
+      "name": "Ksar Said 2, Le Bardo, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1081595,
+      "sampleTitle": "Taleb fih 165 milles \nwenss3dek, 3tawni 150 milles",
+      "extractedAt": "2025-08-09T02:06:45.602Z"
+    },
+    "5316": {
+      "id": "5316",
+      "name": "Mnihla Supérieure, Mnihla, Ariana",
+      "propertyCount": 6,
+      "sampleListingId": 851848,
+      "sampleTitle": "👉  Quadriplex inachevé au Mnihla superieure",
+      "extractedAt": "2025-08-09T01:46:30.756Z"
+    },
+    "5317": {
+      "id": "5317",
+      "name": "Cham Ennassim, Mnihla, Ariana",
+      "propertyCount": 4,
+      "sampleListingId": 84489,
+      "sampleTitle": "A vendre villa a cham ennassim el mnihla",
+      "extractedAt": "2025-08-09T01:46:47.094Z"
+    },
+    "5318": {
+      "id": "5318",
+      "name": "El Ouardia 2, El Kabaria, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 852349,
+      "sampleTitle": "Appartement à vendre à El Ouardia. 2 belles chambres. Belle terrasse.",
+      "extractedAt": "2025-08-09T02:50:28.324Z"
+    },
+    "5319": {
+      "id": "5319",
+      "name": "El Ouardia 6, El Kabaria, Tunis",
+      "propertyCount": 4,
+      "sampleListingId": 922774,
+      "sampleTitle": "Maison deux niveaux",
+      "extractedAt": "2025-08-09T02:50:11.646Z"
+    },
+    "5320": {
+      "id": "5320",
+      "name": "Zone Touristique Borj Cedria, Hammam Chatt, Ben Arous",
+      "propertyCount": 13,
+      "sampleListingId": 1036353,
+      "sampleTitle": "Opportunité à saisir",
+      "extractedAt": "2025-08-09T02:36:26.333Z"
+    },
+    "5321": {
+      "id": "5321",
+      "name": "Borj Cedria Erriadh, Hammam Chatt, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 766880,
+      "sampleTitle": "Appart h standing de 111 m2 au 1er ét pour 280 md",
+      "extractedAt": "2025-08-09T02:36:18.502Z"
+    },
+    "5322": {
+      "id": "5322",
+      "name": "Tahar Sfar, Hammam Chatt, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 995784,
+      "sampleTitle": "Gps    maison plus  terrain nu",
+      "extractedAt": "2025-08-09T02:37:09.496Z"
+    },
+    "5323": {
+      "id": "5323",
+      "name": "Médina Jadida 3, Médina Jadida, Ben Arous",
+      "propertyCount": 20,
+      "sampleListingId": 1012060,
+      "sampleTitle": "Une magnifique villa la nouvelle medina 3",
+      "extractedAt": "2025-08-09T02:42:19.103Z"
+    },
+    "5324": {
+      "id": "5324",
+      "name": "Zone Industrielle Ben Arous, Ben Arous, Ben Arous",
+      "propertyCount": 3,
+      "sampleListingId": 979910,
+      "sampleTitle": "Vend appartement à Ben Arous. Superficie 97,9m²",
+      "extractedAt": "2025-08-09T02:40:13.000Z"
+    },
+    "5325": {
+      "id": "5325",
+      "name": "Borj Ghorbel, Médina Jadida, Ben Arous",
+      "propertyCount": 1,
+      "sampleListingId": 853915,
+      "sampleTitle": "Villa s3 a  a borj ghorbel",
+      "extractedAt": "2025-08-09T02:51:08.829Z"
+    },
+    "5326": {
+      "id": "5326",
+      "name": "Sanhaja, La Manouba, La Manouba",
+      "propertyCount": 9,
+      "sampleListingId": 624037,
+      "sampleTitle": "1250mc villa standing avec piscine",
+      "extractedAt": "2025-08-09T02:37:26.217Z"
+    },
+    "5327": {
+      "id": "5327",
+      "name": "Cité Taieb Mhiri, Le Kram, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1046081,
+      "sampleTitle": "🏠 À Saisir : Grande Villa Familiale + Studio – Cité Taieb Mhiri – L’Aouina",
+      "extractedAt": "2025-08-09T01:33:35.247Z"
+    },
+    "5328": {
+      "id": "5328",
+      "name": "Sidi Amor, La Manouba, La Manouba",
+      "propertyCount": 4,
+      "sampleListingId": 1080406,
+      "sampleTitle": "Appartement S2 à la résidence Edward MANOUBA.",
+      "extractedAt": "2025-08-09T02:18:53.852Z"
+    },
+    "5329": {
+      "id": "5329",
+      "name": "Cité Ben Younes, La Manouba, La Manouba",
+      "propertyCount": 4,
+      "sampleListingId": 1067813,
+      "sampleTitle": "Maison 2 etage",
+      "extractedAt": "2025-08-09T02:27:53.436Z"
+    },
+    "5331": {
+      "id": "5331",
+      "name": "Cité des Oranges, La Manouba, La Manouba",
+      "propertyCount": 12,
+      "sampleListingId": 949084,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T02:18:34.227Z"
+    },
+    "5332": {
+      "id": "5332",
+      "name": "Denden Cité El Amal, La Manouba, La Manouba",
+      "propertyCount": 20,
+      "sampleListingId": 985835,
+      "sampleTitle": "Villa vente",
+      "extractedAt": "2025-08-09T02:07:01.634Z"
+    },
+    "5333": {
+      "id": "5333",
+      "name": "Oued Gueriana, La Manouba, La Manouba",
+      "propertyCount": 1,
+      "sampleListingId": 1073100,
+      "sampleTitle": "Salon plus 3 1ier étage",
+      "extractedAt": "2025-08-09T02:28:01.656Z"
+    },
+    "5334": {
+      "id": "5334",
+      "name": "Cité Ezzouhour 3, Ezzouhour, Tunis",
+      "propertyCount": 6,
+      "sampleListingId": 995274,
+      "sampleTitle": "s2",
+      "extractedAt": "2025-08-09T02:19:59.650Z"
+    },
+    "5335": {
+      "id": "5335",
+      "name": "Cité Ezzouhour 2, Ezzouhour, Tunis",
+      "propertyCount": 7,
+      "sampleListingId": 1078068,
+      "sampleTitle": "A ne pas Rater Maison",
+      "extractedAt": "2025-08-09T02:20:07.716Z"
+    },
+    "5336": {
+      "id": "5336",
+      "name": "Cité Ezzouhour 1, Ezzouhour, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1060943,
+      "sampleTitle": "maison à vendre",
+      "extractedAt": "2025-08-09T02:19:34.924Z"
+    },
+    "5337": {
+      "locationName": "Cap Blanc, Bizerte Nord, Bizerte",
+      "listingId": 609954,
+      "sampleTitle": "Villa summer à bizerte",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:34:49.204Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "5343": {
+      "locationName": "Bechateur, Bizerte Sud, Bizerte",
+      "listingId": 919945,
+      "sampleTitle": "Maison à vendre",
+      "propertyCount": 1,
+      "extractedAt": "2025-08-09T20:31:22.664Z",
+      "sampleIndex": 1,
+      "totalSamplesTested": 1,
+      "isRetry": true
+    },
+    "5345": {
+      "id": "5345",
+      "name": "Menzel Brahim, Kélibia, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 880624,
+      "sampleTitle": "فرصة العمر باش تبني الدار اللي تحلم بيها2",
+      "extractedAt": "2025-08-09T03:14:46.085Z"
+    },
+    "5346": {
+      "id": "5346",
+      "name": "Tahert, Kélibia, Nabeul",
+      "propertyCount": 1,
+      "sampleListingId": 893517,
+      "sampleTitle": "Maison roua 200m kélibia",
+      "extractedAt": "2025-08-09T03:13:46.489Z"
+    },
+    "5348": {
+      "id": "5348",
+      "name": "Maamounia, Kélibia, Nabeul",
+      "propertyCount": 12,
+      "sampleListingId": 1070633,
+      "sampleTitle": "Appartement S1 à kélibia En vente",
+      "extractedAt": "2025-08-09T03:06:48.332Z"
+    },
+    "5349": {
+      "id": "5349",
+      "name": "Cité Ezzouhour, Kélibia, Nabeul",
+      "propertyCount": 11,
+      "sampleListingId": 793460,
+      "sampleTitle": "Appartements à cité Ezzouhour Kelibia",
+      "extractedAt": "2025-08-09T03:07:46.420Z"
+    },
+    "5350": {
+      "id": "5350",
+      "name": "Assemer, Kélibia, Nabeul",
+      "propertyCount": 8,
+      "sampleListingId": 858372,
+      "sampleTitle": "Maison à vendre à kélibia",
+      "extractedAt": "2025-08-09T03:13:21.878Z"
+    },
+    "5351": {
+      "id": "5351",
+      "name": "Sidi Ben Aissa, Kélibia, Nabeul",
+      "propertyCount": 3,
+      "sampleListingId": 777046,
+      "sampleTitle": "Villa morgena à cité sidi ben issa kélibia",
+      "extractedAt": "2025-08-09T03:07:54.491Z"
+    },
+    "5355": {
+      "id": "5355",
+      "name": "Oued El Arouk, Akouda, Sousse",
+      "propertyCount": 4,
+      "sampleListingId": 718394,
+      "sampleTitle": "A vendre villa à Akouda",
+      "extractedAt": "2025-08-09T01:20:03.723Z"
+    },
+    "5356": {
+      "id": "5356",
+      "name": "Gamaoun, Akouda, Sousse",
+      "propertyCount": 2,
+      "sampleListingId": 812624,
+      "sampleTitle": "Villa style américain akouda",
+      "extractedAt": "2025-08-09T01:19:55.622Z"
+    },
+    "5358": {
+      "id": "5358",
+      "name": "El Madfoun, Hergla, Sousse",
+      "propertyCount": 11,
+      "sampleListingId": 1014187,
+      "sampleTitle": "Appartement S2 au rez de chaussée en vente",
+      "extractedAt": "2025-08-09T02:14:45.449Z"
+    },
+    "5359": {
+      "id": "5359",
+      "name": "Hergla AFH, Hergla, Sousse",
+      "propertyCount": 12,
+      "sampleListingId": 1046980,
+      "sampleTitle": "À Vendre – Appartement S2 à Hergla Zone AFH",
+      "extractedAt": "2025-08-09T02:14:37.385Z"
+    },
+    "5363": {
+      "id": "5363",
+      "name": "Marina Monastir, Monastir, Monastir",
+      "propertyCount": 4,
+      "sampleListingId": 972151,
+      "sampleTitle": "Appartement s+2 à Marina avec terrasse",
+      "extractedAt": "2025-08-09T02:53:51.006Z"
+    },
+    "5367": {
+      "id": "5367",
+      "name": "Skanes Palmiers, Monastir, Monastir",
+      "propertyCount": 3,
+      "sampleListingId": 1034906,
+      "sampleTitle": "S3 en vente",
+      "extractedAt": "2025-08-09T02:43:11.247Z"
+    },
+    "5368": {
+      "id": "5368",
+      "name": "El Karaia, Monastir, Monastir",
+      "propertyCount": 4,
+      "sampleListingId": 1057038,
+      "sampleTitle": "A vendre un appartement S+2 à Monastir",
+      "extractedAt": "2025-08-09T03:00:53.880Z"
+    },
+    "5369": {
+      "id": "5369",
+      "name": "El Ghedir, Monastir, Monastir",
+      "propertyCount": 1,
+      "sampleListingId": 1086482,
+      "sampleTitle": "Immeuble À monastir",
+      "extractedAt": "2025-08-09T03:00:04.950Z"
+    },
+    "5370": {
+      "id": "5370",
+      "name": "Skanes Présidence, Monastir, Monastir",
+      "propertyCount": 3,
+      "sampleListingId": 780259,
+      "sampleTitle": "appartement à vendre",
+      "extractedAt": "2025-08-09T02:43:56.220Z"
+    },
+    "5372": {
+      "id": "5372",
+      "name": "Cité Sidi Abdelhamid, Sidi Abdelhamid, Sousse",
+      "propertyCount": 17,
+      "sampleListingId": 1081293,
+      "sampleTitle": "A Vendre Appartement S3 avec jardin à Sidi Abdelhamid",
+      "extractedAt": "2025-08-09T02:21:22.948Z"
+    },
+    "5373": {
+      "id": "5373",
+      "name": "Taffala, Sousse Sud, Sousse",
+      "propertyCount": 1,
+      "sampleListingId": 906057,
+      "sampleTitle": "Bel appartement à sousse",
+      "extractedAt": "2025-08-09T02:15:03.776Z"
+    },
+    "5374": {
+      "id": "5374",
+      "name": "Souk Lahad, Sousse Sud, Sousse",
+      "propertyCount": 7,
+      "sampleListingId": 1054029,
+      "sampleTitle": "Ancien villa R+1",
+      "extractedAt": "2025-08-09T02:12:56.206Z"
+    },
+    "5379": {
+      "id": "5379",
+      "name": "Souiss, Sousse Sud, Sousse",
+      "propertyCount": 8,
+      "sampleListingId": 551792,
+      "sampleTitle": "Belle Villa avec Jardin",
+      "extractedAt": "2025-08-09T02:15:12.456Z"
+    },
+    "5384": {
+      "id": "5384",
+      "name": "Gammarth Harrouch, La Marsa, Tunis",
+      "propertyCount": 3,
+      "sampleListingId": 1069642,
+      "sampleTitle": "Bon investissement villa a gammarth harrouch",
+      "extractedAt": "2025-08-09T01:50:49.266Z"
+    },
+    "5385": {
+      "id": "5385",
+      "name": "La perle du lac 1, La Marsa, Tunis",
+      "propertyCount": 20,
+      "sampleListingId": 1070638,
+      "sampleTitle": "",
+      "extractedAt": "2025-08-09T01:54:44.600Z"
+    },
+    "5386": {
+      "id": "5386",
+      "name": "Jinen Ennasr, Ariana Ville, Ariana",
+      "propertyCount": 10,
+      "sampleListingId": 1062148,
+      "sampleTitle": "A vendre S+2 A jardin D'ennassr",
+      "extractedAt": "2025-08-09T01:24:45.381Z"
+    }, 
+    "2344": {
+      "id": "2344",
+      "name": "El Battan, El Battan, La Manouba",
+      "propertyCount": 0,
+      "sampleListingId": 1062148,
+      "sampleTitle": "A vendre S+2 A jardin D'ennassr",
+      "extractedAt": "2025-08-09T01:24:45.381Z"
+    }
+  },
+  "failureAnalysis": {
+    "totalFailed": 231,
+    "failureBreakdown": {
+      "NO_PROPERTIES": {
+        "count": 230,
+        "percentage": 100,
+        "sampleIds": [
+          "380",
+          "413",
+          "419",
+          "469",
+          "470"
+        ]
+      },
+      "EXTRACTION_FAILED": {
+        "count": 1,
+        "percentage": 0,
+        "sampleIds": [
+          "4465"
+        ]
+      }
+    }
+  },
+  "enhancedFeatures": {
+    "diverseSampling": true,
+    "enhancedRetrySystem": true,
+    "comprehensiveFailureTracking": true,
+    "fourMethodExtraction": true
+  }
+}

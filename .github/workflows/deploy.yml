@@ -1,0 +1,90 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
+
+      - name: Add VPS to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to VPS
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USERNAME: ${{ secrets.VPS_USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          ssh $VPS_USERNAME@$VPS_HOST << ENDSSH
+            set -e
+
+            # Clean up old directory if exists
+            rm -rf /home/deploy/bigdatis-scrapper
+
+            # Create directory if it doesn't exist
+            mkdir -p /root/bigdatis-scrapper
+            cd /root/bigdatis-scrapper
+
+            # Add safe directory to git config
+            git config --global --add safe.directory /root/bigdatis-scrapper
+
+            # Clone or pull using token
+            if [ ! -d ".git" ]; then
+              git clone https://${GITHUB_TOKEN}@github.com/AmirBoufaden99/Bigdatis-Scrapper.git .
+            else
+              git pull https://${GITHUB_TOKEN}@github.com/AmirBoufaden99/Bigdatis-Scrapper.git main
+            fi
+
+            cat > .env << 'EOF'
+          MONGODB_URI=${{ secrets.MONGODB_URI }}
+          BIGDATIS_API_URL=https://server.bigdatis.tn/api/properties/search
+          ACCESS_TOKEN=${{ secrets.BIGDATIS_ACCESS_TOKEN }}
+          REQUEST_DELAY=1000
+          MAX_RETRIES=3
+          TIMEOUT=30000
+          BATCH_SIZE=50
+          ENABLE_DUPLICATES_CHECK=true
+          SCRAPE_SCHEDULE=0 0 * * *
+          LOG_LEVEL=info
+          NODE_ENV=production
+          EXPORT_CSV=false
+          EXPORT_JSON=false
+          EOF
+
+            docker stop bigdatis-scrapper || true
+            docker rm bigdatis-scrapper || true
+
+            docker build -t bigdatis-scrapper .
+
+            docker run -d \
+              --name bigdatis-scrapper \
+              --restart unless-stopped \
+              --network estimo-backend_app-networking \
+              --env-file .env \
+              -v $(pwd)/logs:/app/logs \
+              bigdatis-scrapper
+
+            docker image prune -f
+
+            echo "Deployment completed!"
+          ENDSSH
+
+      - name: Verify Deployment
+        run: |
+          ssh ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }} << 'ENDSSH'
+            docker ps | grep bigdatis-scrapper
+          ENDSSH
