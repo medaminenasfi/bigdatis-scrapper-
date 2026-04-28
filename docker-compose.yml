@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bigdatis-scraper
+    restart: unless-stopped
+
+    env_file:
+      - .env
+    environment:
+      # MongoDB Connection (internal or external)
+      MONGODB_URI: ${MONGODB_URI}
+      
+      # Bigdatis API
+      BIGDATIS_API_URL: ${BIGDATIS_API_URL}
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+      
+      # Scraping Configuration
+      REQUEST_DELAY: ${REQUEST_DELAY:-1000}
+      MAX_RETRIES: ${MAX_RETRIES:-3}
+      MAX_PAGES_PER_RUN: ${MAX_PAGES_PER_RUN:-}
+      ENABLE_DUPLICATES_CHECK: ${ENABLE_DUPLICATES_CHECK:-true}
+      TIMEOUT: ${TIMEOUT:-30000}
+      
+      # Scheduler Configuration
+      SCRAPE_SCHEDULE: ${SCRAPE_SCHEDULE:-0 7 * * *}
+      
+      # Export Configuration
+      EXPORT_CSV: ${EXPORT_CSV:-false}
+      EXPORT_JSON: ${EXPORT_JSON:-false}
+      EXPORT_DIRECTORY: ${EXPORT_DIRECTORY:-/app/exports}
+      
+      # Logging
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      TZ: ${TZ:-Africa/Tunis}
+    volumes:
+      - ./logs:/app/logs
+      - ./exports:/app/exports
+      - ./scraping-status.json:/app/scraping-status.json
+      - ./locations-cache.json:/app/locations-cache.json
+    networks:
+      - bigdatis-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  bigdatis-network:
+    driver: bridge

@@ -8,7 +8,22 @@ const propertySchema = new mongoose.Schema({
     unique: true,
     index: true
   },
-  
+
+  // Source URL (primary source, e.g., first source from sources array)
+  url: {
+    type: String,
+    required: false
+  },
+
+  // All source platforms with their URLs
+  sources: [{
+    sourceId: Number,
+    url: String,
+    lastModified: Number,
+    price: Number,
+    sellerType: String
+  }],
+
   // Property basic information
   title: {
     type: String,
@@ -225,6 +240,20 @@ propertySchema.methods.hasSignificantChanges = function(newData) {
     if (currentValue !== newValue) {
       return true;
     }
+  }
+  
+  // Check if images changed (add or update images)
+  const currentImagesLength = this.images ? this.images.length : 0;
+  const newImagesLength = newData.images ? newData.images.length : 0;
+  if (currentImagesLength !== newImagesLength) {
+    return true;
+  }
+  
+  // Check if contact data changed
+  const currentPhone = this.contact?.phone || '';
+  const newPhone = newData.contact?.phone || '';
+  if (currentPhone !== newPhone) {
+    return true;
   }
   
   return false;

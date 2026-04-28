@@ -88,21 +88,9 @@ class BigdatisScraper {
         };
     }
 
-    // Get all target location IDs from the provided data
+    // Get all target location IDs - preserve full scraping coverage
     getTargetLocationIds() {
-        return [
-            // Ariana
-            286, 287, 290, 292, 299, 300, 301, 308, 309, 310, 311, 312, 316, 320, 321, 325, 329, 343, 344, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 361, 364, 371, 378, 385, 390, 391, 392, 398, 399, 400, 404, 405, 412, 414, 415, 417, 418, 422, 429, 430, 434, 436, 437, 440, 449, 450, 451, 452, 455, 464, 465, 466, 467, 468, 491, 492, 493, 4881, 4882, 5173, 5203, 5293, 5294, 5295, 5314, 5316, 5317, 5386,
-            
-            // Ben Arous
-            804, 805, 811, 816, 818, 822, 835, 845, 879, 909, 910, 923, 932, 933, 934, 939, 941, 942, 946, 948, 951, 956, 961, 962, 963, 964, 966, 967, 968, 969, 987, 989, 990, 991, 992, 993, 996, 1000, 1001, 1013, 1014, 1018, 1022, 1028, 1030, 1040, 1045, 1047, 1051, 1052, 1060, 1063, 1066, 1069, 1075, 1077, 1080, 1084, 1087, 1089, 1090, 1091, 1092, 1096, 1106, 1108, 1109, 1111, 1112, 1113, 1116, 5174, 5175, 5176, 5177, 5283, 5284, 5289, 5313, 5320, 5321, 5322, 5323, 5324, 5325,
-            
-            // La Manouba
-            2321, 2323, 2330, 2335, 2336, 2350, 2361, 2379, 2384, 2385, 2386, 2393, 2394, 2396, 2397, 2407, 2409, 2418, 2419, 2440, 2458, 5326, 5328, 5329, 5331, 5332, 5333,
-            
-            // Tunis
-            4808, 4809, 4812, 4813, 4816, 4818, 4819, 4820, 4821, 4822, 4823, 4824, 4825, 4827, 4829, 4830, 4832, 4834, 4835, 4836, 4837, 4838, 4840, 4841, 4846, 4848, 4850, 4855, 4856, 4857, 4859, 4864, 4865, 4868, 4869, 4870, 4871, 4875, 4879, 4880, 4883, 4885, 4886, 4890, 4894, 4896, 4897, 4898, 4901, 4902, 4903, 4906, 4907, 4908, 4909, 4912, 4913, 4914, 4915, 4918, 4919, 4923, 4924, 4926, 4930, 4932, 4933, 4934, 4938, 4939, 4940, 4941, 4942, 4946, 4947, 4950, 4953, 4956, 4957, 4959, 4963, 4964, 4965, 4971, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4986, 4988, 4989, 4992, 4993, 4994, 4995, 4997, 4998, 4999, 5001, 5002, 5003, 5004, 5006, 5007, 5016, 5017, 5146, 5187, 5188, 5189, 5190, 5191, 5192, 5193, 5194, 5196, 5197, 5199, 5200, 5201, 5202, 5204, 5205, 5206, 5207, 5208, 5209, 5210, 5211, 5212, 5213, 5214, 5215, 5216, 5217, 5218, 5219, 5220, 5221, 5222, 5223, 5288, 5290, 5292, 5296, 5297, 5298, 5299, 5300, 5301, 5315, 5318, 5319, 5327, 5334, 5335, 5336, 5384, 5385
-        ];
+        return [41, 44, 45, 47, 49, 52, 126, 128, 131, 133, 167, 168, 169, 170, 171, 173, 176, 177, 178, 179, 180, 181, 182, 183, 184, 189, 190, 192, 194, 196, 199, 200, 201, 203, 204, 205, 235, 237, 240, 241, 242, 243, 262, 263, 264, 265, 269, 270, 271, 272, 273, 274, 277, 278, 279, 290, 308, 309, 311, 436, 437, 440, 811, 822, 965, 3292, 3312, 3345, 3373, 3421, 3424, 3436, 3476, 3489, 3491, 3499, 3526, 3722, 3960, 4443, 4495, 4830, 4994, 5002, 5173, 5174, 5175, 5176, 5177, 5193, 5283, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 5303, 5305, 5306, 5307, 5308, 5309, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336, 5377, 5380, 5384, 5385, 5386];
     }
 
     // Initialize location stats tracking
@@ -205,6 +193,72 @@ class BigdatisScraper {
         }
     }
 
+    async fetchPropertyDetails(propertyId, retryCount = 0) {
+        const startTime = Date.now();
+        const detailUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}`;
+        
+        try {
+            const response = await this.client.get(detailUrl);
+            const responseTime = Date.now() - startTime;
+            
+            logger.debug(`Fetched details for property ${propertyId} (${responseTime}ms)`);
+            return response.data;
+        } catch (error) {
+            if (retryCount < 2) {
+                logger.warn(`Failed to fetch details for property ${propertyId}, retrying (${retryCount + 1}/2)`);
+                await this.sleep(1000);
+                return this.fetchPropertyDetails(propertyId, retryCount + 1);
+            }
+            
+            logger.warn(`Failed to fetch details for property ${propertyId} after retries: ${error.message}`);
+            return null;
+        }
+    }
+
+    async fetchPropertyContacts(propertyId, retryCount = 0) {
+        const startTime = Date.now();
+        const contactsUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}/contacts`;
+        
+        try {
+            const response = await this.client.get(contactsUrl);
+            const responseTime = Date.now() - startTime;
+            
+            logger.debug(`Fetched contacts for property ${propertyId} (${responseTime}ms)`);
+            return response.data;
+        } catch (error) {
+            if (retryCount < 2) {
+                logger.warn(`Failed to fetch contacts for property ${propertyId}, retrying (${retryCount + 1}/2)`);
+                await this.sleep(1000);
+                return this.fetchPropertyContacts(propertyId, retryCount + 1);
+            }
+            
+            logger.warn(`Failed to fetch contacts for property ${propertyId} after retries: ${error.message}`);
+            return null;
+        }
+    }
+
+    async fetchPropertySources(propertyId, retryCount = 0) {
+        const startTime = Date.now();
+        const sourcesUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}/sources`;
+        
+        try {
+            const response = await this.client.get(sourcesUrl);
+            const responseTime = Date.now() - startTime;
+            
+            logger.debug(`Fetched sources for property ${propertyId} (${responseTime}ms)`);
+            return response.data;
+        } catch (error) {
+            if (retryCount < 2) {
+                logger.warn(`Failed to fetch sources for property ${propertyId}, retrying (${retryCount + 1}/2)`);
+                await this.sleep(1000);
+                return this.fetchPropertySources(propertyId, retryCount + 1);
+            }
+            
+            logger.warn(`Failed to fetch sources for property ${propertyId} after retries: ${error.message}`);
+            return null;
+        }
+    }
+
     extractProperties(responseData) {
         const possibleKeys = [
             'properties',
@@ -301,16 +355,55 @@ class BigdatisScraper {
             } else if (timestamp) {
                 logger.debug(`Generated offset from timestamp only: ${timestamp}`);
                 return timestamp;
-            }
+            } else if (propId) {
+                logger.debug(`Generated offset from property ID only: ${propId}`);
+                return propId;
+            } 
+            return null;
         }
+    }
 
-        return null;
+    // Extract Bigdatis ID from raw property
+    extractBigdatisId(rawProperty) {
+        if (!rawProperty) return null;
+        return rawProperty.id || rawProperty.idsAlt || rawProperty._id || String(rawProperty.bigdatisId) || null;
     }
 
     normalizePropertyData(rawProperty) {
         // Transform raw API data into our schema format
+        const bigdatisId = this.extractBigdatisId(rawProperty);
+        
+        // Get official location mapping
+        const locationMapping = this.createLocationIdMapping();
+        const rawLocationId = rawProperty.locationId || rawProperty.location?.id;
+        const officialLocation = locationMapping[rawLocationId] || {};
+        
+        // Enhanced location handling with fallback
+        let city = officialLocation.city || rawProperty.city || rawProperty.location?.city || '';
+        let region = officialLocation.region || rawProperty.region || rawProperty.location?.region || '';
+        let neighborhood = officialLocation.neighborhood || rawProperty.neighborhood || rawProperty.location?.neighborhood || '';
+        
+        // Fallback: Extract location from title if no official mapping found
+        if (!officialLocation.city && rawLocationId) {
+            const { extractLocationFromTitle, logUnmappedLocation } = require('../../official-location-mapping.js');
+            const fallbackLocation = extractLocationFromTitle(rawProperty.title || rawProperty.name || '', rawLocationId);
+            
+            if (fallbackLocation) {
+                city = city || fallbackLocation.city;
+                region = region || fallbackLocation.region;
+                neighborhood = neighborhood || fallbackLocation.neighborhood;
+                logger.debug(`Used fallback location extraction for property ${bigdatisId}, locationId ${rawLocationId}`);
+            } else {
+                // Log unmapped location IDs for future investigation
+                logUnmappedLocation(rawLocationId, rawProperty.title || rawProperty.name || '', rawProperty.address || '');
+                logger.warn(`Unmapped location ID ${rawLocationId} for property ${bigdatisId}: "${rawProperty.title || rawProperty.name || ''}"`);
+            }
+        }
+        
         const normalized = {
-            bigdatisId: this.extractBigdatisId(rawProperty),
+            bigdatisId: bigdatisId,
+            url: null, // Will be populated from sources endpoint
+            sources: [], // Will be populated from sources endpoint with real source URLs
             title: rawProperty.title || rawProperty.name || '',
             description: rawProperty.description || '',
             propertyType: this.normalizePropertyType(rawProperty.propertyType || rawProperty.type),
@@ -318,15 +411,17 @@ class BigdatisScraper {
             typology: rawProperty.typology || rawProperty.rooms,
             
             location: {
-                city: rawProperty.city || rawProperty.location?.city || '',
-                region: rawProperty.region || rawProperty.location?.region || '',
-                neighborhood: rawProperty.neighborhood || rawProperty.location?.neighborhood || '',
+                city,
+                region,
+                neighborhood,
                 address: rawProperty.address || rawProperty.location?.address || '',
                 coordinates: {
                     latitude: rawProperty.latitude || rawProperty.coordinates?.lat || rawProperty.location?.coordinates?.latitude,
                     longitude: rawProperty.longitude || rawProperty.coordinates?.lng || rawProperty.location?.coordinates?.longitude
                 },
-                locationId: rawProperty.locationId || rawProperty.location?.id
+                locationId: rawLocationId,
+                mappingSource: officialLocation.city ? 'official' : (city ? 'fallback' : 'raw'),
+                hasCompleteMapping: !!(city && region)
             },
             
             price: {
@@ -370,16 +465,12 @@ class BigdatisScraper {
                 lastUpdated: new Date(),
                 version: 1,
                 source: 'bigdatis',
-                locationId: this.getCurrentLocation() // Track which location this property came from
+                locationId: this.getCurrentLocation(), // Track which location this property came from
+                locationMappingQuality: officialLocation.city ? 'official' : (city ? 'fallback' : 'missing')
             }
         };
 
         return normalized;
-    }
-
-    extractBigdatisId(property) {
-        return property.id || property._id || property.propertyId || property.listing_id || 
-            `${property.title}_${property.price}_${Date.now()}`;
     }
 
     normalizePropertyType(type) {
@@ -398,7 +489,7 @@ class BigdatisScraper {
     parsePrice(price) {
         if (typeof price === 'number') return price;
         if (typeof price === 'string') {
-            const cleaned = price.replace(/[^\d.]/g, '');
+            const cleaned = price.replace(/[^\d.,]/g, '');
             return parseFloat(cleaned) || null;
         }
         return null;
@@ -425,7 +516,38 @@ class BigdatisScraper {
     parseDate(dateStr) {
         if (!dateStr) return null;
         try {
-            return new Date(dateStr);
+            // Handle Unix timestamp (could be seconds or milliseconds)
+            if (typeof dateStr === 'number') {
+                // If timestamp is in seconds (less than 10000000000), convert to milliseconds
+                const timestamp = dateStr < 10000000000 ? dateStr * 1000 : dateStr;
+                const date = new Date(timestamp);
+                // Reject invalid dates (before year 2000)
+                if (date.getTime() < 946684800000) { // Before Jan 1, 2000
+                    return null;
+                }
+                return date;
+            }
+            
+            // Handle string Unix timestamp
+            if (typeof dateStr === 'string' && /^\d+$/.test(dateStr)) {
+                const timestamp = parseInt(dateStr);
+                // If timestamp is in seconds (less than 10000000000), convert to milliseconds
+                const convertedTimestamp = timestamp < 10000000000 ? timestamp * 1000 : timestamp;
+                const date = new Date(convertedTimestamp);
+                // Reject invalid dates (before year 2000)
+                if (date.getTime() < 946684800000) {
+                    return null;
+                }
+                return date;
+            }
+            
+            // Handle ISO date strings
+            const date = new Date(dateStr);
+            // Reject invalid dates (before year 2000)
+            if (date.getTime() < 946684800000) {
+                return null;
+            }
+            return date;
         } catch {
             return null;
         }
@@ -467,6 +589,35 @@ class BigdatisScraper {
     }
 
     extractContact(property) {
+        // Check if it's an array from the dedicated contacts endpoint
+        if (Array.isArray(property) && property.length > 0) {
+            const contact = property[0];
+            return {
+                name: contact.contactName || contact.name || '',
+                phone: contact.contactPhones && Array.isArray(contact.contactPhones) 
+                    ? contact.contactPhones.join(', ') 
+                    : (contact.phone || ''),
+                email: contact.email || '',
+                isAgency: contact.sellerType === 'agency',
+                agencyName: contact.agencyName || '',
+                active: contact.active || false
+            };
+        }
+        
+        // Check for contacts array (Bigdatis detail endpoint format)
+        if (property.contacts && Array.isArray(property.contacts) && property.contacts.length > 0) {
+            const contact = property.contacts[0];
+            return {
+                name: contact.contactName || contact.name || '',
+                phone: contact.phone || '',
+                email: contact.email || '',
+                isAgency: contact.sellerType === 'agency',
+                agencyName: property.agencyName || '',
+                active: contact.active || false
+            };
+        }
+        
+        // Fallback to individual fields
         return {
             name: property.contactName || property.contact?.name || '',
             phone: property.phone || property.contact?.phone || '',
@@ -503,6 +654,39 @@ class BigdatisScraper {
         for (const rawProperty of properties) {
             try {
                 const normalizedData = this.normalizePropertyData(rawProperty);
+                const propertyId = normalizedData.bigdatisId;
+                
+                // Fetch property details from detail endpoint to get images and description
+                const propertyDetails = await this.fetchPropertyDetails(propertyId);
+                if (propertyDetails) {
+                    // Merge detail data into normalized data
+                    normalizedData.images = this.extractImages(propertyDetails);
+                    if (propertyDetails.description) {
+                        normalizedData.description = propertyDetails.description;
+                        logger.info(`Property ${propertyId}: DESCRIPTION FOUND (${propertyDetails.description.length} chars)`);
+                    } else {
+                        logger.debug(`Property ${propertyId}: No description in API response`);
+                    }
+                    logger.debug(`Fetched details for property ${propertyId}: ${normalizedData.images.length} images`);
+                }
+                
+                // Fetch contacts from dedicated contacts endpoint to get phone numbers
+                const propertyContacts = await this.fetchPropertyContacts(propertyId);
+                if (propertyContacts) {
+                    normalizedData.contact = this.extractContact(propertyContacts);
+                    logger.debug(`Fetched contacts for property ${propertyId}: ${normalizedData.contact.phone || 'no phone'}`);
+                }
+                
+                // Fetch sources from dedicated sources endpoint to get source URLs
+                const propertySources = await this.fetchPropertySources(propertyId);
+                if (propertySources) {
+                    normalizedData.sources = propertySources;
+                    // Use first source URL as primary URL
+                    if (propertySources.length > 0 && propertySources[0].url) {
+                        normalizedData.url = propertySources[0].url;
+                    }
+                    logger.debug(`Fetched sources for property ${propertyId}: ${propertySources.length} sources`);
+                }
                 
                 if (this.enableDuplicatesCheck && !skipDuplicateCheck) {
                     const existingProperty = await Property.findDuplicates(normalizedData);
@@ -583,7 +767,13 @@ class BigdatisScraper {
         let page = 0;
         let offset = null;
         let consecutiveEmptyPages = 0;
-        const maxConsecutiveEmptyPages = 7; // Stop after 3 consecutive empty pages
+        let consecutiveZeroNewPages = 0; // Track pages with 0 NEW properties
+        let lastOffset = null;
+        let sameOffsetCount = 0;
+        const maxConsecutiveEmptyPages = 7; // Stop after 7 consecutive empty pages
+        const maxConsecutiveZeroNewPages = 10; // Stop after 10 pages with 0 NEW properties
+        const maxSameOffset = 3; // Stop if same offset used 3 times
+        const maxPagesPerLocation = maxPages || 500; // Hard limit per location
 
         try {
             while (true) {
@@ -677,6 +867,19 @@ class BigdatisScraper {
 
                 logger.scrapingInfo(`Location ${locationId}, Page ${page}: Retrieved ${newPropertiesForSession.length} NEW properties (${existingInDb.length} exist in DB, ${duplicatesFromSession.length} session duplicates). Location total: ${locationStats.scraped}`);
 
+                // Check for consecutive pages with 0 NEW properties
+                if (newPropertiesForSession.length === 0) {
+                    consecutiveZeroNewPages++;
+                    logger.scrapingInfo(`Zero NEW properties for location ${locationId}, page ${page}. Count: ${consecutiveZeroNewPages}/${maxConsecutiveZeroNewPages}`);
+                    
+                    if (consecutiveZeroNewPages >= maxConsecutiveZeroNewPages) {
+                        logger.scrapingInfo(`Reached ${maxConsecutiveZeroNewPages} consecutive pages with 0 NEW properties for location ${locationId}. Moving to next location.`);
+                        break;
+                    }
+                } else {
+                    consecutiveZeroNewPages = 0; // Reset counter when we get new properties
+                }
+
                 // Save properties to database (ONLY the truly new ones)
                 if (newPropertiesForSession.length > 0) {
                     const saveResult = await this.saveProperties(newPropertiesForSession, offset, true);
@@ -695,8 +898,28 @@ class BigdatisScraper {
                     break;
                 }
 
+                // Check for same offset being used repeatedly (infinite loop detection)
+                if (nextOffset === lastOffset) {
+                    sameOffsetCount++;
+                    logger.scrapingInfo(`Same offset detected: ${nextOffset}. Count: ${sameOffsetCount}/${maxSameOffset}`);
+                    
+                    if (sameOffsetCount >= maxSameOffset) {
+                        logger.scrapingInfo(`Same offset used ${maxSameOffset} times for location ${locationId}. Breaking to prevent infinite loop.`);
+                        break;
+                    }
+                } else {
+                    sameOffsetCount = 0; // Reset counter when offset changes
+                }
+                lastOffset = nextOffset;
+
+                // Check max pages limit
+                if (page >= maxPagesPerLocation - 1) {
+                    logger.scrapingInfo(`Reached maximum pages limit (${maxPagesPerLocation}) for location ${locationId}`);
+                    break;
+                }
+
                 if (maxPages && page >= maxPages - 1) {
-                    logger.scrapingInfo(`Reached maximum pages limit (${maxPages}) for location ${locationId}`);
+                    logger.scrapingInfo(`Reached user-specified maximum pages limit (${maxPages}) for location ${locationId}`);
                     break;
                 }
 
@@ -738,6 +961,10 @@ class BigdatisScraper {
         this.stats.startTime = new Date();
         logger.scrapingInfo('Starting location-based property scraping session');
         logger.scrapingInfo(`Total locations to process: ${this.targetLocationIds.length}`);
+
+        // Fetch complete location data from Bigdatis CDN before scraping
+        const { fetchAndCacheLocations } = require('../../official-location-mapping.js');
+        await fetchAndCacheLocations();
 
         const allProperties = [];
         const locationResults = [];
@@ -863,6 +1090,13 @@ class BigdatisScraper {
         this.locationStats.clear();
         this.currentLocationIndex = 0;
     }
+
+    // Location mapping — backed by CDN cache or hardcoded fallback
+    createLocationIdMapping() {
+        const { createLocationMapping } = require('../../official-location-mapping.js');
+        return createLocationMapping();
+    }
+
 }
 
 module.exports = BigdatisScraper;

@@ -20,7 +20,7 @@ class ScrapingScheduler {
         this.failedRuns = 0;
         
         // Use your existing .env configuration
-        this.cronPattern = process.env.SCRAPE_SCHEDULE || '*/30 * * * *'; // Every 30 minutes
+        this.cronPattern = process.env.SCRAPE_SCHEDULE || '0 7 * * *'; // Daily at 07:00
         this.maxPagesPerRun = parseInt(process.env.MAX_PAGES_PER_RUN) || null;
         
         // Status file to track runs
@@ -76,7 +76,7 @@ class ScrapingScheduler {
     
     async runScraping() {
         if (this.isRunning) {
-            logger.warn('Scraping is already running, skipping this cycle');
+            logger.info('⏭️ Scraper skipped (already running)');
             return;
         }
         
@@ -84,7 +84,7 @@ class ScrapingScheduler {
         this.lastRunTime = new Date();
         this.totalRuns++;
         
-        logger.info(`🚀 Starting scheduled scraping run #${this.totalRuns}`);
+        logger.info('🚀 Scraper started');
         logger.info(`⏰ Started at: ${this.lastRunTime.toLocaleString()}`);
         
         try {
@@ -96,6 +96,7 @@ class ScrapingScheduler {
             
             // Log results
             const duration = Math.round((new Date() - this.lastRunTime) / 1000);
+            logger.info('✅ Scraper finished');
             logger.info('✅ Scheduled scraping completed successfully', {
                 runNumber: this.totalRuns,
                 duration: `${duration}s`,
@@ -174,8 +175,10 @@ class ScrapingScheduler {
         // Convert your existing SCRAPE_SCHEDULE or use default
         let cronPattern = this.cronPattern;
         
-        // If using the default 6-hour schedule from your .env
-        if (cronPattern === '0 */6 * * *') {
+        // If using the default daily schedule
+        if (cronPattern === '0 7 * * *') {
+            logger.info(`📅 Scheduled to run daily at 07:00 (Africa/Tunis)`);
+        } else if (cronPattern === '0 */6 * * *') {
             logger.info(`📅 Scheduled to run every 6 hours`);
         } else if (cronPattern === '*/30 * * * *') {
             logger.info(`📅 Scheduled to run every 30 minutes`);
@@ -223,7 +226,19 @@ class ScrapingScheduler {
     updateNextRunTime() {
         const now = new Date();
         
-        if (this.cronPattern === '*/30 * * * *') {
+        if (this.cronPattern === '0 7 * * *') {
+            // Daily at 07:00
+            const nextRun = new Date(now);
+            nextRun.setHours(7, 0, 0, 0);
+            
+            // If today's 07:00 has passed, schedule for tomorrow
+            if (nextRun <= now) {
+                nextRun.setDate(nextRun.getDate() + 1);
+            }
+            
+            this.nextRunTime = nextRun;
+            
+        } else if (this.cronPattern === '*/30 * * * *') {
             // Every 30 minutes
             const minutes = now.getMinutes();
             const nextMinutes = minutes < 30 ? 30 : 60;

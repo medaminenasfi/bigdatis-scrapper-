@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env
+.DS_Store
+logs/*
+exports/*
+scraping-status.json
+locations-cache.json
