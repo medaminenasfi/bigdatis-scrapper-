@@ -844,16 +844,18 @@ class BigdatisScraper {
                         continue;
                     }
                     
-                    // Check if exists in database
-                    try {
-                        const existingProp = await Property.findOne({ bigdatisId: propId });
-                        if (existingProp) {
-                            existingInDb.push(propId);
-                            seenPropertyIds.add(propId);
-                            continue;
+                    // Check if exists in database (only if duplicate check is enabled)
+                    if (this.enableDuplicatesCheck) {
+                        try {
+                            const existingProp = await Property.findOne({ bigdatisId: propId });
+                            if (existingProp) {
+                                existingInDb.push(propId);
+                                seenPropertyIds.add(propId);
+                                continue;
+                            }
+                        } catch (dbError) {
+                            logger.warn(`Database check failed for property ${propId} (Location: ${locationId}):`, dbError.message);
                         }
-                    } catch (dbError) {
-                        logger.warn(`Database check failed for property ${propId} (Location: ${locationId}):`, dbError.message);
                     }
                     
                     // Truly new property
