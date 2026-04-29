@@ -1,7 +1,14 @@
 const mongoose = require('mongoose');
 const logger = require('./logger');
 
+// Disable buffering to prevent silent failures
+mongoose.set('bufferCommands', false);
+
 async function connectMongoDB() {
+  if (!process.env.MONGODB_URI) {
+    logger.warn('MONGODB_URI not set - skipping database connection');
+    return;
+  }
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
       serverSelectionTimeoutMS: 30000,

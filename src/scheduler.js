@@ -11,7 +11,8 @@ const command = args[0] || 'start';
 async function main() {
     try {
         // Initialize database connection
-        require('./config/database');
+        const { connectMongoDB } = require('./config/database');
+        await connectMongoDB();
         
         // Create logs directory if it doesn't exist
         const fs = require('fs');
