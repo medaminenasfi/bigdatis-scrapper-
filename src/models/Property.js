@@ -153,7 +153,14 @@ const propertySchema = new mongoose.Schema({
     views: {
       type: Number,
       default: 0
-    }
+    },
+    // Enhanced timestamp fields from Bigdatis API
+    firstSeenAt: Number,
+    createdAt: Number,
+    modifiedAt: Number,
+    priceDroppedAt: Number,
+    timestamp: Number,
+    priceTimestamp: Number
   },
   
   // Raw data from API (for backup/debugging)

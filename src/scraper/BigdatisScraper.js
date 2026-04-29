@@ -668,6 +668,17 @@ class BigdatisScraper {
                         logger.debug(`Property ${propertyId}: No description in API response`);
                     }
                     logger.debug(`Fetched details for property ${propertyId}: ${normalizedData.images.length} images`);
+                    
+                    // Add enhanced timestamp fields from API response
+                    if (!normalizedData.publication) {
+                        normalizedData.publication = {};
+                    }
+                    normalizedData.publication.firstSeenAt = propertyDetails.firstSeenAt;
+                    normalizedData.publication.createdAt = propertyDetails.createdAt;
+                    normalizedData.publication.modifiedAt = propertyDetails.modifiedAt;
+                    normalizedData.publication.priceDroppedAt = propertyDetails.priceDroppedAt;
+                    normalizedData.publication.timestamp = propertyDetails.timestamp;
+                    normalizedData.publication.priceTimestamp = propertyDetails.priceTimestamp;
                 }
                 
                 // Fetch contacts from dedicated contacts endpoint to get phone numbers
