@@ -3,7 +3,10 @@ const logger = require('./logger');
 
 async function connectMongoDB() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI, {
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 45000
+    });
     logger.info('Connected to MongoDB');
   } catch (error) {
     logger.error(`MongoDB connection error: ${error.message}`);
