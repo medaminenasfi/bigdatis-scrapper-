@@ -1,4 +1,8 @@
 const mongoose = require('mongoose');
+const {
+  applyVisibilityToPublication,
+  buildPublicListingQuery
+} = require('../utils/visibility');
 
 const propertySchema = new mongoose.Schema({
   // Unique identifier from Bigdatis
@@ -145,6 +149,15 @@ const propertySchema = new mongoose.Schema({
     publishedAt: Date,
     updatedAt: Date,
     expiresAt: Date,
+    visibility: {
+      type: String,
+      enum: ['public', 'archived', 'pending_validation'],
+      default: 'pending_validation'
+    },
+    archivedAt: {
+      type: Date,
+      required: false
+    },
     status: {
       type: String,
       enum: ['active', 'sold', 'rented', 'expired', 'removed'],
@@ -160,7 +173,11 @@ const propertySchema = new mongoose.Schema({
     modifiedAt: Number,
     priceDroppedAt: Number,
     timestamp: Number,
-    priceTimestamp: Number
+    priceTimestamp: Number,
+    dateProvenance: {
+      type: mongoose.Schema.Types.Mixed,
+      required: false
+    }
   },
   
   // Raw data from API (for backup/debugging)
@@ -215,6 +232,10 @@ propertySchema.virtual('propertyAge').get(function() {
   return null;
 });
 
+propertySchema.virtual('isPublicListing').get(function() {
+  return this.publication?.visibility === 'public';
+});
+
 // Pre-save middleware to update lastUpdated
 propertySchema.pre('save', function(next) {
   this.scrapingMeta.lastUpdated = new Date();
@@ -223,22 +244,49 @@ propertySchema.pre('save', function(next) {
 
 // Static method to find duplicates
 propertySchema.statics.findDuplicates = function(propertyData) {
-  const query = {
-    $or: [
-      { bigdatisId: propertyData.bigdatisId },
-      {
-        'location.address': propertyData.location?.address,
-        'price.amount': propertyData.price?.amount,
-        propertyType: propertyData.propertyType
-      }
-    ]
-  };
-  return this.findOne(query);
+  // Only match on the authoritative BigDatis ID
+  return this.findOne({ bigdatisId: propertyData.bigdatisId });
+};
+
+propertySchema.statics.getPublicListingQuery = function(baseQuery = {}) {
+  return buildPublicListingQuery(baseQuery);
+};
+
+propertySchema.statics.findPublicListings = function(baseQuery = {}, options = {}) {
+  const query = this.find(this.getPublicListingQuery(baseQuery));
+
+  if (options.select) {
+    query.select(options.select);
+  }
+
+  if (options.sort) {
+    query.sort(options.sort);
+  }
+
+  if (options.skip !== undefined) {
+    query.skip(options.skip);
+  }
+
+  if (options.limit !== undefined) {
+    query.limit(options.limit);
+  }
+
+  return query;
+};
+
+// Static method for fuzzy duplicates (useful for reporting, but not blocking saves)
+propertySchema.statics.findFuzzyDuplicates = function(propertyData) {
+  return this.find({
+    bigdatisId: { $ne: propertyData.bigdatisId },
+    'location.address': propertyData.location?.address,
+    'price.amount': propertyData.price?.amount,
+    propertyType: propertyData.propertyType
+  }).limit(5);
 };
 
 // Instance method to check if property data has changed
 propertySchema.methods.hasSignificantChanges = function(newData) {
-  const significantFields = ['price.amount', 'publication.status', 'area.total'];
+  const significantFields = ['price.amount', 'publication.status', 'publication.publishedAt', 'publication.visibility', 'area.total'];
   
   for (const field of significantFields) {
     const currentValue = this.get(field);

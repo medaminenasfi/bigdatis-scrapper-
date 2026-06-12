@@ -26,7 +26,7 @@ class ScrapingScheduler {
         // Status file to track runs
         this.statusFile = path.join(process.cwd(), 'scraping-status.json');
         
-        this.initializeStatus();
+        this.statusReady = this.initializeStatus();
     }
     
     async initializeStatus() {
@@ -35,6 +35,7 @@ class ScrapingScheduler {
             this.totalRuns = status.totalRuns || 0;
             this.successfulRuns = status.successfulRuns || 0;
             this.failedRuns = status.failedRuns || 0;
+            this.totalRuns = Math.max(this.totalRuns, this.successfulRuns + this.failedRuns);
             this.lastRunTime = status.lastRunTime ? new Date(status.lastRunTime) : null;
         } catch (error) {
             logger.warn('Could not load previous status, starting fresh');
@@ -75,6 +76,8 @@ class ScrapingScheduler {
     }
     
     async runScraping() {
+        await this.statusReady;
+
         if (this.isRunning) {
             logger.info('⏭️ Scraper skipped (already running)');
             return;
@@ -170,6 +173,10 @@ class ScrapingScheduler {
     }
     
     start() {
+        this.statusReady.catch(error => {
+            logger.warn(`Could not initialize scheduler status before start: ${error.message}`);
+        });
+
         logger.info(`🕐 Starting scraping scheduler with pattern: ${this.cronPattern}`);
         
         // Convert your existing SCRAPE_SCHEDULE or use default
@@ -296,6 +303,7 @@ class ScrapingScheduler {
     }
     
     async triggerManualRun() {
+        await this.statusReady;
         logger.info('🔧 Manual scraping run triggered');
         await this.runScraping();
     }

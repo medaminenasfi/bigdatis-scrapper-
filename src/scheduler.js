@@ -41,7 +41,7 @@ async function main() {
                 
                 // Show configuration
                 console.log('📋 Current Configuration:');
-                console.log(`   Database: ${process.env.MONGODB_URI}`);
+                console.log(`   Database: ${process.env.MONGODB_URI ? 'Configured' : 'Not configured'}`);
                 console.log(`   Schedule: ${process.env.SCRAPE_SCHEDULE || '*/30 * * * *'}`);
                 console.log(`   Max Pages Per Run: ${process.env.MAX_PAGES_PER_RUN || 'Unlimited'}`);
                 console.log(`   Duplicate Check: ${process.env.ENABLE_DUPLICATES_CHECK !== 'false' ? 'Enabled' : 'Disabled'}`);

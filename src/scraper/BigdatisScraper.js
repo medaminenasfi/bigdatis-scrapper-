@@ -3,27 +3,35 @@ const fs = require('fs').promises;
 const path = require('path');
 const logger = require('../config/logger');
 const Property = require('../models/Property');
+const { applyVisibilityToPublication } = require('../utils/visibility');
+const PerformanceTracker = require('../utils/performanceTracker');
 
 class BigdatisScraper {
     constructor(options = {}) {
         this.baseUrl = process.env.BIGDATIS_API_URL || "https://server.bigdatis.tn/api/properties/search";
+        this.accessToken = process.env.ACCESS_TOKEN || '';
         this.delay = options.delay || parseInt(process.env.REQUEST_DELAY) || 1000;
         this.maxRetries = options.maxRetries || parseInt(process.env.MAX_RETRIES) || 3;
         this.batchSize = options.batchSize || parseInt(process.env.BATCH_SIZE) || 50;
         this.enableDuplicatesCheck = options.enableDuplicatesCheck ?? 
             (process.env.ENABLE_DUPLICATES_CHECK === 'true');
+        this.searchOnly = options.searchOnly ?? (process.env.SEARCH_ONLY === 'true');
+        this.skipNoPhoto = options.skipNoPhoto ?? (process.env.SKIP_NO_PHOTO === 'true');
         
         // Location-based scraping configuration
         this.targetLocationIds = this.getTargetLocationIds();
         this.currentLocationIndex = 0;
         this.locationStats = new Map(); // Track stats per location
         
+        // Photo retry queue for properties that failed to get images
+        this.photoRetryQueue = new Map(); // propertyId => retry attempts
+        
         // Create axios instance with default config
         this.client = axios.create({
             timeout: parseInt(process.env.TIMEOUT) || 30000,
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`,
+                'Authorization': `Bearer ${this.accessToken}`,
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
@@ -35,6 +43,20 @@ class BigdatisScraper {
                 'Sec-Fetch-Site': 'same-origin'
             }
         });
+
+        this.accessTokenExpiresAt = this.getAccessTokenExpiry(this.accessToken);
+        if (!this.accessToken) {
+            logger.error('ACCESS_TOKEN is not configured');
+        } else if (this.accessTokenExpiresAt && this.accessTokenExpiresAt.getTime() <= Date.now()) {
+            logger.error(`ACCESS_TOKEN is expired since ${this.accessTokenExpiresAt.toISOString()}`);
+        } else if (this.accessTokenExpiresAt) {
+            logger.info(`ACCESS_TOKEN expires at ${this.accessTokenExpiresAt.toISOString()}`);
+        }
+        
+        // Parse configurable filters
+        const transactionTypes = process.env.TRANSACTION_TYPES ? process.env.TRANSACTION_TYPES.split(',') : ["sale"];
+        const propertyTypes = process.env.PROPERTY_TYPES ? process.env.PROPERTY_TYPES.split(',') : ["flat", "house"];
+        const typologies = process.env.TYPOLOGIES ? process.env.TYPOLOGIES.split(',') : ["s+1", "s+2", "s+3", "s+4", "s+5", "s+6", "s+7", "s+8+"];
         
         // Default search payload
         this.basePayload = {
@@ -42,15 +64,11 @@ class BigdatisScraper {
                 propertyFilters: [
                     {
                         property: "transactionType",
-                        values: ["sale"]
+                        values: transactionTypes
                     },
                     {
                         property: "propertyType",
-                        values: ["flat", "house"]
-                    },
-                    {
-                        property: "typology",
-                        values: ["s+3", "s+1", "s+2", "s+4", "s+5", "s+6", "s+7", "s+8+"]
+                        values: propertyTypes
                     }
                 ],
                 location: {
@@ -74,6 +92,14 @@ class BigdatisScraper {
             },
             orderBy: "date"
         };
+        
+        // Only add typology filter if it's not set to "all" (empty or explicit "all")
+        if (typologies.length > 0 && typologies[0] !== '' && typologies[0].toLowerCase() !== 'all') {
+            this.basePayload.filter.propertyFilters.push({
+                property: "typology",
+                values: typologies
+            });
+        }
 
         this.stats = {
             totalScraped: 0,
@@ -86,11 +112,130 @@ class BigdatisScraper {
             startTime: null,
             endTime: null
         };
+
+        this.perf = new PerformanceTracker();
+        this._locationNameIndex = this._buildLocationNameIndex();
     }
 
-    // Get all target location IDs - preserve full scraping coverage
+    _buildLocationNameIndex() {
+        const index = new Map();
+        try {
+            const fs = require('fs');
+            const filteredPath = path.join(__dirname, '../../exports/usable-locations-filtered.json');
+            const cachePath = path.join(__dirname, '../../locations-cache.json');
+            let list = [];
+            if (fs.existsSync(filteredPath)) {
+                list = JSON.parse(fs.readFileSync(filteredPath, 'utf8'));
+            } else if (fs.existsSync(cachePath)) {
+                list = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+            }
+            for (const loc of list) {
+                if (!loc?.id) continue;
+                const name = loc.name || '';
+                const parts = name.split(',').map((p) => p.trim());
+                index.set(String(loc.id), {
+                    name,
+                    governorate: parts[parts.length - 1] || null
+                });
+            }
+        } catch (e) {
+            logger.warn(`Could not build location name index: ${e.message}`);
+        }
+        return index;
+    }
+
+    _applyLocationMeta(locationId) {
+        const meta = this._locationNameIndex.get(String(locationId));
+        if (meta) {
+            this.perf.setLocationMeta(locationId, meta);
+        }
+    }
+
+    getAccessTokenExpiry(token) {
+        if (!token) {
+            return null;
+        }
+
+        try {
+            const parts = token.split('.');
+            if (parts.length < 2) {
+                return null;
+            }
+
+            let payload = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+            while (payload.length % 4 !== 0) {
+                payload += '=';
+            }
+
+            const decoded = JSON.parse(Buffer.from(payload, 'base64').toString('utf8'));
+            if (!decoded.exp) {
+                return null;
+            }
+
+            return new Date(decoded.exp * 1000);
+        } catch (error) {
+            logger.warn(`Unable to decode ACCESS_TOKEN expiry: ${error.message}`);
+            return null;
+        }
+    }
+
+    ensureAccessTokenIsValid() {
+        if (!this.accessToken) {
+            throw new Error('ACCESS_TOKEN is missing. Set a valid BigDatis JWT before scraping.');
+        }
+
+        if (this.accessTokenExpiresAt && this.accessTokenExpiresAt.getTime() <= Date.now()) {
+            throw new Error(`ACCESS_TOKEN expired at ${this.accessTokenExpiresAt.toISOString()}. Refresh it before scraping.`);
+        }
+    }
+
+    // Get all target location IDs - load from CDN cache or fallback
     getTargetLocationIds() {
-        return [41, 44, 45, 47, 49, 52, 126, 128, 131, 133, 167, 168, 169, 170, 171, 173, 176, 177, 178, 179, 180, 181, 182, 183, 184, 189, 190, 192, 194, 196, 199, 200, 201, 203, 204, 205, 235, 237, 240, 241, 242, 243, 262, 263, 264, 265, 269, 270, 271, 272, 273, 274, 277, 278, 279, 290, 308, 309, 311, 436, 437, 440, 811, 822, 965, 3292, 3312, 3345, 3373, 3421, 3424, 3436, 3476, 3489, 3491, 3499, 3526, 3722, 3960, 4443, 4495, 4830, 4994, 5002, 5173, 5174, 5175, 5176, 5177, 5193, 5283, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 5303, 5305, 5306, 5307, 5308, 5309, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336, 5377, 5380, 5384, 5385, 5386];
+        try {
+            const fs = require('fs');
+            const { filterLocations, parseAllowedGovernorates } = require('../utils/locationFilter');
+            const maxLocationsPerRun = parseInt(process.env.MAX_LOCATIONS_PER_RUN) || null;
+            const allowedGovernorates = parseAllowedGovernorates(process.env.TARGET_GOVERNORATES);
+
+            const matchesTargetGovernorates = (locationName) =>
+                filterLocations([{ name: locationName }]).length > 0;
+
+            // Allow using a filtered, user-provided list when requested
+            const useFiltered = process.env.USE_FILTERED_LOCATIONS === 'true';
+            const filteredPath = path.join(__dirname, '../../exports/usable-locations-filtered.json');
+            if (useFiltered && fs.existsSync(filteredPath)) {
+                const filtered = JSON.parse(fs.readFileSync(filteredPath, 'utf8'));
+                const filteredByGov = filterLocations(filtered);
+                const allIds = filteredByGov.map(loc => loc.id);
+                const ids = maxLocationsPerRun ? allIds.slice(0, maxLocationsPerRun) : allIds;
+                logger.info(
+                    `Loaded ${ids.length} location IDs from usable-locations-filtered.json ` +
+                    `(governorates: ${allowedGovernorates.join(', ')})` +
+                    (maxLocationsPerRun ? ` [limited to first ${maxLocationsPerRun}]` : '')
+                );
+                return ids;
+            }
+
+            const cachePath = path.join(__dirname, '../../locations-cache.json');
+            if (fs.existsSync(cachePath)) {
+                const data = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+                const filteredByGov = filterLocations(data.filter(loc => loc.use !== false));
+                const allIds = filteredByGov.map(loc => loc.id);
+                const usableIds = maxLocationsPerRun ? allIds.slice(0, maxLocationsPerRun) : allIds;
+                logger.info(
+                    `Loaded ${usableIds.length} location IDs from CDN cache ` +
+                    `(governorates: ${allowedGovernorates.join(', ')})` +
+                    (maxLocationsPerRun ? ` [limited to first ${maxLocationsPerRun}]` : '')
+                );
+                return usableIds;
+            }
+        } catch (e) {
+            logger.warn(`Failed to load locations from cache: ${e.message}. Using hardcoded fallback.`);
+        }
+        
+        // Fallback to the original hardcoded list if cache fails
+        const fallbackIds = [41, 44, 45, 47, 49, 52, 126, 128, 131, 133, 167, 168, 169, 170, 171, 173, 176, 177, 178, 179, 180, 181, 182, 183, 184, 189, 190, 192, 194, 196, 199, 200, 201, 203, 204, 205, 235, 237, 240, 241, 242, 243, 262, 263, 264, 265, 269, 270, 271, 272, 273, 274, 277, 278, 279, 290, 308, 309, 311, 436, 437, 440, 811, 822, 965, 3292, 3312, 3345, 3373, 3421, 3424, 3436, 3476, 3489, 3491, 3499, 3526, 3722, 3960, 4443, 4495, 4830, 4994, 5002, 5173, 5174, 5175, 5176, 5177, 5193, 5283, 5288, 5289, 5290, 5291, 5292, 5293, 5294, 5295, 5296, 5297, 5298, 5299, 5300, 5301, 5302, 5303, 5305, 5306, 5307, 5308, 5309, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336, 5377, 5380, 5384, 5385, 5386];
+        return maxLocationsPerRun ? fallbackIds.slice(0, maxLocationsPerRun) : fallbackIds;
     }
 
     // Initialize location stats tracking
@@ -145,12 +290,23 @@ class BigdatisScraper {
     }
 
     async makeRequest(payload, retryCount = 0) {
+        if (retryCount === 0) {
+            this.perf.recordPageScan();
+        }
+
+        return this.perf.track(
+            'makeRequest',
+            () => this._makeRequestImpl(payload, retryCount),
+            { incrementRequest: retryCount === 0 }
+        );
+    }
+
+    async _makeRequestImpl(payload, retryCount = 0) {
         const startTime = Date.now();
         
         try {
             logger.apiRequest(this.baseUrl, 'POST', { payload });
             
-            // Debug: Log headers being sent
             if (retryCount === 0) {
                 logger.debug('Request headers:', {
                     'Authorization': this.client.defaults.headers.Authorization ? 'Bearer ***' : 'Missing',
@@ -164,12 +320,45 @@ class BigdatisScraper {
             logger.apiResponse(this.baseUrl, response.status, responseTime);
             return response.data;
         } catch (error) {
-            const responseTime = Date.now() - startTime;
+            const status = error.response?.status;
+
+            if (status === 401 || status === 403) {
+                logger.error(`Authentication failed with status ${status}. Check ACCESS_TOKEN before retrying.`);
+                throw error;
+            }
+
+            if (status === 429) {
+                let retryAfterValue = error.response.headers['retry-after'];
+                let backoffDelay = this.delay * Math.pow(2, retryCount + 1);
+                
+                if (retryAfterValue) {
+                    const parsedRetryAfter = Number(retryAfterValue);
+                    if (Number.isFinite(parsedRetryAfter) && parsedRetryAfter > 0) {
+                        backoffDelay = parsedRetryAfter * 1000;
+                    } else {
+                        const retryDate = new Date(retryAfterValue);
+                        if (!isNaN(retryDate.getTime())) {
+                            backoffDelay = Math.max(0, retryDate.getTime() - Date.now());
+                        }
+                    }
+                }
+                
+                backoffDelay = Math.max(backoffDelay, 60000);
+                const maxRateLimitRetries = 10;
+                if (retryCount < maxRateLimitRetries) {
+                    this.perf.record429('makeRequest', backoffDelay);
+                    this.perf.recordRetry('makeRequest');
+                    logger.warn(`Rate limited (429). Global cooldown ${backoffDelay}ms before retry (${retryCount + 1}/${maxRateLimitRetries}).`);
+                    await this.sleep(backoffDelay, '429_cooldown');
+                    return this._makeRequestImpl(payload, retryCount + 1);
+                }
+            }
             
             if (retryCount < this.maxRetries) {
+                this.perf.recordRetry('makeRequest');
                 logger.warn(`Request failed, retrying (${retryCount + 1}/${this.maxRetries}):`, error.message);
-                await this.sleep(this.delay * (retryCount + 1)); // Exponential backoff
-                return this.makeRequest(payload, retryCount + 1);
+                await this.sleep(this.delay * Math.pow(2, retryCount + 1));
+                return this._makeRequestImpl(payload, retryCount + 1);
             }
             
             logger.error(`Request failed after ${this.maxRetries} retries:`, error.message);
@@ -180,7 +369,6 @@ class BigdatisScraper {
             
             this.stats.errors++;
             
-            // Update location stats
             const currentLocationId = this.getCurrentLocation();
             if (currentLocationId) {
                 const locationStats = this.locationStats.get(currentLocationId);
@@ -194,72 +382,128 @@ class BigdatisScraper {
     }
 
     async fetchPropertyDetails(propertyId, retryCount = 0) {
+        return this.perf.track(
+            'fetchPropertyDetails',
+            () => this._fetchPropertyDetailsImpl(propertyId, retryCount),
+            { incrementRequest: retryCount === 0, propertyId }
+        );
+    }
+
+    async _fetchPropertyDetailsImpl(propertyId, retryCount = 0) {
         const startTime = Date.now();
         const detailUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}`;
         
         try {
             const response = await this.client.get(detailUrl);
             const responseTime = Date.now() - startTime;
-            
             logger.debug(`Fetched details for property ${propertyId} (${responseTime}ms)`);
             return response.data;
         } catch (error) {
-            if (retryCount < 2) {
-                logger.warn(`Failed to fetch details for property ${propertyId}, retrying (${retryCount + 1}/2)`);
-                await this.sleep(1000);
-                return this.fetchPropertyDetails(propertyId, retryCount + 1);
+            if (error.response && error.response.status === 429) {
+                const retryAfter = error.response.headers['retry-after'];
+                const waitTime = retryAfter ? parseInt(retryAfter) * 1000 : this.delay * (retryCount + 2);
+                
+                if (retryCount < this.maxRetries) {
+                    this.perf.record429('fetchPropertyDetails', waitTime);
+                    this.perf.recordRetry('fetchPropertyDetails');
+                    logger.warn(`Rate limited for property ${propertyId}, waiting ${waitTime}ms before retry (${retryCount + 1}/${this.maxRetries})`);
+                    await this.sleep(waitTime, '429_cooldown');
+                    return this._fetchPropertyDetailsImpl(propertyId, retryCount + 1);
+                }
+                
+                logger.error(`Rate limit exceeded for property ${propertyId} after ${this.maxRetries} retries - giving up`);
+                return null;
             }
             
-            logger.warn(`Failed to fetch details for property ${propertyId} after retries: ${error.message}`);
+            if (retryCount < this.maxRetries) {
+                this.perf.recordRetry('fetchPropertyDetails');
+                logger.warn(`Failed to fetch details for property ${propertyId}, retrying (${retryCount + 1}/${this.maxRetries}): ${error.message}`);
+                await this.sleep(this.delay * (retryCount + 1));
+                return this._fetchPropertyDetailsImpl(propertyId, retryCount + 1);
+            }
+            
+            logger.warn(`Failed to fetch details for property ${propertyId} after ${this.maxRetries} retries: ${error.message}`);
             return null;
         }
     }
 
     async fetchPropertyContacts(propertyId, retryCount = 0) {
+        return this.perf.track(
+            'fetchPropertyContacts',
+            () => this._fetchPropertyContactsImpl(propertyId, retryCount),
+            { incrementRequest: retryCount === 0, propertyId }
+        );
+    }
+
+    async _fetchPropertyContactsImpl(propertyId, retryCount = 0) {
         const startTime = Date.now();
         const contactsUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}/contacts`;
         
         try {
             const response = await this.client.get(contactsUrl);
             const responseTime = Date.now() - startTime;
-            
             logger.debug(`Fetched contacts for property ${propertyId} (${responseTime}ms)`);
             return response.data;
         } catch (error) {
-            if (retryCount < 2) {
-                logger.warn(`Failed to fetch contacts for property ${propertyId}, retrying (${retryCount + 1}/2)`);
-                await this.sleep(1000);
-                return this.fetchPropertyContacts(propertyId, retryCount + 1);
+            if (error.response?.status === 429 && retryCount < this.maxRetries) {
+                const waitTime = this.delay * (retryCount + 2);
+                this.perf.record429('fetchPropertyContacts', waitTime);
+                this.perf.recordRetry('fetchPropertyContacts');
+                await this.sleep(waitTime, '429_cooldown');
+                return this._fetchPropertyContactsImpl(propertyId, retryCount + 1);
+            }
+            if (retryCount < this.maxRetries) {
+                this.perf.recordRetry('fetchPropertyContacts');
+                logger.warn(`Failed to fetch contacts for property ${propertyId}, retrying (${retryCount + 1}/${this.maxRetries}): ${error.message}`);
+                await this.sleep(this.delay * (retryCount + 1));
+                return this._fetchPropertyContactsImpl(propertyId, retryCount + 1);
             }
             
-            logger.warn(`Failed to fetch contacts for property ${propertyId} after retries: ${error.message}`);
+            logger.warn(`Failed to fetch contacts for property ${propertyId} after ${this.maxRetries} retries: ${error.message}`);
             return null;
         }
     }
 
     async fetchPropertySources(propertyId, retryCount = 0) {
+        return this.perf.track(
+            'fetchPropertySources',
+            () => this._fetchPropertySourcesImpl(propertyId, retryCount),
+            { incrementRequest: retryCount === 0, propertyId }
+        );
+    }
+
+    async _fetchPropertySourcesImpl(propertyId, retryCount = 0) {
         const startTime = Date.now();
         const sourcesUrl = `${this.baseUrl.replace('/search', '')}/show/${propertyId}/sources`;
         
         try {
             const response = await this.client.get(sourcesUrl);
             const responseTime = Date.now() - startTime;
-            
             logger.debug(`Fetched sources for property ${propertyId} (${responseTime}ms)`);
             return response.data;
         } catch (error) {
-            if (retryCount < 2) {
-                logger.warn(`Failed to fetch sources for property ${propertyId}, retrying (${retryCount + 1}/2)`);
-                await this.sleep(1000);
-                return this.fetchPropertySources(propertyId, retryCount + 1);
+            if (error.response?.status === 429 && retryCount < this.maxRetries) {
+                const waitTime = this.delay * (retryCount + 2);
+                this.perf.record429('fetchPropertySources', waitTime);
+                this.perf.recordRetry('fetchPropertySources');
+                await this.sleep(waitTime, '429_cooldown');
+                return this._fetchPropertySourcesImpl(propertyId, retryCount + 1);
+            }
+            if (retryCount < this.maxRetries) {
+                this.perf.recordRetry('fetchPropertySources');
+                logger.warn(`Failed to fetch sources for property ${propertyId}, retrying (${retryCount + 1}/${this.maxRetries}): ${error.message}`);
+                await this.sleep(this.delay * (retryCount + 1));
+                return this._fetchPropertySourcesImpl(propertyId, retryCount + 1);
             }
             
-            logger.warn(`Failed to fetch sources for property ${propertyId} after retries: ${error.message}`);
+            logger.warn(`Failed to fetch sources for property ${propertyId} after ${this.maxRetries} retries: ${error.message}`);
             return null;
         }
     }
 
     extractProperties(responseData) {
+        if (!responseData) return [];
+
         const possibleKeys = [
             'properties',
             'data',
@@ -451,24 +695,32 @@ class BigdatisScraper {
             images: this.extractImages(rawProperty),
             
             publication: {
-                publishedAt: this.parseDate(rawProperty.publishedAt || rawProperty.createdAt),
-                updatedAt: this.parseDate(rawProperty.updatedAt),
+                publishedAt: null,
+                updatedAt: null,
                 expiresAt: this.parseDate(rawProperty.expiresAt),
                 status: rawProperty.status || 'active',
-                views: this.parseNumber(rawProperty.views) || 0
+                views: this.parseNumber(rawProperty.views) || 0,
+                firstSeenAt: rawProperty.firstSeenAt ?? null,
+                createdAt: rawProperty.createdAt ?? null,
+                modifiedAt: rawProperty.modifiedAt ?? null,
+                timestamp: rawProperty.timestamp ?? null,
+                priceDroppedAt: rawProperty.priceDroppedAt ?? null,
+                priceTimestamp: rawProperty.priceTimestamp ?? null,
             },
             
             rawData: rawProperty,
             
             scrapingMeta: {
                 scrapedAt: new Date(),
-                lastUpdated: new Date(),
                 version: 1,
                 source: 'bigdatis',
-                locationId: this.getCurrentLocation(), // Track which location this property came from
+                locationId: this.getCurrentLocation(),
                 locationMappingQuality: officialLocation.city ? 'official' : (city ? 'fallback' : 'missing')
             }
         };
+
+        this.applySourceDates(normalized, rawProperty);
+        normalized.publication = applyVisibilityToPublication(normalized.publication);
 
         return normalized;
     }
@@ -630,15 +882,58 @@ class BigdatisScraper {
     extractImages(property) {
         const images = property.images || property.photos || [];
         
-        if (Array.isArray(images)) {
+        if (Array.isArray(images) && images.length > 0) {
             return images.map((img, index) => ({
                 url: typeof img === 'string' ? img : img.url,
                 caption: typeof img === 'object' ? img.caption || '' : '',
                 isPrimary: index === 0
             }));
         }
+
+        if (property.thumbnailUrl) {
+            const url = String(property.thumbnailUrl).startsWith('http')
+                ? property.thumbnailUrl
+                : `https://server.bigdatis.tn/${property.thumbnailUrl}`;
+            return [{ url, caption: '', isPrimary: true }];
+        }
         
         return [];
+    }
+
+    applySourceDates(normalizedData, rawProperty, detailPayload = null) {
+        const { extractSourceDates } = require('../utils/sourceDateExtractor');
+        const merged = {
+            ...(rawProperty || {}),
+            ...(detailPayload || {}),
+            publication: {
+                ...(normalizedData.publication || {}),
+                ...(detailPayload || {}),
+            },
+        };
+        const extracted = extractSourceDates(merged, {
+            referenceScrapeTime: normalizedData.scrapingMeta?.scrapedAt || new Date(),
+        });
+
+        if (!normalizedData.publication) {
+            normalizedData.publication = {};
+        }
+
+        normalizedData.publication.publishedAt = extracted.first_published_at
+            ? this.parseDate(extracted.first_published_at)
+            : null;
+        normalizedData.publication.updatedAt = extracted.last_updated_at
+            ? this.parseDate(extracted.last_updated_at)
+            : null;
+        normalizedData.publication.dateProvenance = extracted.raw_date_debug;
+
+        if (detailPayload) {
+            normalizedData.publication.firstSeenAt = detailPayload.firstSeenAt ?? normalizedData.publication.firstSeenAt;
+            normalizedData.publication.createdAt = detailPayload.createdAt ?? normalizedData.publication.createdAt;
+            normalizedData.publication.modifiedAt = detailPayload.modifiedAt ?? normalizedData.publication.modifiedAt;
+            normalizedData.publication.timestamp = detailPayload.timestamp ?? normalizedData.publication.timestamp;
+            normalizedData.publication.priceDroppedAt = detailPayload.priceDroppedAt ?? normalizedData.publication.priceDroppedAt;
+            normalizedData.publication.priceTimestamp = detailPayload.priceTimestamp ?? normalizedData.publication.priceTimestamp;
+        }
     }
 
     async saveProperties(properties, offset = null, skipDuplicateCheck = false) {
@@ -646,6 +941,14 @@ class BigdatisScraper {
             return { saved: 0, updated: 0, skipped: 0 };
         }
 
+        return this.perf.track(
+            'saveProperties',
+            () => this._savePropertiesImpl(properties, offset, skipDuplicateCheck),
+            { recordsProcessed: properties.length }
+        );
+    }
+
+    async _savePropertiesImpl(properties, offset = null, skipDuplicateCheck = false) {
         let saved = 0;
         let updated = 0;
         let skipped = 0;
@@ -656,48 +959,109 @@ class BigdatisScraper {
                 const normalizedData = this.normalizePropertyData(rawProperty);
                 const propertyId = normalizedData.bigdatisId;
                 
-                // Fetch property details from detail endpoint to get images and description
-                const propertyDetails = await this.fetchPropertyDetails(propertyId);
-                if (propertyDetails) {
-                    // Merge detail data into normalized data
-                    normalizedData.images = this.extractImages(propertyDetails);
-                    if (propertyDetails.description) {
-                        normalizedData.description = propertyDetails.description;
-                        logger.info(`Property ${propertyId}: DESCRIPTION FOUND (${propertyDetails.description.length} chars)`);
-                    } else {
-                        logger.debug(`Property ${propertyId}: No description in API response`);
-                    }
-                    logger.debug(`Fetched details for property ${propertyId}: ${normalizedData.images.length} images`);
+                let hasImages = false;
+
+                if (!this.searchOnly) {
+                    // Fetch property details from detail endpoint to get images and description
+                    const propertyDetails = await this.fetchPropertyDetails(propertyId);
                     
-                    // Add enhanced timestamp fields from API response
-                    if (!normalizedData.publication) {
-                        normalizedData.publication = {};
+                    if (propertyDetails) {
+                        // Merge detail data into normalized data
+                        normalizedData.images = this.extractImages(propertyDetails);
+                        hasImages = normalizedData.images.length > 0;
+                        
+                        if (propertyDetails.description) {
+                            normalizedData.description = propertyDetails.description;
+                            logger.info(`Property ${propertyId}: DESCRIPTION FOUND (${propertyDetails.description.length} chars)`);
+                        } else {
+                            logger.debug(`Property ${propertyId}: No description in API response`);
+                        }
+                        
+                        if (hasImages) {
+                            logger.info(`Property ${propertyId}: ${normalizedData.images.length} IMAGES FOUND`);
+                        } else {
+                            logger.warn(`Property ${propertyId}: NO IMAGES FOUND - checking fallback sources`);
+                            // Try to extract images from raw property data as fallback
+                            const fallbackImages = this.extractImages(rawProperty);
+                            if (fallbackImages.length > 0) {
+                                normalizedData.images = fallbackImages;
+                                hasImages = true;
+                                logger.info(`Property ${propertyId}: ${fallbackImages.length} FALLBACK IMAGES FOUND from raw data`);
+                            }
+                        }
+                        
+                        // Add enhanced timestamp fields from API response
+                        if (!normalizedData.publication) {
+                            normalizedData.publication = {};
+                        }
+                        this.applySourceDates(normalizedData, rawProperty, propertyDetails);
+                        normalizedData.publication = applyVisibilityToPublication(normalizedData.publication);
+                    } else {
+                        // Detail endpoint failed completely - try fallback
+                        logger.warn(`Property ${propertyId}: DETAIL ENDPOINT FAILED - trying fallback image extraction`);
+                        const fallbackImages = this.extractImages(rawProperty);
+                        if (fallbackImages.length > 0) {
+                            normalizedData.images = fallbackImages;
+                            hasImages = true;
+                            logger.info(`Property ${propertyId}: ${fallbackImages.length} FALLBACK IMAGES FOUND from raw data`);
+                        } else {
+                            logger.error(`Property ${propertyId}: NO IMAGES AVAILABLE - saved without photos`);
+                            // Add to retry queue for later attempt
+                            this.photoRetryQueue.set(propertyId, 0);
+                        }
                     }
-                    normalizedData.publication.firstSeenAt = propertyDetails.firstSeenAt;
-                    normalizedData.publication.createdAt = propertyDetails.createdAt;
-                    normalizedData.publication.modifiedAt = propertyDetails.modifiedAt;
-                    normalizedData.publication.priceDroppedAt = propertyDetails.priceDroppedAt;
-                    normalizedData.publication.timestamp = propertyDetails.timestamp;
-                    normalizedData.publication.priceTimestamp = propertyDetails.priceTimestamp;
-                }
-                
-                // Fetch contacts from dedicated contacts endpoint to get phone numbers
-                const propertyContacts = await this.fetchPropertyContacts(propertyId);
-                if (propertyContacts) {
-                    normalizedData.contact = this.extractContact(propertyContacts);
-                    logger.debug(`Fetched contacts for property ${propertyId}: ${normalizedData.contact.phone || 'no phone'}`);
-                }
-                
-                // Fetch sources from dedicated sources endpoint to get source URLs
-                const propertySources = await this.fetchPropertySources(propertyId);
-                if (propertySources) {
-                    normalizedData.sources = propertySources;
-                    // Use first source URL as primary URL
-                    if (propertySources.length > 0 && propertySources[0].url) {
-                        normalizedData.url = propertySources[0].url;
+                    
+                    // Fetch contacts from dedicated contacts endpoint to get phone numbers
+                    const propertyContacts = await this.fetchPropertyContacts(propertyId);
+                    if (propertyContacts) {
+                        normalizedData.contact = this.extractContact(propertyContacts);
+                        logger.debug(`Fetched contacts for property ${propertyId}: ${normalizedData.contact.phone || 'no phone'}`);
                     }
-                    logger.debug(`Fetched sources for property ${propertyId}: ${propertySources.length} sources`);
+                    
+                    // Fetch sources from dedicated sources endpoint to get source URLs
+                    const propertySources = await this.fetchPropertySources(propertyId);
+                    if (propertySources) {
+                        normalizedData.sources = propertySources;
+                        // Use first source URL as primary URL
+                        if (propertySources.length > 0 && propertySources[0].url) {
+                            normalizedData.url = propertySources[0].url;
+                        }
+                        logger.debug(`Fetched sources for property ${propertyId}: ${propertySources.length} sources`);
+                    }
+                        // Optionally skip saving properties without photos
+                        if (this.skipNoPhoto && !hasImages) {
+                            skipped++;
+                            logger.info(`Property ${propertyId}: SKIPPED (no images) {skipNoPhoto}`);
+                            // Update location stats incrementally
+                            if (currentLocationId) {
+                                const locationStats = this.locationStats.get(currentLocationId);
+                                if (locationStats) {
+                                    locationStats.skipped++;
+                                }
+                            }
+                            continue;
+                        }
+                } else {
+                    // Search-only mode: extract from search payload (includes firstSeenAt when present)
+                    this.applySourceDates(normalizedData, rawProperty);
+                    const fallbackImages = this.extractImages(rawProperty);
+                    if (fallbackImages.length > 0) {
+                        normalizedData.images = fallbackImages;
+                        hasImages = true;
+                        logger.debug(`Property ${propertyId}: Search-only mode - extracted ${fallbackImages.length} images from raw data`);
+                    }
+                    if (this.skipNoPhoto && !hasImages) {
+                        skipped++;
+                        logger.info(`Property ${propertyId}: SKIPPED (no images) {skipNoPhoto}`);
+                        if (currentLocationId) {
+                            const locationStats = this.locationStats.get(currentLocationId);
+                            if (locationStats) locationStats.skipped++;
+                        }
+                        continue;
+                    }
                 }
+
+                normalizedData.publication = applyVisibilityToPublication(normalizedData.publication);
                 
                 if (this.enableDuplicatesCheck && !skipDuplicateCheck) {
                     const existingProperty = await Property.findDuplicates(normalizedData);
@@ -761,16 +1125,19 @@ class BigdatisScraper {
         return { saved, updated, skipped };
     }
 
-    sleep(ms) {
-        // Add random variation (±30%) to avoid detection
+    sleep(ms, reason = 'delay') {
         const variation = 0.3;
         const randomMs = ms + (Math.random() - 0.5) * 2 * ms * variation;
-        return new Promise(resolve => setTimeout(resolve, Math.max(randomMs, 1000)));
+        const actualMs = Math.max(randomMs, reason === '429_cooldown' ? ms : 1000);
+        this.perf.recordSleep(actualMs, reason);
+        return new Promise(resolve => setTimeout(resolve, actualMs));
     }
 
     // Scrape properties for a specific location
     async scrapeLocationProperties(locationId, maxPages = null) {
         logger.scrapingInfo(`Starting scraping for location ID: ${locationId}`);
+        this._applyLocationMeta(locationId);
+        this.perf.startLocation(locationId);
         
         const locationStats = this.initLocationStats(locationId);
         const allProperties = [];
@@ -852,16 +1219,20 @@ class BigdatisScraper {
                     // Check session duplicates first (faster)
                     if (seenPropertyIds.has(propId)) {
                         duplicatesFromSession.push(propId);
+                        this.perf.recordDuplicateCheck({ session: 1 });
                         continue;
                     }
                     
                     // Check if exists in database (only if duplicate check is enabled)
                     if (this.enableDuplicatesCheck) {
                         try {
+                            const dbStart = Date.now();
                             const existingProp = await Property.findOne({ bigdatisId: propId });
+                            this.perf.recordMongoQuery(1, Date.now() - dbStart);
                             if (existingProp) {
                                 existingInDb.push(propId);
                                 seenPropertyIds.add(propId);
+                                this.perf.recordDuplicateCheck({ db: 1 });
                                 continue;
                             }
                         } catch (dbError) {
@@ -949,6 +1320,7 @@ class BigdatisScraper {
         } finally {
             locationStats.endTime = new Date();
             const duration = locationStats.endTime - locationStats.startTime;
+            this.perf.endLocation(locationId, locationStats);
             
             logger.scrapingInfo(`Completed location ${locationId}`, {
                 duration: `${Math.round(duration / 1000)}s`,
@@ -971,6 +1343,7 @@ class BigdatisScraper {
 
     // Main scraping method with location-based approach
     async scrapeAllProperties(maxPages = null) {
+        this.ensureAccessTokenIsValid();
         this.stats.startTime = new Date();
         logger.scrapingInfo('Starting location-based property scraping session');
         logger.scrapingInfo(`Total locations to process: ${this.targetLocationIds.length}`);
@@ -1032,13 +1405,21 @@ class BigdatisScraper {
         } finally {
             this.stats.endTime = new Date();
             this.logFinalResults();
+            
+            await this.perf.track('retryPhotoRequests', () => this.retryPhotoRequests());
+
+            const perfExport = this.perf.finalize();
+            if (perfExport) {
+                logger.info(`📊 Performance report written: ${perfExport.jsonPath}`);
+            }
         }
 
         return {
             properties: allProperties,
             stats: this.stats,
             locationResults,
-            locationStats: Object.fromEntries(this.locationStats)
+            locationStats: Object.fromEntries(this.locationStats),
+            performanceReport: this.perf.buildReport()
         };
     }
 
@@ -1102,6 +1483,64 @@ class BigdatisScraper {
         
         this.locationStats.clear();
         this.currentLocationIndex = 0;
+    }
+
+    // Retry photo requests for properties that failed initially
+    async retryPhotoRequests() {
+        if (this.photoRetryQueue.size === 0) {
+            logger.info('No properties in photo retry queue');
+            return;
+        }
+
+        logger.info(`Starting photo retry for ${this.photoRetryQueue.size} properties`);
+        let successCount = 0;
+        let failedCount = 0;
+
+        for (const [propertyId, retryAttempts] of this.photoRetryQueue.entries()) {
+            if (retryAttempts >= 2) {
+                logger.debug(`Property ${propertyId}: Max photo retries reached, skipping`);
+                continue;
+            }
+
+            logger.debug(`Property ${propertyId}: Retrying photo request (attempt ${retryAttempts + 1})`);
+            
+            try {
+                // Wait longer between retries to avoid rate limiting
+                await this.sleep(this.delay * 3);
+                
+                const propertyDetails = await this.fetchPropertyDetails(propertyId);
+                if (propertyDetails) {
+                    const images = this.extractImages(propertyDetails);
+                    if (images.length > 0) {
+                        // Update the property in database with the new images
+                        const property = await Property.findOne({ bigdatisId: propertyId });
+                        if (property) {
+                            property.images = images;
+                            property.scrapingMeta.lastUpdated = new Date();
+                            property.scrapingMeta.version += 1;
+                            await property.save();
+                            
+                            logger.info(`Property ${propertyId}: SUCCESS - ${images.length} photos added on retry`);
+                            successCount++;
+                            this.photoRetryQueue.delete(propertyId);
+                        } else {
+                            logger.warn(`Property ${propertyId}: Property not found in database for photo update`);
+                        }
+                    } else {
+                        logger.debug(`Property ${propertyId}: Still no images on retry`);
+                        this.photoRetryQueue.set(propertyId, retryAttempts + 1);
+                    }
+                } else {
+                    logger.debug(`Property ${propertyId}: Detail endpoint still failed on retry`);
+                    this.photoRetryQueue.set(propertyId, retryAttempts + 1);
+                }
+            } catch (error) {
+                logger.error(`Property ${propertyId}: Photo retry failed: ${error.message}`);
+                this.photoRetryQueue.set(propertyId, retryAttempts + 1);
+            }
+        }
+
+        logger.info(`Photo retry completed: ${successCount} succeeded, ${failedCount} failed`);
     }
 
     // Location mapping — backed by CDN cache or hardcoded fallback
